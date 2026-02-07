@@ -1,0 +1,35 @@
+{
+  "name": "werking-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WerkING Tools - Engineering Workflow Marketplace",
+  "scripts": {
+    "dev": "echo 'ERROR: Use npm run dev:local or dev:live' && exit 1",
+    "build": "echo 'ERROR: Use npm run build:local or build:live' && exit 1",
+    "start": "echo 'ERROR: Use npm run start:local or start:live' && exit 1",
+    "dev:local": "next dev -p 3016 --hostname 0.0.0.0",
+    "build:local": "next build",
+    "start:local": "next start -p 3006 --hostname 0.0.0.0",
+    "dev:live": "echo 'Not applicable - deploy to Vercel' && exit 1",
+    "build:live": "next build",
+    "start:live": "echo 'Not applicable - deploy to Vercel' && exit 1",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "framer-motion": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "postcss": "^8.5.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.1.0"
+  }
+}

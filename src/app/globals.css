@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #DEC15E;
+  --color-gold-light: #F1E28C;
+  --color-gold-dark: #C4A94D;
+  --color-navy: #0A0F1E;
+  --color-navy-mid: #1A1A2E;
+  --color-navy-light: #252540;
+  --color-text-body: #404A5E;
+  --color-text-muted: #98A7C2;
+  --color-bg-light: #F8F9FA;
+  --color-green: #48BB78;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-body);
+  background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Logo ING highlight */
+.brand-ing {
+  background: linear-gradient(135deg, #F1E28C, #DEC15E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold line decorator */
+.gold-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #DEC15E, #F1E28C);
+  margin-bottom: 1rem;
+}
+
+.gold-line-center {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #DEC15E, #F1E28C);
+  margin: 0 auto 1rem;
+}
+
+/* Scroll indicator animation */
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(8px); }
+}
