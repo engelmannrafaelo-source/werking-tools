@@ -30,12 +30,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
-/* Logo ING highlight */
+/* Logo ING highlight — gold gradient fill */
 .brand-ing {
   background: linear-gradient(135deg, #F1E28C, #DEC15E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Logo outline text — "Werk" and suffix (Tools/Report/etc.)
+   Dark background: gray outline, transparent fill
+   Matches: flyer-werking-tools.html, WerkING Report login */
+.brand-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px #94a3b8;
+}
+
+/* Light background variant — darker outline */
+.brand-outline-dark {
+  color: transparent;
+  -webkit-text-stroke: 1px #6b7280;
 }
 
 /* Gold line decorator */

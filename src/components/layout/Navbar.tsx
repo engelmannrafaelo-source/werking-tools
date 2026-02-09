@@ -7,43 +7,74 @@ import { NAV_ITEMS, SITE } from '@/lib/constants'
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50)
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-navy/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      scrolled ? 'bg-navy/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-heading text-xl font-semibold text-white tracking-tight no-underline">
-          Werk<span className="brand-ing">ING</span> Tools
+      <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <Link href="/" className="font-heading text-xl font-bold text-white tracking-tight no-underline hover:opacity-90 transition-opacity">
+          <span className="brand-outline">Werk</span><span className="brand-ing">ING</span><span className="brand-outline"> Tools</span>
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-1">
           {NAV_ITEMS.map((item) => (
-            <li key={item.href}>
-              <a
-                href={item.href}
-                className="text-sm text-white/70 hover:text-gold transition-colors no-underline"
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-          <li>
-            <a
-              href="#kontakt"
-              className="text-sm bg-gold text-navy px-4 py-2 rounded-full font-semibold hover:bg-gold-light transition-colors no-underline"
+            <div
+              key={item.label}
+              className="relative"
+              onMouseEnter={() => 'children' in item ? setOpenDropdown(item.label) : undefined}
+              onMouseLeave={() => setOpenDropdown(null)}
             >
-              Kontakt
-            </a>
-          </li>
-        </ul>
+              {'children' in item ? (
+                <>
+                  <button className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors font-medium no-underline">
+                    {item.label}
+                    <svg className="inline-block ml-1 w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+
+                  {openDropdown === item.label && (
+                    <div className="absolute top-full left-0 mt-1 w-64 bg-navy-mid border border-white/10 rounded-xl shadow-2xl py-2">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="block px-4 py-3 hover:bg-white/5 transition-colors no-underline"
+                        >
+                          <span className="text-sm font-medium text-white">{child.label}</span>
+                          <span className="block text-xs text-white/50 mt-0.5">{child.desc}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <Link
+                  href={item.href}
+                  className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors font-medium no-underline"
+                >
+                  {item.label}
+                </Link>
+              )}
+            </div>
+          ))}
+
+          <Link
+            href="/kontakt/"
+            className="ml-4 px-5 py-2.5 bg-gold text-navy text-sm font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.3)]"
+          >
+            Kontakt
+          </Link>
+        </div>
 
         {/* Mobile Toggle */}
         <button
@@ -59,29 +90,48 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-navy/95 backdrop-blur-sm border-t border-white/10">
-          <ul className="flex flex-col p-6 gap-4">
+        <div className="md:hidden bg-navy-mid/95 backdrop-blur-md border-t border-white/10">
+          <div className="px-6 py-4 space-y-1">
             {NAV_ITEMS.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-white/80 hover:text-gold transition-colors no-underline"
-                >
-                  {item.label}
-                </a>
-              </li>
+              <div key={item.label}>
+                {'children' in item ? (
+                  <>
+                    <p className="px-3 py-2 text-xs uppercase tracking-wider text-white/40 font-semibold">
+                      {item.label}
+                    </p>
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        onClick={() => setMenuOpen(false)}
+                        className="block px-3 py-2.5 text-white/80 hover:text-white transition-colors no-underline"
+                      >
+                        {child.label}
+                        <span className="block text-xs text-white/40">{child.desc}</span>
+                      </Link>
+                    ))}
+                  </>
+                ) : (
+                  <Link
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="block px-3 py-2.5 text-white/80 hover:text-white transition-colors no-underline"
+                  >
+                    {item.label}
+                  </Link>
+                )}
+              </div>
             ))}
-            <li>
-              <a
-                href="#kontakt"
+            <div className="pt-3">
+              <Link
+                href="/kontakt/"
                 onClick={() => setMenuOpen(false)}
-                className="inline-block bg-gold text-navy px-4 py-2 rounded-full font-semibold no-underline"
+                className="block px-5 py-3 bg-gold text-navy text-center font-semibold rounded-lg no-underline"
               >
                 Kontakt
-              </a>
-            </li>
-          </ul>
+              </Link>
+            </div>
+          </div>
         </div>
       )}
     </nav>
