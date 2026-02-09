@@ -1,85 +1,66 @@
 export const SITE = {
   name: 'WerkING Tools',
-  tagline: 'AI-Workflows mit Handschlagsqualitaet',
-  description: 'Engineering Workflow Marketplace. Gutachten, Energieberichte, Risikoanalysen automatisiert. 90% Zeitersparnis. DSGVO-konform.',
+  tagline: 'AI-Workflows mit Handschlagsqualitaet.',
+  description: 'Technische Gutachten, Energieberichte, Risikoanalysen — KI-gestuetzt, ingenieur-geprueft.',
   url: 'https://werking-tools.at',
-  email: 'office@data-energyneering.at',
+  email: 'office@werking-tools.at',
   phone: '+43 676 542 3883',
   address: 'Florianigasse 17/19, 1080 Wien',
   linkedin: 'https://www.linkedin.com/in/rafael-engelmann-02567a2aa/',
+  hours: 'Mo-Do: 09-17, Fr: 09-12',
 } as const
 
 export const NAV_ITEMS = [
-  { label: 'Produkte', href: '#produkte' },
-  { label: 'So funktioniert\'s', href: '#so-funktionierts' },
-  { label: 'Vertrauen', href: '#vertrauen' },
-  { label: 'Foerderung', href: '#foerderung' },
+  {
+    label: 'Produkte',
+    href: '#produkte',
+    children: [
+      { label: 'WerkING Report', href: '/report/', desc: 'Technische Gutachten' },
+      { label: 'WerkING Energy', href: '/energy/', desc: 'Energieberichte' },
+      { label: 'WerkING Safety', href: '/safety/', desc: 'CE-Risikoanalysen' },
+      { label: 'WerkING Noise', href: '/noise/', desc: 'Akustik-Planung' },
+      { label: 'WerkingFlow', href: '/platform/', desc: 'Workflow Marketplace' },
+    ],
+  },
+  { label: 'Preise', href: '/preise/' },
+  { label: 'Ueber mich', href: '/ueber-mich/' },
 ] as const
 
-export const PRODUCTS = [
-  {
-    name: 'Werking Report',
-    icon: '📋',
-    badge: 'live' as const,
-    desc: 'Gutachten in 5 Minuten statt 5 Stunden. Upload, pruefen, fertig. Fuer Ziviltechniker und Sachverstaendige.',
-    link: 'https://gutachten-standalone.vercel.app',
-    price: 'ab EUR 29/Monat',
-  },
-  {
-    name: 'Werking Safety',
-    icon: '⚠️',
-    badge: 'live' as const,
-    desc: 'CE-Risikoanalysen automatisiert. Normenkonform nach Maschinenrichtlinie 2006/42/EG.',
-    link: 'https://tecc-safety-expert.vercel.app',
-    price: 'Projektbasis',
-  },
-  {
-    name: 'Werking Energy',
-    icon: '⚡',
-    badge: 'soon' as const,
-    desc: 'Energieberichte fuer Gebaeude generieren. 70+ Berechnungsschritte automatisiert.',
-    link: null,
-    price: 'EUR 700-1.000/Report',
-  },
-  {
-    name: 'Werking Noise',
-    icon: '🔊',
-    badge: 'soon' as const,
-    desc: 'Schallschutz-Nachweise und Akustik-Gutachten digital erstellen.',
-    link: null,
-    price: 'Maerz 2026',
-  },
-] as const
-
-export const STATS = [
-  { value: 90, suffix: '%', label: 'Zeitersparnis' },
-  { value: 70, suffix: '+', label: 'API-Calls pro Report' },
-  { value: 3, suffix: '', label: 'Schritte zum Ergebnis' },
-  { value: 100, suffix: '%', label: 'DSGVO-konform' },
-] as const
-
-export const STEPS = [
+export const SOLUTION_STEPS = [
   {
     number: 1,
-    title: 'Upload',
-    desc: 'Daten hochladen — Plaene, Fotos, Messwerte, Bestandsdokumente. Drag & Drop oder strukturierte Eingabe.',
+    title: 'Hochladen',
+    desc: 'Ihre Unterlagen: Messdaten, Fotos, Plaene, Notizen.',
+    icon: 'upload',
   },
   {
     number: 2,
-    title: 'KI-Analyse',
-    desc: 'Spezialisierte Pipeline erstellt den Entwurf. Deterministische Verarbeitung — gleicher Input, gleiches Ergebnis.',
+    title: 'KI-Pipeline',
+    desc: 'Definierter Prozess — analysiert, strukturiert, erstellt einen Entwurf.',
+    icon: 'pipeline',
   },
   {
     number: 3,
-    title: 'Freigabe',
-    desc: 'Ingenieur prueft, korrigiert und gibt frei. Human-in-the-Loop — keine Black Box, volle Kontrolle.',
+    title: 'Pruefen & Freigeben',
+    desc: 'Sie pruefen, passen an und geben frei. Die Verantwortung bleibt bei Ihnen.',
+    icon: 'check',
   },
 ] as const
 
-export const TRUST_ITEMS = [
-  { icon: '🇪🇺', title: 'EU-Server', desc: 'Hosting in Deutschland. Keine Daten ausserhalb der EU.' },
-  { icon: '🔒', title: 'DSGVO-konform', desc: 'Presidio-Anonymisierung. Keine Datenweitergabe an Dritte.' },
-  { icon: '⚖️', title: 'Normenkonform', desc: 'DIN V 18599, OIB-Richtlinie, OENORM. Branchenstandards eingebaut.' },
-  { icon: '👤', title: 'Human-in-the-Loop', desc: 'KI erstellt Entwuerfe. Der Experte prueft und gibt frei.' },
-  { icon: '🔄', title: 'Reproduzierbar', desc: 'Deterministische Pipelines. Gleicher Input ergibt gleiches Ergebnis.' },
-] as const
+export const FOUNDER = {
+  name: 'DI Dr. Rafael Engelmann',
+  title: 'Ziviltechniker fuer Maschinenbau. Und Softwareentwickler.',
+  bio: 'Als Ziviltechniker habe ich taeglich gesehen, wie viel Zeit mit repetitiven Excel-Workflows, manuellen Berechnungen und Copy-Paste in Berichten draufgeht. Die Idee: Was wenn die KI den Entwurf schreibt und der Ingenieur nur noch prueft? WerkING Tools entsteht aus dieser Erfahrung — jedes Tool loest ein Problem, das ich selbst hatte.',
+  facts: [
+    'Dr. techn., TU Wien (Maschinenbau / Aeroakustik)',
+    '15+ Jahre Software-Entwicklung',
+    'Referenzprojekte: Otto-Wagner Areal, Raiffeisen Linz, Muenzing Chemie',
+    'Ziviltechniker-Kammer Wien, NOe, Bgld',
+  ],
+  references: [
+    { name: 'Otto-Wagner Areal', category: 'Energiekonzept' },
+    { name: 'Raiffeisenlandesbank Linz', category: 'Technische Studie' },
+    { name: 'Muenzing Chemie', category: 'Anlagenstudie' },
+    { name: 'Invenio', category: 'Spezialsoftware' },
+  ],
+} as const
