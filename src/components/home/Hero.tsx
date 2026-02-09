@@ -1,41 +1,51 @@
+import Link from 'next/link'
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-navy overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-navy via-navy-mid to-navy" />
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_#DEC15E_0%,_transparent_70%)]" />
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background image placeholder — replace with AI-generated hero */}
+      <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-mid to-navy-light" />
+      <div className="absolute inset-0 opacity-[0.07] bg-[radial-gradient(ellipse_at_30%_50%,_#DEC15E_0%,_transparent_60%)]" />
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1 className="font-heading text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-          Werk<span className="brand-ing">ING</span> Tools
-        </h1>
-        <p className="text-xl md:text-2xl text-gold font-heading font-medium mb-4">
-          AI-Workflows mit Handschlagsqualitaet
-        </p>
-        <p className="text-lg text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Jeder Workflow ist fachlich geprueft und freigegeben.
-          Workflows nutzen, eigene bauen, oder an andere verkaufen.
-        </p>
-        <div className="flex gap-4 justify-center flex-wrap">
-          <a
-            href="#produkte"
-            className="bg-gold text-navy px-8 py-3 rounded-full font-semibold text-lg hover:bg-gold-light transition-colors no-underline"
-          >
-            Produkte entdecken
-          </a>
-          <a
-            href="#kontakt"
-            className="border-2 border-white/30 text-white px-8 py-3 rounded-full font-semibold text-lg hover:border-gold hover:text-gold transition-colors no-underline"
-          >
-            Demo anfragen
-          </a>
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-32">
+        <div className="max-w-2xl">
+          <div className="gold-line mb-6" />
+
+          <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-6 leading-[1.1]">
+            AI-Workflows mit<br />
+            <span className="text-gold">Handschlagsqualitaet.</span>
+          </h1>
+
+          <p className="font-heading text-lg md:text-xl text-white/70 mb-3 tracking-wide">
+            Werkzeug, kein Spielzeug.
+          </p>
+
+          <p className="text-base text-white/50 mb-10">
+            Von Ingenieuren. Fuer Ingenieure.
+          </p>
+
+          <div className="flex gap-4 flex-wrap">
+            <Link
+              href="/report/"
+              className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-base"
+            >
+              WerkING Report testen
+            </Link>
+            <a
+              href="#produkte"
+              className="inline-block px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-gold hover:text-gold transition-colors no-underline text-base"
+            >
+              Alle Produkte
+            </a>
+          </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-gold rounded-full mt-2" style={{ animation: 'scrollPulse 2s infinite' }} />
+        <div className="w-7 h-12 border-2 border-white/30 rounded-full flex justify-center">
+          <div className="w-1.5 h-3 bg-gold rounded-full mt-2" style={{ animation: 'scrollPulse 2s infinite' }} />
         </div>
       </div>
     </section>
