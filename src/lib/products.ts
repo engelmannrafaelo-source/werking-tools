@@ -27,6 +27,12 @@ export type ProductStat = {
   label: string
 }
 
+export type ProductPillar = {
+  title: string
+  desc: string
+  capabilities: string[]
+}
+
 export type Product = {
   slug: string
   name: string
@@ -39,6 +45,7 @@ export type Product = {
   screenshot: string // main screenshot for product grid
   problem: string
   features: ProductFeature[]
+  pillars?: ProductPillar[]
   steps: ProductStep[]
   stats: ProductStat[]
   pricing: {
@@ -52,55 +59,78 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'report',
     name: 'WerkING Report',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Report</span>',
-    tagline: 'KI-gestuetzte Gutachten-Erstellung. Reproduzierbar.',
-    status: 'live',
-    statusLabel: 'Verfuegbar',
+    tagline: 'Technische Gutachten. Reproduzierbar. In Ihrem Stil.',
+    status: 'prelaunch',
+    statusLabel: 'Bald verfügbar',
     href: '/report/',
-    appUrl: 'https://werking-report.vercel.app',
+    appUrl: '',
     screenshot: '/images/products/report-dashboard.png',
-    problem: 'Technische Gutachten: Dieselbe Struktur, andere Daten, andere Adresse. Jedes Mal von vorne.',
-    features: [
-      { title: 'Dokumenttypen', desc: 'Eigene Gutachten-Typen definieren mit individuellen Anforderungen und Struktur.' },
-      { title: 'Projekte', desc: 'Gutachten in Projekten organisieren. Drag-and-Drop, Filter, Suche.' },
-      { title: 'KI-Generierung', desc: 'Die KI erstellt einen vollstaendigen Entwurf. Sie pruefen und geben frei.' },
-      { title: 'WYSIWYG Editor', desc: 'Professioneller Rich-Text Editor. Formatierung, Bilder, Tabellen.' },
-      { title: 'Muster-Bibliothek', desc: 'Eigene Vorlagen hochladen und wiederverwenden. DOCX, PDF, HTML.' },
-      { title: 'PDF/DOCX Export', desc: 'Fertiges Gutachten als PDF oder Word exportieren.' },
-      { title: 'Foto-Upload', desc: 'Fotos hochladen. Die KI analysiert Bilder und beschreibt Befunde.' },
-      { title: 'Spracherkennung', desc: 'Diktieren statt tippen. Speech-to-Text fuer Notizen und Befunde.' },
+    problem: 'Druckbelüftungsprüfung: 6 Stiegenhäuser, 18 Messpunkte, Differenzdrücke, Strömungsgeschwindigkeiten. Der Bericht ist jedes Mal gleich aufgebaut — aber Sie schreiben ihn jedes Mal neu.',
+    features: [], // Report uses pillars instead
+    pillars: [
+      {
+        title: 'Ihr Dokumenttyp',
+        desc: 'Sie definieren einmal die Struktur — z.B. "Druckbelüftungsprüfung" mit Checkliste, Beispiel-Formulierungen und Design-Vorlage. Ab dann folgt jeder Bericht dieses Typs demselben Prozess.',
+        capabilities: [
+          'Beliebige Berichtstypen — von Druckbelüftung bis Schallgutachten',
+          'Muster hochladen — Stil und Struktur werden übernommen',
+          'Checkliste: Das System weiss, welche Daten fehlen',
+          'Eigene Design-Vorlagen für das fertige PDF',
+        ],
+      },
+      {
+        title: 'Ihr Schreibstil',
+        desc: 'Laden Sie ein bestehendes Gutachten als Muster hoch. Formulierungen, Fachbegriffe und Struktur werden erkannt. Neue Berichte klingen wie von Ihnen geschrieben.',
+        capabilities: [
+          'Stil-Erkennung aus einem einzigen Beispieldokument',
+          'Vollständige Berichte, kein Lückentext',
+          'Fachbegriffe und Formulierungen werden übernommen',
+        ],
+      },
+      {
+        title: 'Ihre Arbeitsweise',
+        desc: 'Messwerte eingeben, Fotos hochladen, Befunde diktieren. Die KI weiss, was Ihr Berichtstyp braucht — und schreibt den Bericht auf Anweisung um.',
+        capabilities: [
+          'Spracheingabe — diktierte Notizen werden Fachtext',
+          'Bildanalyse — Fotos werden fachlich beschrieben',
+          '"Formaler formulieren" — Absätze auf Anweisung umschreiben',
+          'Druckfertiges PDF — direkt versenden oder drucken',
+        ],
+      },
     ],
     steps: [
-      { title: 'Dokumenttyp waehlen', desc: 'Waehlen Sie einen Gutachten-Typ oder erstellen Sie einen neuen.', screenshot: '/images/products/report-dashboard.png' },
-      { title: 'Projekt anlegen', desc: 'Legen Sie ein Projekt an und ordnen Sie es einem Dokumenttyp zu.', screenshot: '/images/products/report-wizard.png' },
-      { title: 'KI generiert', desc: 'Die KI erstellt einen vollstaendigen Entwurf. Prozess statt Prompt.', screenshot: '/images/products/report-editor.png' },
-      { title: 'Pruefen & Exportieren', desc: 'Pruefen Sie den Entwurf im Editor und exportieren Sie als PDF.', screenshot: '/images/products/report-preview.png' },
+      { title: 'Dokumenttyp definieren', desc: 'Einmal: Struktur festlegen, Muster hochladen, Checkliste konfigurieren. Gilt für alle zukünftigen Berichte dieses Typs.', screenshot: '/images/products/report-dashboard.png' },
+      { title: 'Wizard starten', desc: 'Projekt zuordnen, Stammdaten, Begehungsdatum. Der 6-Schritt-Wizard führt Sie durch — in 2 Minuten bereit.', screenshot: '/images/products/report-wizard.png' },
+      { title: 'Material sammeln', desc: 'Messwerte eingeben, Fotos hochladen, Befunde diktieren. Die Checkliste weiss, was Ihr Berichtstyp braucht — nichts wird vergessen.', screenshot: '/images/products/report-wizard.png' },
+      { title: 'Bericht entsteht', desc: 'Vollständiger Fachbericht in Ihrem Stil. Tabellen mit Messwerten, fachliche Bewertungen, Empfehlungen — kein Lückentext.', screenshot: '/images/products/report-editor.png' },
+      { title: 'Prüfen & PDF', desc: 'Überarbeitungen per Anweisung: "Kürzer", "Formaler", "Mehr Detail". Design-Vorlage wählen, PDF generieren, versenden.', screenshot: '/images/products/report-preview.png' },
     ],
     stats: [
-      { value: 'Definiert', label: 'Jeder Schritt ist festgelegt' },
+      { value: 'Workflow', label: 'Definierter Prozess, kein Chatbot' },
       { value: 'Reproduzierbar', label: 'Gleiche Daten, gleiches Ergebnis' },
-      { value: '8', label: 'Features integriert' },
+      { value: 'Ihr Stil', label: 'Schreibt wie Sie — nicht wie eine Maschine' },
     ],
     pricing: {
       model: 'subscription',
       plans: [
         {
-          name: 'Basic',
-          price: 29,
+          name: 'Starter',
+          price: 40,
           period: 'Monat',
-          features: ['10 Gutachten/Monat', 'KI-Generierung', 'PDF Export', 'Email-Support'],
+          features: ['Haiku 4.5 KI-Modell', 'EUR 10 API-Budget inkl.', '3 Dokumenttypen', '5 Projekte', '1 Design-Vorlage', 'PDF Export'],
         },
         {
           name: 'Professional',
-          price: 79,
+          price: 100,
           period: 'Monat',
           highlighted: true,
-          features: ['Unbegrenzte Gutachten', 'KI-Generierung', 'KI-Editing', 'Stammdaten-Verwaltung', 'PDF & DOCX Export', 'Prioritaets-Support'],
+          features: ['Sonnet 4.5 KI-Modell', 'EUR 35 API-Budget inkl.', '10 Dokumenttypen', '25 Projekte', '3 Design-Vorlagen', 'KI-Recherche', 'Spracheingabe'],
         },
         {
-          name: 'Enterprise',
-          price: 149,
+          name: 'Expert',
+          price: 250,
           period: 'Monat',
-          features: ['Alles aus Professional', 'Multi-User', 'API-Zugang', 'Eigenes Branding', 'Dedizierter Support'],
+          features: ['Opus 4.6 KI-Modell', 'EUR 100 API-Budget inkl.', 'Unbegrenzte Dokumenttypen', 'Unbegrenzte Projekte', 'Unbegrenzte Vorlagen', 'KI-Recherche unbegrenzt', 'Spracheingabe unbegrenzt'],
         },
       ],
     },
@@ -110,85 +140,107 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'energy',
     name: 'WerkING Energy',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Energy</span>',
-    tagline: 'KI-gestuetzte Energiediagnostik mit 8-Phasen-Pipeline.',
+    tagline: 'Energieberichte aus Betriebsdaten. Automatisch. Nachvollziehbar.',
     status: 'beta',
     statusLabel: 'Alpha Testing',
     href: '/energy/',
-    appUrl: 'https://werking-energy.vercel.app',
+    appUrl: '',
     screenshot: '/images/products/energy-wizard.png',
-    problem: 'Energieberichte sind aufwaendig — Datenanalyse, Heizlastberechnung, Berichterstellung. Stunden an Arbeit fuer jedes Gebaeude.',
-    features: [
-      { title: 'Daten-Upload', desc: 'Verbrauchsdaten als Excel oder Parquet hochladen.' },
-      { title: 'KI-Klaerungsfragen', desc: '7 automatisch generierte Fragen zu Ihren Daten.' },
-      { title: 'Auto-Spaltenzuordnung', desc: 'Automatische Erkennung und Zuordnung der Datenspalten.' },
-      { title: '9-Phasen Pipeline', desc: 'Vollstaendige Analyse: Baseline, Anomalien, Fehler, Einsparungen, Empfehlungen.' },
-      { title: 'HTML Preview', desc: 'Interaktive Vorschau des fertigen Berichts.' },
-      { title: 'PDF Export', desc: 'Professioneller Energiebericht als PDF.' },
+    problem: '2 Jahre Betriebsdaten einer Kälteanlage. Excel-Dateien mit Temperaturen, Volumenströmen, Leistungswerten. Daraus manuell Anomalien finden, Wirkungsgrade berechnen, Einsparpotenziale quantifizieren — dauert Wochen.',
+    features: [], // Energy uses pillars instead
+    pillars: [
+      {
+        title: 'Beliebige Daten',
+        desc: 'CSV, Excel oder Parquet — egal ob Kälteanlage, Heizung oder Lüftung. Das System erkennt die Spalten und versteht die Anlage. Dazu optional: Anlagenschemata oder Betriebsanleitungen als PDF.',
+        capabilities: [
+          'Automatische Spaltenerkennung — Temperaturen, Volumenströme, Leistungen',
+          'Beliebige Gebäudetechnik: Kälte, Heizung, Lüftung, Klima',
+          'Kontext-Dokumente als PDF: Anlagenschemata, Betriebsanleitungen',
+        ],
+      },
+      {
+        title: 'KI klärt Kontext',
+        desc: 'Rückfragen statt Raten: Welche Anlage? Welche Sensoren? Welcher Zeitraum? Erst wenn alles klar ist, startet die Analyse.',
+        capabilities: [
+          'Gezielte Rückfragen — kein blindes Analysieren',
+          'Sensor-Zuordnung und Anlagen-Verständnis',
+          'Zeitraum, Betriebsmodi und Randbedingungen werden geklärt',
+        ],
+      },
+      {
+        title: '9 Phasen, 1 Bericht',
+        desc: 'Von Datenvalidierung über Baseline-Berechnung und Anomalie-Erkennung bis hin zu bezifferten Einsparpotenzialen. Vollautomatisch in ~30 Minuten. Jedes Ergebnis nachvollziehbar.',
+        capabilities: [
+          'Datenvalidierung, Baseline, Anomalien, Effizienz, Einsparpotenziale',
+          '~30 Minuten für einen vollständigen Energiebericht',
+          'Jede Berechnung mit Begründung und Quelldaten',
+        ],
+      },
     ],
     steps: [
-      { title: 'Daten hochladen', desc: 'Laden Sie Ihre Verbrauchsdaten und Kontext-Dokumente hoch.', screenshot: '/images/products/energy-wizard.png' },
-      { title: 'Fragen beantworten', desc: 'Die KI stellt 7 gezielte Fragen zu Ihren Daten.', screenshot: '/images/products/energy-pipeline.png' },
-      { title: 'Pipeline laeuft', desc: '9 Phasen analysieren Ihre Daten automatisch.', screenshot: '/images/products/energy-pipeline.png' },
-      { title: 'Bericht erhalten', desc: 'Fertiger Energiebericht mit Empfehlungen und Einsparpotenzialen.', screenshot: '/images/products/energy-report.png' },
+      { title: 'Daten hochladen', desc: 'Excel, CSV oder Parquet — beliebige Gebäudetechnik-Daten. Dazu optional: Anlagenschemata oder Betriebsanleitungen als PDF.', screenshot: '/images/products/energy-wizard.png' },
+      { title: 'KI klärt Kontext', desc: 'Gezielte Rückfragen: Welche Anlage? Welche Sensoren? Welcher Zeitraum? Erst wenn der Kontext steht, startet die Analyse.', screenshot: '/images/products/energy-pipeline.png' },
+      { title: '9 Phasen laufen', desc: 'Datenvalidierung, Baseline, Anomalien, Effizienz, Einsparpotenziale. Vollautomatisch in ~30 Minuten. Sie sehen den Fortschritt live.', screenshot: '/images/products/energy-pipeline.png' },
+      { title: 'Fertiger Energiebericht', desc: 'Professioneller Report: Inhaltsverzeichnis, Kapitel, Berechnungen, Empfehlungen. HTML-Vorschau oder PDF-Export.', screenshot: '/images/products/energy-report.png' },
     ],
     stats: [
-      { value: '9', label: 'Analyse-Phasen' },
-      { value: '70+', label: 'API-Calls pro Bericht' },
-      { value: 'Automatisiert', label: 'Vollstaendige Pipeline' },
+      { value: '9 Phasen', label: 'Von Rohdaten bis Empfehlung' },
+      { value: '~30 Min', label: 'Für einen vollständigen Energiebericht' },
+      { value: 'Nachvollziehbar', label: 'Jede Berechnung mit Quelldaten' },
     ],
-    pricing: {
-      model: 'per-report',
-      plans: [
-        {
-          name: 'Einzelbericht',
-          price: 1000,
-          period: 'einmalig',
-          features: ['1 Energiebericht', 'Vollstaendige 9-Phasen Analyse', 'PDF Export', 'Email-Support'],
-        },
-        {
-          name: '5er-Pack',
-          price: 4000,
-          period: 'einmalig',
-          highlighted: true,
-          features: ['5 Energieberichte', 'Mengenrabatt', 'Alle Features', 'Prioritaets-Support'],
-        },
-        {
-          name: '10er-Pack',
-          price: 7000,
-          period: 'einmalig',
-          features: ['10 Energieberichte', 'Mengenrabatt', 'Alle Features', 'Dedizierter Support'],
-        },
-      ],
-    },
+    pricing: null, // Alpha Testing — Preise folgen
   },
 
   safety: {
     slug: 'safety',
     name: 'WerkING Safety',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Safety</span>',
-    tagline: 'CE-Risikoanalysen automatisiert.',
+    tagline: 'Risikoanalysen für Maschinen. Von der Dokumentation bis zur Massnahme.',
     status: 'beta',
     statusLabel: 'Alpha Testing',
     href: '/safety/',
-    appUrl: 'https://tecc-safety-expert.vercel.app',
+    appUrl: '',
     screenshot: '/images/products/safety-analysis.png',
-    problem: 'CE-Risikoanalysen sind komplex — Gefaehrdungen identifizieren, Massnahmen definieren, alles dokumentieren. Pro Maschine mehrere Stunden.',
-    features: [
-      { title: 'PDF-Analyse', desc: 'Maschinen-Dokumentation als PDF hochladen. Vision-AI erkennt Komponenten.' },
-      { title: '4-Phasen Pipeline', desc: 'Automatische Analyse: Bildextraktion, Dokumenten-Analyse, Gefaehrdungen, Report.' },
-      { title: '9-Spalten Format', desc: 'CE-konforme Risikoanalyse mit Severity, Probability, Frequency.' },
-      { title: 'Quellenangabe', desc: 'Jede Massnahme mit Verweis auf die Wissensbasis-Quelle.' },
-      { title: 'JSON Export', desc: 'Export fuer Safe Expert Import. Nahtlose Integration.' },
+    problem: 'Eine Bohrmaschine mit Servoantrieb und hydraulischer Klemmung. 200 Seiten Dokumentation. Daraus manuell Gefährdungen identifizieren und bewerten — pro Maschine mehrere Tage.',
+    features: [], // Safety uses pillars instead
+    pillars: [
+      {
+        title: 'Liest Ihre Dokumentation',
+        desc: 'PDF hochladen — Vision-AI analysiert Bilder, Schaltpläne und technische Daten. Maschinenkomponenten werden automatisch erkannt.',
+        capabilities: [
+          'Vision-AI erkennt Komponenten aus Bildern und Schaltplänen',
+          '200+ Seiten Betriebsanleitung in einer Analyse',
+          'Automatische Bildextraktion und Komponentenerkennung',
+        ],
+      },
+      {
+        title: 'Bewertet systematisch',
+        desc: 'Jede Gefährdung nach Schwere, Wahrscheinlichkeit und Häufigkeit. 4-Phasen-Pipeline: Analyse, Durchsuchung, Identifikation, Bewertung.',
+        capabilities: [
+          '4-Phasen-Pipeline — vollständig automatisiert',
+          'Schwere, Wahrscheinlichkeit, Häufigkeit — systematisch bewertet',
+          'Massnahmenvorschläge mit fachlicher Begründung',
+        ],
+      },
+      {
+        title: 'Exportiert für Ihre Tools',
+        desc: '9-Spalten CE-Format. JSON-Export für Safe Expert. PDF-Report für die Dokumentation. Direkt weiterverarbeiten.',
+        capabilities: [
+          '9-Spalten CE-konformes Risikoanalyse-Format',
+          'JSON-Export für Safe Expert Integration',
+          'PDF-Report mit vollständiger Dokumentation',
+        ],
+      },
     ],
     steps: [
-      { title: 'PDF hochladen', desc: 'Laden Sie die Maschinen-Dokumentation als PDF hoch.', screenshot: '/images/products/safety-upload.png' },
-      { title: 'KI analysiert', desc: 'Vision-AI extrahiert Bilder und identifiziert Gefaehrdungen.', screenshot: '/images/products/safety-analysis.png' },
-      { title: 'Risikoanalyse', desc: '9-Spalten CE-Format mit Massnahmen und Quellenangaben.', screenshot: '/images/products/safety-analysis.png' },
+      { title: 'Dokumentation hochladen', desc: 'Betriebsanleitung als PDF. Bilder, Schaltpläne, technische Daten — die Vision-AI liest alles.', screenshot: '/images/products/safety-upload.png' },
+      { title: '4 Phasen analysieren', desc: 'Vision-AI erkennt Komponenten. Gefährdungen werden identifiziert, kategorisiert und nach CE-Schema bewertet. Jede Bewertung begründet.', screenshot: '/images/products/safety-analysis.png' },
+      { title: 'Risikoanalyse exportieren', desc: '9-Spalten CE-Format mit begründeten Massnahmen. Export für Safe Expert oder als vollständiger PDF-Report.', screenshot: '/images/products/safety-analysis.png' },
     ],
     stats: [
-      { value: 'Automatisiert', label: 'Gefaehrdungen erkennen und bewerten' },
-      { value: '9 Spalten', label: 'CE-konformes Risikoanalyse-Format' },
-      { value: 'Quellenangabe', label: 'Jede Massnahme mit Verweis' },
+      { value: '4 Phasen', label: 'Von Dokumentation bis Massnahme' },
+      { value: 'CE-konform', label: '9-Spalten Risikoanalyse-Format' },
+      { value: 'Vision-AI', label: 'Erkennt Bilder, Schaltpläne, Komponenten' },
     ],
     pricing: null, // Auf Anfrage
   },
@@ -197,25 +249,53 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'noise',
     name: 'WerkING Noise',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Noise</span>',
-    tagline: 'CNOSSOS-EU Schallberechnung mit interaktivem Map-Editor.',
+    tagline: 'Lärmberechnung direkt auf der Karte. Europäischer Standard.',
     status: 'development',
     statusLabel: 'In Entwicklung',
     href: '/noise/',
     appUrl: '',
     screenshot: '/images/products/noise-map.png',
-    problem: 'Laermberechnungen erfordern spezialisierte Software und manuelle Modellierung. Zeitaufwaendig und fehleranfaellig.',
-    features: [
-      { title: 'Karten-Editor', desc: 'OpenStreetMap-basierter Editor mit Zeichenwerkzeugen.' },
-      { title: 'CNOSSOS-EU', desc: 'Normkonforme Laermberechnung nach europaeischem Standard.' },
-      { title: '3D-Visualisierung', desc: 'Dreidimensionale Darstellung von Gebaeuden und Schallausbreitung.' },
-      { title: 'Heatmap', desc: 'Farbkodierte Laermkarten mit Grenzwert-Pruefung.' },
+    problem: 'Neues Gewerbeobjekt neben Wohngebiet. Wie laut wird es bei den Nachbarn? Spezialsoftware kostet tausende Euro pro Lizenz. Manuelle Modellierung dauert Stunden.',
+    features: [], // Noise uses pillars instead
+    pillars: [
+      {
+        title: 'Direkt auf der Karte',
+        desc: 'Adresse eingeben, Gebäude laden sich aus OpenStreetMap. Quellen und Empfänger per Drag & Drop platzieren. Keine separate Software nötig.',
+        capabilities: [
+          'Interaktiver Karten-Editor mit Zeichenwerkzeugen',
+          'Gebäude und Gelände automatisch aus OpenStreetMap',
+          'Quellen und Empfänger per Drag & Drop platzieren',
+        ],
+      },
+      {
+        title: 'CNOSSOS-EU Berechnung',
+        desc: 'Europäischer Standard für Lärmberechnung. Reflexionen, Beugung, Geländeeinfluss — automatisch berücksichtigt. Kein Spezialwissen nötig.',
+        capabilities: [
+          'CNOSSOS-EU — europäischer Berechnungsstandard',
+          'Reflexionen und Beugung an Gebäuden',
+          'Geländeeinfluss und Abschirmung automatisch',
+        ],
+      },
+      {
+        title: 'Ergebnis auf einen Blick',
+        desc: 'Farbkodierte Lärmkarte zeigt sofort, wo Grenzwerte überschritten werden. Export für Gutachten und Behörden.',
+        capabilities: [
+          'Heatmap mit farbkodierter Grenzwert-Prüfung',
+          'Pegelwerte an jedem Empfängerpunkt',
+          'Export für Gutachten und Behörden',
+        ],
+      },
     ],
     steps: [
-      { title: 'Standort waehlen', desc: 'Waehlen Sie den Standort auf der Karte.', screenshot: '/images/products/noise-map.png' },
-      { title: 'Quellen platzieren', desc: 'Platzieren Sie Laermquellen und Empfaenger.', screenshot: '/images/products/noise-heatmap.png' },
-      { title: 'Berechnung', desc: 'Automatische Laermberechnung mit Heatmap-Visualisierung.', screenshot: '/images/products/noise-heatmap.png' },
+      { title: 'Standort wählen', desc: 'Adresse eingeben. Gebäude und Gelände werden automatisch aus OpenStreetMap geladen.', screenshot: '/images/products/noise-map.png' },
+      { title: 'Quellen platzieren', desc: 'Lärmquellen und Empfänger auf der Karte positionieren. Schallleistung und Frequenzspektrum definieren.', screenshot: '/images/products/noise-map.png' },
+      { title: 'Berechnung & Heatmap', desc: 'CNOSSOS-EU Berechnung auf Knopfdruck. Farbkodierte Lärmkarte zeigt, wo Grenzwerte überschritten werden.', screenshot: '/images/products/noise-heatmap.png' },
     ],
-    stats: [],
+    stats: [
+      { value: 'CNOSSOS-EU', label: 'Europäischer Berechnungsstandard' },
+      { value: 'Kartenbasiert', label: 'Direkt auf OpenStreetMap arbeiten' },
+      { value: 'Sofort sichtbar', label: 'Farbkodierte Lärmkarte' },
+    ],
     pricing: null,
   },
 
@@ -230,10 +310,35 @@ export const PRODUCTS: Record<string, Product> = {
     appUrl: '',
     screenshot: '/images/products/platform-dashboard.png',
     problem: '',
-    features: [
-      { title: 'Workflow-Marktplatz', desc: 'Fertige Workflows nutzen — von Ingenieuren geprueft.' },
-      { title: 'Eigene Workflows', desc: 'Eigene Workflows entwickeln und im Unternehmen einsetzen.' },
-      { title: 'Marketplace', desc: 'Workflows an andere Ingenieure verkaufen. 70% bleibt beim Entwickler.' },
+    features: [], // Platform uses pillars instead
+    pillars: [
+      {
+        title: 'Nutzen',
+        desc: 'Fertige Workflows aus dem Marktplatz — von Ingenieuren entwickelt, geprüft und bereit zum Einsatz.',
+        capabilities: [
+          'Workflows für verschiedene Fachgebiete',
+          'Von Ingenieuren geprüft und dokumentiert',
+          'Sofort einsetzbar, ohne Konfiguration',
+        ],
+      },
+      {
+        title: 'Bauen',
+        desc: 'Eigene Workflows entwickeln und im Unternehmen einsetzen. Kein Code nötig — visuelle Konfiguration.',
+        capabilities: [
+          'Eigene Workflows visuell zusammenstellen',
+          'KI-Bausteine kombinieren und anpassen',
+          'Im eigenen Team deployen und nutzen',
+        ],
+      },
+      {
+        title: 'Verkaufen',
+        desc: 'Workflows an andere Ingenieure verkaufen. Sie entwickeln, WerkingFlow vertreibt. 70% bleibt beim Entwickler.',
+        capabilities: [
+          'Eigene Workflows im Marktplatz anbieten',
+          '70% Umsatzbeteiligung für Entwickler',
+          'Automatische Abrechnung und Vertrieb',
+        ],
+      },
     ],
     steps: [],
     stats: [],
