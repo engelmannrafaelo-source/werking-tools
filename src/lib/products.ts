@@ -60,10 +60,10 @@ export const PRODUCTS: Record<string, Product> = {
     name: 'WerkING Report',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Report</span>',
     tagline: 'Technische Gutachten. Reproduzierbar. In Ihrem Stil.',
-    status: 'prelaunch',
-    statusLabel: 'Bald verfügbar',
+    status: 'live',
+    statusLabel: 'Early Access',
     href: '/report/',
-    appUrl: '',
+    appUrl: 'https://werking-report.vercel.app',
     screenshot: '/images/products/report-dashboard.png',
     problem: 'Druckbelüftungsprüfung: 6 Stiegenhäuser, 18 Messpunkte, Differenzdrücke, Strömungsgeschwindigkeiten. Der Bericht ist jedes Mal gleich aufgebaut — aber Sie schreiben ihn jedes Mal neu.',
     features: [], // Report uses pillars instead
