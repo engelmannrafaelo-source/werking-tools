@@ -110,36 +110,7 @@ export const PRODUCTS: Record<string, Product> = {
       { value: 'Reproduzierbar', label: 'Gleiche Daten, gleiches Ergebnis' },
       { value: 'Ihr Stil', label: 'Schreibt wie Sie — nicht wie eine Maschine' },
     ],
-    pricing: {
-      model: 'subscription',
-      plans: [
-        {
-          name: 'Starter',
-          price: 40,
-          period: 'Monat',
-          features: ['Haiku 4.5 KI-Modell', 'EUR 10 API-Budget inkl.', '3 Dokumenttypen', '5 Projekte', '1 Design-Vorlage', 'PDF Export', '1 Benutzer'],
-        },
-        {
-          name: 'Professional',
-          price: 100,
-          period: 'Monat',
-          highlighted: true,
-          features: ['Sonnet 4.5 KI-Modell', 'EUR 35 API-Budget inkl.', '10 Dokumenttypen', '25 Projekte', '3 Design-Vorlagen', 'KI-Recherche', 'Spracheingabe', '1 Benutzer'],
-        },
-        {
-          name: 'Expert',
-          price: 250,
-          period: 'Monat',
-          features: ['Opus 4.6 KI-Modell', 'EUR 100 API-Budget inkl.', 'Unbegrenzte Dokumenttypen', 'Unbegrenzte Projekte', 'Unbegrenzte Vorlagen', 'KI-Recherche unbegrenzt', 'Spracheingabe unbegrenzt', '1 Benutzer'],
-        },
-        {
-          name: 'Team',
-          price: 600,
-          period: 'Monat',
-          features: ['Opus 4.6 KI-Modell', 'EUR 300 API-Budget inkl.', 'Unbegrenzte Dokumenttypen', 'Unbegrenzte Projekte', 'Unbegrenzte Vorlagen', 'KI-Recherche unbegrenzt', 'Spracheingabe unbegrenzt', 'Bis zu 5 Benutzer', 'Gemeinsame Dokumenttypen & Vorlagen'],
-        },
-      ],
-    },
+    pricing: null, // Beta Testing — Preise werden nach der Testphase veröffentlicht
   },
 
   energy: {
