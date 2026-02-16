@@ -4,7 +4,7 @@ import { FOUNDER } from '@/lib/constants'
 
 const IDENTITY = [
   { skill: 'Fachsprache verstehen', via: 'Maschinenbau-Ingenieur' },
-  { skill: 'Normen kennen', via: 'Ziviltechniker' },
+  { skill: 'Regelwerke kennen', via: 'Ziviltechniker' },
   { skill: 'Automatisieren', via: '10+ Jahre Fullstack' },
 ] as const
 

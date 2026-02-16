@@ -176,54 +176,24 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'safety',
     name: 'WerkING Safety',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Safety</span>',
-    tagline: 'Risikoanalysen für Maschinen. Von der Dokumentation bis zur Massnahme.',
+    tagline: 'Automatisierte Gefährdungsbeurteilung. Aus Ihrer Maschinendokumentation.',
     status: 'beta',
     statusLabel: 'Alpha Testing',
     href: '/safety/',
     appUrl: '',
-    screenshot: '/images/products/safety-analysis.png',
+    screenshot: '/images/products/safety-upload.png',
     problem: 'Eine Bohrmaschine mit Servoantrieb und hydraulischer Klemmung. 200 Seiten Dokumentation. Daraus manuell Gefährdungen identifizieren und bewerten — pro Maschine mehrere Tage.',
-    features: [], // Safety uses pillars instead
-    pillars: [
-      {
-        title: 'Liest Ihre Dokumentation',
-        desc: 'PDF hochladen — Vision-AI analysiert Bilder, Schaltpläne und technische Daten. Maschinenkomponenten werden automatisch erkannt.',
-        capabilities: [
-          'Vision-AI erkennt Komponenten aus Bildern und Schaltplänen',
-          '200+ Seiten Betriebsanleitung in einer Analyse',
-          'Automatische Bildextraktion und Komponentenerkennung',
-        ],
-      },
-      {
-        title: 'Bewertet systematisch',
-        desc: 'Jede Gefährdung nach Schwere, Wahrscheinlichkeit und Häufigkeit. 4-Phasen-Pipeline: Analyse, Durchsuchung, Identifikation, Bewertung.',
-        capabilities: [
-          '4-Phasen-Pipeline — vollständig automatisiert',
-          'Schwere, Wahrscheinlichkeit, Häufigkeit — systematisch bewertet',
-          'Massnahmenvorschläge mit fachlicher Begründung',
-        ],
-      },
-      {
-        title: 'Exportiert für Ihre Tools',
-        desc: '9-Spalten CE-Format. JSON-Export für Safe Expert. PDF-Report für die Dokumentation. Direkt weiterverarbeiten.',
-        capabilities: [
-          '9-Spalten CE-konformes Risikoanalyse-Format',
-          'JSON-Export für Safe Expert Integration',
-          'PDF-Report mit vollständiger Dokumentation',
-        ],
-      },
-    ],
+    features: [],
+    pillars: [],
     steps: [
-      { title: 'Dokumentation hochladen', desc: 'Betriebsanleitung als PDF. Bilder, Schaltpläne, technische Daten — die Vision-AI liest alles.', screenshot: '/images/products/safety-upload.png' },
-      { title: '4 Phasen analysieren', desc: 'Vision-AI erkennt Komponenten. Gefährdungen werden identifiziert, kategorisiert und nach CE-Schema bewertet. Jede Bewertung begründet.', screenshot: '/images/products/safety-analysis.png' },
-      { title: 'Risikoanalyse exportieren', desc: '9-Spalten CE-Format mit begründeten Massnahmen. Export für Safe Expert oder als vollständiger PDF-Report.', screenshot: '/images/products/safety-analysis.png' },
+      { title: 'Dokumentation hochladen', desc: 'Betriebsanleitung als PDF hochladen. Vision-AI analysiert Bilder, Schaltpläne und technische Daten — Gefährdungen werden automatisch identifiziert und bewertet.', screenshot: '/images/products/safety-upload.png' },
     ],
     stats: [
       { value: '4 Phasen', label: 'Von Dokumentation bis Massnahme' },
-      { value: 'CE-konform', label: '9-Spalten Risikoanalyse-Format' },
       { value: 'Vision-AI', label: 'Erkennt Bilder, Schaltpläne, Komponenten' },
+      { value: '~45 Min', label: 'Pro Maschine statt mehrere Tage' },
     ],
-    pricing: null, // Auf Anfrage
+    pricing: null,
   },
 
   noise: {

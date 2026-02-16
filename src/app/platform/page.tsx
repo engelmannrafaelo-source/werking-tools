@@ -87,7 +87,7 @@ export default function PlatformPage() {
             </div>
             <div className="p-6 rounded-xl bg-bg-light">
               <h3 className="font-heading text-base font-semibold text-navy mb-2">WerkING Safety</h3>
-              <p className="text-sm text-text-muted">CE-Risikoanalysen aus Maschinendokumentation. Vision-AI erkennt Komponenten aus Bildern und Schaltplänen.</p>
+              <p className="text-sm text-text-muted">Automatisierte Gefährdungsbeurteilung aus Maschinendokumentation. Vision-AI erkennt Komponenten aus Bildern und Schaltplänen.</p>
             </div>
             <div className="p-6 rounded-xl bg-bg-light">
               <h3 className="font-heading text-base font-semibold text-navy mb-2">WerkING Noise</h3>
