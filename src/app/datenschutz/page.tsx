@@ -14,7 +14,7 @@ export default function Datenschutz() {
       <Navbar />
       <div className="min-h-screen bg-navy text-white pt-24 pb-16">
         <div className="max-w-3xl mx-auto px-6">
-          <h1 className="font-heading text-4xl font-bold mb-8">Datenschutzerklaerung</h1>
+          <h1 className="font-heading text-4xl font-bold mb-8">Datenschutzerklärung</h1>
 
           <div className="space-y-8 text-white/80 leading-relaxed">
             <div>
@@ -22,8 +22,7 @@ export default function Datenschutz() {
               <p>
                 DI Dr. tech. Rafael Engelmann<br />
                 {SITE.address}<br />
-                E-Mail: {SITE.email}<br />
-                Telefon: {SITE.phone}
+                E-Mail: {SITE.email}
               </p>
             </div>
 
@@ -47,7 +46,7 @@ export default function Datenschutz() {
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">4. Google Fonts</h2>
               <p>
-                Diese Website nutzt Google Fonts, die ueber next/font lokal eingebettet werden.
+                Diese Website nutzt Google Fonts, die über next/font lokal eingebettet werden.
                 Es werden keine Anfragen an Google-Server gestellt.
               </p>
             </div>
@@ -55,16 +54,16 @@ export default function Datenschutz() {
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">5. Externe Links</h2>
               <p>
-                Diese Website enthaelt Links zu externen Websites. Beim Klick auf
-                diese Links gelten die Datenschutzerklaerungen der jeweiligen Anbieter.
+                Diese Website enthält Links zu externen Websites. Beim Klick auf
+                diese Links gelten die Datenschutzerklärungen der jeweiligen Anbieter.
               </p>
             </div>
 
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">6. Ihre Rechte</h2>
               <p>
-                Sie haben das Recht auf Auskunft, Berichtigung, Loeschung,
-                Einschraenkung der Verarbeitung, Datenuebertragbarkeit und
+                Sie haben das Recht auf Auskunft, Berichtigung, Löschung,
+                Einschränkung der Verarbeitung, Datenübertragbarkeit und
                 Widerspruch. Kontaktieren Sie uns unter {SITE.email}.
               </p>
             </div>
@@ -72,8 +71,8 @@ export default function Datenschutz() {
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">7. Beschwerderecht</h2>
               <p>
-                Sie haben das Recht, Beschwerde bei der oesterreichischen
-                Datenschutzbehoerde (dsb.gv.at) einzureichen.
+                Sie haben das Recht, Beschwerde bei der österreichischen
+                Datenschutzbehörde (dsb.gv.at) einzureichen.
               </p>
             </div>
           </div>

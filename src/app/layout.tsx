@@ -17,10 +17,10 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: `${SITE.name} - Engineering Workflow Marketplace`,
+  title: `${SITE.name} — ${SITE.tagline}`,
   description: SITE.description,
   openGraph: {
-    title: `${SITE.name} - ${SITE.tagline}`,
+    title: `${SITE.name} — ${SITE.tagline}`,
     description: SITE.description,
     type: 'website',
     url: SITE.url,

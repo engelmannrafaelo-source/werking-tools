@@ -1,6 +1,6 @@
 const STATS = [
   { value: 'Workflow', label: 'Definierter Prozess statt Chatbot-Raten' },
-  { value: '4 Tools', label: 'Spezialisiert fuer Ingenieure' },
+  { value: 'Für Ingenieure', label: 'Jedes Tool löst ein konkretes Problem' },
   { value: 'Reproduzierbar', label: 'Gleiche Daten, gleiche Analyse, gleiche Empfehlungen.' },
 ] as const
 

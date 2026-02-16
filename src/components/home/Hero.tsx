@@ -14,7 +14,7 @@ export default function Hero() {
 
           <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-6 leading-[1.1]">
             AI-Workflows mit<br />
-            <span className="text-gold">Handschlagsqualitaet.</span>
+            <span className="text-gold">Handschlagsqualität.</span>
           </h1>
 
           <p className="font-heading text-lg md:text-xl text-white/70 mb-3 tracking-wide">
@@ -22,7 +22,7 @@ export default function Hero() {
           </p>
 
           <p className="text-base text-white/50 mb-10">
-            Von Ingenieuren. Fuer Ingenieure.
+            Von Ingenieuren. Für Ingenieure.
           </p>
 
           <div className="flex gap-4 flex-wrap">

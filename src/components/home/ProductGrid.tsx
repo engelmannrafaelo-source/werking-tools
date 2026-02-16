@@ -11,8 +11,8 @@ export default function ProductGrid() {
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="gold-line-center" />
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">Tools fuer Ingenieure.</h2>
-          <p className="text-white/50 mt-3 text-base">Vier spezialisierte Produkte — eine Vision.</p>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">Tools für Ingenieure.</h2>
+          <p className="text-white/50 mt-3 text-base">Spezialisierte Produkte — eine Vision.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -45,10 +45,9 @@ export default function ProductGrid() {
 
                 {/* Content */}
                 <div className="relative z-10 p-6">
-                  <h3
-                    className="font-heading text-xl font-semibold text-white mb-2 group-hover:text-gold transition-colors"
-                    dangerouslySetInnerHTML={{ __html: p.nameHtml }}
-                  />
+                  <h3 className="font-heading text-xl font-semibold text-white mb-2 group-hover:text-gold transition-colors">
+                    Werk<span className="brand-ing">ING</span>{p.name.replace('WerkING', '')}
+                  </h3>
                   <p className="text-sm text-white/60 leading-relaxed mb-3">
                     {p.tagline}
                   </p>
@@ -75,41 +74,41 @@ export default function ProductGrid() {
                   <h3 className="font-heading text-2xl md:text-3xl font-bold text-white mt-1 group-hover:text-gold transition-colors">
                     <span className="brand-outline">Werk</span><span className="brand-ing">ING</span><span className="brand-outline">Flow</span>
                   </h3>
-                  <p className="text-white/50 mt-1">Engineering Workflow Marketplace</p>
+                  <p className="text-white/50 mt-1">KI-Plattform für Engineering-Workflows</p>
                 </div>
                 <span className="text-xs px-3 py-1 rounded-full border border-white/20 text-white/50 bg-white/5">
                   In Entwicklung
                 </span>
               </div>
 
-              {/* 3 Ebenen — Nutzen → Bauen → Verkaufen */}
+              {/* 3 Stärken */}
               <div className="grid md:grid-cols-3 gap-6 mb-6">
                 <div className="p-5 rounded-xl bg-white/5 border border-white/10">
                   <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center mb-3">
                     <span className="text-gold text-sm font-bold">1</span>
                   </div>
-                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Nutzen</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Fertige Workflows nutzen — von Ingenieuren geprueft und bereit zum Einsatz.</p>
+                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Workflow statt Chatbot</h4>
+                  <p className="text-xs text-white/50 leading-relaxed">Definierte Prozesse mit klaren Schritten. Reproduzierbare Ergebnisse — keine Zufallstreffer.</p>
                 </div>
                 <div className="p-5 rounded-xl bg-white/5 border border-white/10">
                   <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center mb-3">
                     <span className="text-gold text-sm font-bold">2</span>
                   </div>
-                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Bauen</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Eigene Workflows entwickeln und im Unternehmen einsetzen.</p>
+                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Engineering-fokussiert</h4>
+                  <p className="text-xs text-white/50 leading-relaxed">Versteht Fachprozesse, Datenformate und Qualitätsanforderungen — keine generische KI.</p>
                 </div>
                 <div className="p-5 rounded-xl bg-white/5 border border-white/10">
                   <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center mb-3">
                     <span className="text-gold text-sm font-bold">3</span>
                   </div>
-                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Verkaufen</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Workflows an andere Ingenieure verkaufen. 70% bleibt beim Entwickler.</p>
+                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Volle Kontrolle</h4>
+                  <p className="text-xs text-white/50 leading-relaxed">Modell-agnostisch, EU-gehostet. Know-how bleibt im Unternehmen.</p>
                 </div>
               </div>
 
               {/* Tagline */}
               <div className="flex items-center justify-between">
-                <p className="text-sm text-white/40">Alle WerkING Tools auf einer Plattform.</p>
+                <p className="text-sm text-white/40">Die KI erstellt den Entwurf. Sie prüfen und geben frei.</p>
                 <span className="text-sm text-gold font-medium group-hover:underline">
                   Mehr erfahren &rarr;
                 </span>

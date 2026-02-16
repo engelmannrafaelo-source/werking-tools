@@ -18,11 +18,6 @@ export default function Footer() {
                   {SITE.email}
                 </a>
               </li>
-              <li>
-                <a href={`tel:${SITE.phone.replace(/\s/g, '')}`} className="text-white hover:text-gold transition-colors no-underline font-medium">
-                  {SITE.phone}
-                </a>
-              </li>
               <li>{SITE.address}</li>
               <li>{SITE.hours}</li>
               <li className="pt-2">
@@ -49,7 +44,7 @@ export default function Footer() {
               {[
                 { href: '/', label: 'Home' },
                 { href: '/preise/', label: 'Preise' },
-                { href: '/ueber-mich/', label: 'Ueber mich' },
+                { href: '/ueber-mich/', label: 'Über mich' },
                 { href: '/kontakt/', label: 'Kontakt' },
               ].map((link) => (
                 <li key={link.href}>
@@ -89,7 +84,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>&copy; {new Date().getFullYear()} DI Dr. Rafael Engelmann — Ziviltechniker fuer Maschinenbau</p>
+          <p>&copy; {new Date().getFullYear()} DI Dr. Rafael Engelmann — Ziviltechniker für Maschinenbau</p>
           <div className="flex gap-6">
             <Link href="/impressum/" className="hover:text-gold transition-colors no-underline">Impressum</Link>
             <Link href="/datenschutz/" className="hover:text-gold transition-colors no-underline">Datenschutz</Link>

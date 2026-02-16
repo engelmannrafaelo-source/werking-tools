@@ -19,39 +19,51 @@ export default function Impressum() {
           <div className="space-y-8 text-white/80 leading-relaxed">
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">
-                Informationen gemaess &sect; 5 ECG
+                Medieninhaber und Herausgeber
               </h2>
               <p>
+                Werkingflow<br />
                 DI Dr. tech. Rafael Engelmann<br />
-                Ingenieurbuero fuer Technische Physik<br />
-                Gewerbe: IT-Dienstleistungen
+                IT-Dienstleistungen<br />
+                {SITE.address}
               </p>
             </div>
 
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">Kontakt</h2>
               <p>
-                Adresse: {SITE.address}<br />
                 E-Mail: {SITE.email}<br />
-                Telefon: {SITE.phone}
+                Telefonischer Rückruf auf Anfrage per E-Mail
               </p>
             </div>
 
             <div>
-              <h2 className="font-heading text-xl font-semibold text-white mb-3">Berufsbezeichnung</h2>
+              <h2 className="font-heading text-xl font-semibold text-white mb-3">
+                Berufsbezeichnung des Gründers
+              </h2>
               <p>
-                Ziviltechniker (Ingenieurkonsulent fuer Technische Physik)<br />
-                Verliehen in: Oesterreich<br />
+                Ziviltechniker (Ingenieurkonsulent für Technische Physik)<br />
+                Verliehen in: Österreich<br />
                 Kammer: Bundeskammer der ZiviltechnikerInnen
+              </p>
+            </div>
+
+            <div>
+              <h2 className="font-heading text-xl font-semibold text-white mb-3">
+                Informationen gemäß &sect; 5 ECG
+              </h2>
+              <p>
+                Unternehmensgegenstand: IT-Dienstleistungen<br />
+                UID-Nr.: auf Anfrage
               </p>
             </div>
 
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">Haftungshinweis</h2>
               <p>
-                Trotz sorgfaeltiger inhaltlicher Kontrolle uebernehmen wir keine
-                Haftung fuer die Inhalte externer Links. Fuer den Inhalt der
-                verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.
+                Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine
+                Haftung für die Inhalte externer Links. Für den Inhalt der
+                verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
               </p>
             </div>
           </div>
