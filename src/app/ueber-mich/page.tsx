@@ -6,8 +6,13 @@ import PageHeader from '@/components/layout/PageHeader'
 import { FOUNDER } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: `${FOUNDER.name} — WerkING Tools`,
-  description: FOUNDER.title,
+  title: `${FOUNDER.name} — Ingenieur + Entwickler`,
+  description: 'DI Dr. Rafael Engelmann — Ziviltechniker für Maschinenbau, Fullstack-Entwickler. Von der Aeroakustik-Forschung zur Engineering-Automation.',
+  openGraph: {
+    title: `${FOUNDER.name} — Ingenieur + Entwickler`,
+    description: 'Ziviltechniker für Maschinenbau, Fullstack-Entwickler. Engineering-Automation mit KI.',
+  },
+  alternates: { canonical: '/ueber-mich' },
 }
 
 const credentialIcons: Record<string, React.ReactNode> = {

@@ -181,12 +181,12 @@ export const PRODUCTS: Record<string, Product> = {
     statusLabel: 'Alpha Testing',
     href: '/safety/',
     appUrl: '',
-    screenshot: '/images/products/safety-upload.png',
+    screenshot: '/images/products/werking-safety.png',
     problem: 'Eine Bohrmaschine mit Servoantrieb und hydraulischer Klemmung. 200 Seiten Dokumentation. Daraus manuell Gefährdungen identifizieren und bewerten — pro Maschine mehrere Tage.',
     features: [],
     pillars: [],
     steps: [
-      { title: 'Dokumentation hochladen', desc: 'Betriebsanleitung als PDF hochladen. Vision-AI analysiert Bilder, Schaltpläne und technische Daten — Gefährdungen werden automatisch identifiziert und bewertet.', screenshot: '/images/products/safety-upload.png' },
+      { title: 'Dokumentation hochladen', desc: 'Betriebsanleitung als PDF hochladen. Vision-AI analysiert Bilder, Schaltpläne und technische Daten — Gefährdungen werden automatisch identifiziert und bewertet.', screenshot: '/images/products/werking-safety.png' },
     ],
     stats: [
       { value: '4 Phasen', label: 'Von Dokumentation bis Massnahme' },
@@ -205,7 +205,7 @@ export const PRODUCTS: Record<string, Product> = {
     statusLabel: 'In Entwicklung',
     href: '/noise/',
     appUrl: '',
-    screenshot: '/images/products/noise-map.png',
+    screenshot: '/images/products/werking-noise.png',
     problem: 'Neues Gewerbeobjekt neben Wohngebiet. Wie laut wird es bei den Nachbarn? Spezialsoftware kostet tausende Euro pro Lizenz. Manuelle Modellierung dauert Stunden.',
     features: [], // Noise uses pillars instead
     pillars: [
@@ -238,9 +238,9 @@ export const PRODUCTS: Record<string, Product> = {
       },
     ],
     steps: [
-      { title: 'Standort wählen', desc: 'Adresse eingeben. Gebäude und Gelände werden automatisch aus OpenStreetMap geladen.', screenshot: '/images/products/noise-map.png' },
-      { title: 'Quellen platzieren', desc: 'Lärmquellen und Empfänger auf der Karte positionieren. Schallleistung und Frequenzspektrum definieren.', screenshot: '/images/products/noise-map.png' },
-      { title: 'Berechnung & Heatmap', desc: 'CNOSSOS-EU Berechnung auf Knopfdruck. Farbkodierte Lärmkarte zeigt, wo Grenzwerte überschritten werden.', screenshot: '/images/products/noise-heatmap.png' },
+      { title: 'Standort wählen', desc: 'Adresse eingeben. Gebäude und Gelände werden automatisch aus OpenStreetMap geladen.', screenshot: '/images/products/werking-noise.png' },
+      { title: 'Quellen platzieren', desc: 'Lärmquellen und Empfänger auf der Karte positionieren. Schallleistung und Frequenzspektrum definieren.', screenshot: '/images/products/werking-noise.png' },
+      { title: 'Berechnung & Heatmap', desc: 'CNOSSOS-EU Berechnung auf Knopfdruck. Farbkodierte Lärmkarte zeigt, wo Grenzwerte überschritten werden.', screenshot: '/images/products/werking-noise.png' },
     ],
     stats: [
       { value: 'CNOSSOS-EU', label: 'Europäischer Berechnungsstandard' },

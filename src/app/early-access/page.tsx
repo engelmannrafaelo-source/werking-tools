@@ -6,8 +6,13 @@ import PageHeader from '@/components/layout/PageHeader'
 import { PRODUCTS } from '@/lib/products'
 
 export const metadata: Metadata = {
-  title: 'Early Access — WerkING Tools',
-  description: 'Jetzt als Beta-Tester registrieren. Kostenlos testen, Feedback geben, mitgestalten.',
+  title: 'Early Access — Kostenlos testen',
+  description: 'WerkING Tools kostenlos als Beta-Tester ausprobieren. Kein Abo, keine Kreditkarte. Feedback geben und mitgestalten.',
+  openGraph: {
+    title: 'Early Access — WerkING Tools kostenlos testen',
+    description: 'Jetzt als Beta-Tester registrieren. Kein Abo, keine Kreditkarte.',
+  },
+  alternates: { canonical: '/early-access' },
 }
 
 const STATUS_CONFIG: Record<string, { color: string; label: string }> = {

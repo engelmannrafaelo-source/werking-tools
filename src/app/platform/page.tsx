@@ -10,7 +10,12 @@ const product = PRODUCTS.platform
 
 export const metadata: Metadata = {
   title: 'WerkingFlow — KI-Plattform für Engineering-Workflows',
-  description: 'Deterministische Engineering-Workflows. Reproduzierbar, kontrolliert, engineering-fokussiert.',
+  description: 'Deterministische Engineering-Workflows. Reproduzierbar, kontrolliert, engineering-fokussiert. Modell-agnostisch, EU-gehostet.',
+  openGraph: {
+    title: 'WerkingFlow — KI-Plattform für Engineering-Workflows',
+    description: 'Deterministische Engineering-Workflows. Reproduzierbar, kontrolliert, modell-agnostisch.',
+  },
+  alternates: { canonical: '/platform' },
 }
 
 export default function PlatformPage() {

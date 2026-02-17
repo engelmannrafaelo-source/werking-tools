@@ -7,10 +7,12 @@ import ProductGrid from '@/components/home/ProductGrid'
 import Stats from '@/components/home/Stats'
 import FounderTeaser from '@/components/home/FounderTeaser'
 import CTA from '@/components/home/CTA'
+import JsonLd from '@/components/shared/JsonLd'
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd />
       <Navbar />
       <Hero />
       <HowItWorks />

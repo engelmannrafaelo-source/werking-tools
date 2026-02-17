@@ -29,8 +29,12 @@ export default function Datenschutz() {
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">2. Erhobene Daten</h2>
               <p>
-                Diese Website erhebt keine personenbezogenen Daten. Es werden keine
-                Cookies gesetzt, kein Tracking eingesetzt und keine Analytics-Tools verwendet.
+                Diese Website verwendet Vercel Analytics und Vercel Speed Insights zur
+                Messung der Website-Performance und Besucherstatistiken. Dabei werden
+                anonymisierte, aggregierte Daten erhoben (Seitenaufrufe, Ladezeiten,
+                Web Vitals). Es werden keine Cookies gesetzt und keine personenbezogenen
+                Daten gespeichert. Die Datenverarbeitung erfolgt durch Vercel Inc.
+                Details: vercel.com/docs/analytics/privacy-policy.
               </p>
             </div>
 

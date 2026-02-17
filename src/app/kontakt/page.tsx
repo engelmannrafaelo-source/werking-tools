@@ -5,8 +5,13 @@ import PageHeader from '@/components/layout/PageHeader'
 import { SITE } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Kontakt — WerkING Tools',
-  description: 'Kontaktieren Sie uns für ein Gespräch.',
+  title: 'Kontakt',
+  description: 'Kontaktieren Sie WerkING Tools. Fragen zu KI-Workflows, Gutachten-Automatisierung oder Early Access. Antwort innerhalb von 24 Stunden.',
+  openGraph: {
+    title: 'Kontakt — WerkING Tools',
+    description: 'Fragen zu KI-Workflows oder Early Access? Wir antworten innerhalb von 24 Stunden.',
+  },
+  alternates: { canonical: '/kontakt' },
 }
 
 export default function KontaktPage() {

@@ -13,7 +13,12 @@ const product = PRODUCTS.energy
 
 export const metadata: Metadata = {
   title: `${product.name} — ${product.tagline}`,
-  description: product.tagline,
+  description: 'Energieberichte aus Betriebsdaten automatisiert erstellen. 8-Phasen-Pipeline, selbstkorrigierende KI-Schleifen, ~40 Minuten pro Bericht.',
+  openGraph: {
+    title: `${product.name} — ${product.tagline}`,
+    description: 'Energieberichte aus Betriebsdaten automatisiert erstellen. 8-Phasen-Pipeline, ~40 Minuten pro Bericht.',
+  },
+  alternates: { canonical: '/energy' },
 }
 
 export default function EnergyPage() {
