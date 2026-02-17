@@ -52,12 +52,14 @@ export default function EarlyAccessPage() {
             Kein Abo, keine Kreditkarte. Einfach testen und Feedback geben.
           </p>
 
-          <Link
+          <a
             href="https://werking-report.vercel.app/login"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-lg"
           >
             Als Beta-Tester registrieren
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -134,12 +136,14 @@ export default function EarlyAccessPage() {
           <p className="text-white/60 mb-8">
             Registrieren Sie sich jetzt und gehören Sie zu den ersten Nutzern.
           </p>
-          <Link
+          <a
             href="https://werking-report.vercel.app/login"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-lg"
           >
             Jetzt registrieren
-          </Link>
+          </a>
         </div>
       </section>
 

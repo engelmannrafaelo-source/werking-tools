@@ -35,15 +35,19 @@ export default function Navbar() {
             >
               {'children' in item ? (
                 <>
-                  <button className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors font-medium no-underline">
+                  <button
+                    className="px-4 py-2 text-sm text-white/80 hover:text-white transition-colors font-medium no-underline"
+                    aria-haspopup="true"
+                    aria-expanded={openDropdown === item.label}
+                  >
                     {item.label}
-                    <svg className="inline-block ml-1 w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="inline-block ml-1 w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
 
                   {openDropdown === item.label && (
-                    <div className="absolute top-full left-0 mt-1 w-64 bg-navy-mid border border-white/10 rounded-xl shadow-2xl py-2">
+                    <div className="absolute top-full left-0 mt-1 w-64 bg-navy-mid border border-white/10 rounded-xl shadow-2xl py-2" role="menu">
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
@@ -81,6 +85,7 @@ export default function Navbar() {
           className="md:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
+          aria-expanded={menuOpen}
         >
           <span className={`block w-6 h-0.5 bg-white transition-transform ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
           <span className={`block w-6 h-0.5 bg-white transition-opacity ${menuOpen ? 'opacity-0' : ''}`} />

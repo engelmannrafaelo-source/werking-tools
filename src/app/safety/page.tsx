@@ -53,7 +53,7 @@ export default function SafetyPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="rounded-xl overflow-hidden border-2 border-white/20 shadow-[0_0_30px_rgba(222,193,94,0.12)]">
             <Image
-              src="/images/products/werking-safety.png"
+              src="/images/products/werking-safety.webp"
               alt="WerkING Safety — Gefährdungsbeurteilung"
               width={1920}
               height={1080}

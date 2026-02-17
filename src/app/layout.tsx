@@ -44,20 +44,11 @@ export const metadata: Metadata = {
     url: SITE.url,
     siteName: SITE.name,
     locale: 'de_AT',
-    images: [
-      {
-        url: '/images/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'WerkING Tools — AI-Workflows mit Handschlagsqualität',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${SITE.name} — ${SITE.tagline}`,
     description: SITE.description,
-    images: ['/images/og-image.png'],
   },
   robots: {
     index: true,
@@ -72,10 +63,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE.url,
-  },
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
   },
 }
 

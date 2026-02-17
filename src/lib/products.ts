@@ -64,7 +64,7 @@ export const PRODUCTS: Record<string, Product> = {
     statusLabel: 'Early Access',
     href: '/report/',
     appUrl: 'https://werking-report.vercel.app',
-    screenshot: '/images/products/report-dashboard.png',
+    screenshot: '/images/products/report-dashboard.webp',
     problem: 'Druckbelüftungsprüfung: 6 Stiegenhäuser, 18 Messpunkte, Differenzdrücke, Strömungsgeschwindigkeiten. Der Bericht ist jedes Mal gleich aufgebaut — aber Sie schreiben ihn jedes Mal neu.',
     features: [], // Report uses pillars instead
     pillars: [
@@ -99,11 +99,11 @@ export const PRODUCTS: Record<string, Product> = {
       },
     ],
     steps: [
-      { title: 'Dokumenttyp definieren', desc: 'Einmal: Struktur festlegen, Muster hochladen, Checkliste konfigurieren. Gilt für alle zukünftigen Berichte dieses Typs.', screenshot: '/images/products/report-dashboard.png' },
-      { title: 'Wizard starten', desc: 'Projekt zuordnen, Titel und Adresse eingeben, Auftraggeber angeben. Der 5-Schritt-Wizard führt Sie durch den gesamten Prozess.', screenshot: '/images/products/report-wizard.png' },
-      { title: 'Bericht entsteht', desc: 'Die KI generiert Ihren Bericht — formatiert, in Ihrem Stil, direkt bearbeitbar im integrierten Editor mit Toolbar und Versionierung.', screenshot: '/images/products/report-editor.png' },
-      { title: 'Berichte verwalten', desc: 'Alle Gutachten auf einen Blick — bearbeiten, drucken, Eingabedaten anpassen. Versionierung und Demo-Beispiele inklusive.', screenshot: '/images/products/report-generation.png' },
-      { title: 'Wissensbasis pflegen', desc: 'KI-Recherche, eigene Wissensbasis, Kontext-Budget — Ihr Dokumenttyp wird mit jedem Bericht besser.', screenshot: '/images/products/report-preview.png' },
+      { title: 'Dokumenttyp definieren', desc: 'Einmal: Struktur festlegen, Muster hochladen, Checkliste konfigurieren. Gilt für alle zukünftigen Berichte dieses Typs.', screenshot: '/images/products/report-dashboard.webp' },
+      { title: 'Wizard starten', desc: 'Projekt zuordnen, Titel und Adresse eingeben, Auftraggeber angeben. Der 5-Schritt-Wizard führt Sie durch den gesamten Prozess.', screenshot: '/images/products/report-wizard.webp' },
+      { title: 'Bericht entsteht', desc: 'Die KI generiert Ihren Bericht — formatiert, in Ihrem Stil, direkt bearbeitbar im integrierten Editor mit Toolbar und Versionierung.', screenshot: '/images/products/report-editor.webp' },
+      { title: 'Berichte verwalten', desc: 'Alle Gutachten auf einen Blick — bearbeiten, drucken, Eingabedaten anpassen. Versionierung und Demo-Beispiele inklusive.', screenshot: '/images/products/report-generation.webp' },
+      { title: 'Wissensbasis pflegen', desc: 'KI-Recherche, eigene Wissensbasis, Kontext-Budget — Ihr Dokumenttyp wird mit jedem Bericht besser.', screenshot: '/images/products/report-preview.webp' },
     ],
     stats: [
       { value: 'Workflow', label: 'Definierter Prozess, kein Chatbot' },
@@ -122,7 +122,7 @@ export const PRODUCTS: Record<string, Product> = {
     statusLabel: 'In Entwicklung',
     href: '/energy/',
     appUrl: '',
-    screenshot: '/images/products/energy-dashboard.png',
+    screenshot: '/images/products/energy-dashboard.webp',
     problem: '2 Jahre Betriebsdaten einer Kälteanlage. Excel-Dateien mit Temperaturen, Volumenströmen, Leistungswerten. Daraus manuell Anomalien finden, Wirkungsgrade berechnen, Einsparpotenziale quantifizieren — dauert Wochen. Und jedes Gebäude ist anders.',
     features: [], // Energy uses pillars instead
     pillars: [
@@ -158,11 +158,11 @@ export const PRODUCTS: Record<string, Product> = {
       },
     ],
     steps: [
-      { title: 'Projekte verwalten', desc: 'Alle Energy Reports auf einen Blick — Status, Fortschritt und Dateien pro Projekt. Neuen Report mit einem Klick starten.', screenshot: '/images/products/energy-dashboard.png' },
-      { title: 'Daten hochladen', desc: 'Excel, CSV oder Parquet hochladen. Die KI analysiert sofort: Systemtyp, Betriebscharakteristik, Datenqualität — und zeigt fehlende Informationen.', screenshot: '/images/products/energy-wizard-upload.png' },
-      { title: 'KI klärt Kontext', desc: 'Gezielte Rückfragen zur Anlagentopologie: Chiller, Verbraucher, Kreisläufe. Technische Referenzdokumente und Spaltenzuordnung werden automatisch erkannt.', screenshot: '/images/products/energy-wizard-conversation.png' },
-      { title: 'Review & Systemschema', desc: 'Interaktives Anlagenschema zeigt die erkannte Topologie. Spaltenzuordnung prüfen, Konfidenz bewerten — erst dann startet die 8-Phasen-Analyse.', screenshot: '/images/products/energy-wizard-review.png' },
-      { title: 'Fertiger Energiebericht', desc: 'Temperaturverläufe, Leistungsprofile, Anomalie-Erkennung — alles automatisch berechnet und visualisiert. Professioneller Report mit Grafiken und Handlungsempfehlungen.', screenshot: '/images/products/energy-report-analysis.png' },
+      { title: 'Projekte verwalten', desc: 'Alle Energy Reports auf einen Blick — Status, Fortschritt und Dateien pro Projekt. Neuen Report mit einem Klick starten.', screenshot: '/images/products/energy-dashboard.webp' },
+      { title: 'Daten hochladen', desc: 'Excel, CSV oder Parquet hochladen. Die KI analysiert sofort: Systemtyp, Betriebscharakteristik, Datenqualität — und zeigt fehlende Informationen.', screenshot: '/images/products/energy-wizard-upload.webp' },
+      { title: 'KI klärt Kontext', desc: 'Gezielte Rückfragen zur Anlagentopologie: Chiller, Verbraucher, Kreisläufe. Technische Referenzdokumente und Spaltenzuordnung werden automatisch erkannt.', screenshot: '/images/products/energy-wizard-conversation.webp' },
+      { title: 'Review & Systemschema', desc: 'Interaktives Anlagenschema zeigt die erkannte Topologie. Spaltenzuordnung prüfen, Konfidenz bewerten — erst dann startet die 8-Phasen-Analyse.', screenshot: '/images/products/energy-wizard-review.webp' },
+      { title: 'Fertiger Energiebericht', desc: 'Temperaturverläufe, Leistungsprofile, Anomalie-Erkennung — alles automatisch berechnet und visualisiert. Professioneller Report mit Grafiken und Handlungsempfehlungen.', screenshot: '/images/products/energy-report-analysis.webp' },
     ],
     stats: [
       { value: '8 Phasen', label: 'Vom Rohdaten-Upload bis zum Bericht' },
@@ -181,12 +181,12 @@ export const PRODUCTS: Record<string, Product> = {
     statusLabel: 'Alpha Testing',
     href: '/safety/',
     appUrl: '',
-    screenshot: '/images/products/werking-safety.png',
+    screenshot: '/images/products/werking-safety.webp',
     problem: 'Eine Bohrmaschine mit Servoantrieb und hydraulischer Klemmung. 200 Seiten Dokumentation. Daraus manuell Gefährdungen identifizieren und bewerten — pro Maschine mehrere Tage.',
     features: [],
     pillars: [],
     steps: [
-      { title: 'Dokumentation hochladen', desc: 'Betriebsanleitung als PDF hochladen. Vision-AI analysiert Bilder, Schaltpläne und technische Daten — Gefährdungen werden automatisch identifiziert und bewertet.', screenshot: '/images/products/werking-safety.png' },
+      { title: 'Dokumentation hochladen', desc: 'Betriebsanleitung als PDF hochladen. Vision-AI analysiert Bilder, Schaltpläne und technische Daten — Gefährdungen werden automatisch identifiziert und bewertet.', screenshot: '/images/products/werking-safety.webp' },
     ],
     stats: [
       { value: '4 Phasen', label: 'Von Dokumentation bis Massnahme' },
@@ -205,7 +205,7 @@ export const PRODUCTS: Record<string, Product> = {
     statusLabel: 'In Entwicklung',
     href: '/noise/',
     appUrl: '',
-    screenshot: '/images/products/werking-noise.png',
+    screenshot: '/images/products/werking-noise.webp',
     problem: 'Neues Gewerbeobjekt neben Wohngebiet. Wie laut wird es bei den Nachbarn? Spezialsoftware kostet tausende Euro pro Lizenz. Manuelle Modellierung dauert Stunden.',
     features: [], // Noise uses pillars instead
     pillars: [
@@ -238,9 +238,9 @@ export const PRODUCTS: Record<string, Product> = {
       },
     ],
     steps: [
-      { title: 'Standort wählen', desc: 'Adresse eingeben. Gebäude und Gelände werden automatisch aus OpenStreetMap geladen.', screenshot: '/images/products/werking-noise.png' },
-      { title: 'Quellen platzieren', desc: 'Lärmquellen und Empfänger auf der Karte positionieren. Schallleistung und Frequenzspektrum definieren.', screenshot: '/images/products/werking-noise.png' },
-      { title: 'Berechnung & Heatmap', desc: 'CNOSSOS-EU Berechnung auf Knopfdruck. Farbkodierte Lärmkarte zeigt, wo Grenzwerte überschritten werden.', screenshot: '/images/products/werking-noise.png' },
+      { title: 'Standort wählen', desc: 'Adresse eingeben. Gebäude und Gelände werden automatisch aus OpenStreetMap geladen.', screenshot: '/images/products/werking-noise.webp' },
+      { title: 'Quellen platzieren', desc: 'Lärmquellen und Empfänger auf der Karte positionieren. Schallleistung und Frequenzspektrum definieren.', screenshot: '/images/products/werking-noise.webp' },
+      { title: 'Berechnung & Heatmap', desc: 'CNOSSOS-EU Berechnung auf Knopfdruck. Farbkodierte Lärmkarte zeigt, wo Grenzwerte überschritten werden.', screenshot: '/images/products/werking-noise.webp' },
     ],
     stats: [
       { value: 'CNOSSOS-EU', label: 'Europäischer Berechnungsstandard' },
@@ -259,7 +259,7 @@ export const PRODUCTS: Record<string, Product> = {
     statusLabel: 'In Entwicklung',
     href: '/platform/',
     appUrl: '',
-    screenshot: '/images/products/platform-dashboard.png',
+    screenshot: '/images/products/platform-dashboard.webp',
     problem: 'Ingenieure verbringen 40-60% ihrer Zeit mit Dokumentation und wiederkehrenden Prozessen. Generische KI-Chatbots helfen nicht — sie erzeugen jedes Mal andere Ergebnisse und verstehen keine Fachprozesse. Was fehlt: strukturierte Workflows, die reproduzierbare Ergebnisse liefern.',
     features: [], // Platform uses pillars instead
     pillars: [
