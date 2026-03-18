@@ -14,14 +14,8 @@ export default function CTA() {
 
         <div className="flex gap-4 justify-center flex-wrap">
           <Link
-            href="/report/"
-            className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-lg"
-          >
-            Mehr erfahren
-          </Link>
-          <Link
             href="/kontakt/"
-            className="inline-block px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-gold hover:text-gold transition-colors no-underline text-lg"
+            className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-lg"
           >
             Kontakt aufnehmen
           </Link>

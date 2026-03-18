@@ -63,7 +63,7 @@ export const PRODUCTS: Record<string, Product> = {
     status: 'live',
     statusLabel: 'Early Access',
     href: '/report/',
-    appUrl: 'https://werking-report.vercel.app',
+    appUrl: '',
     screenshot: '/images/products/report-dashboard.webp',
     problem: 'Druckbelüftungsprüfung: 6 Stiegenhäuser, 18 Messpunkte, Differenzdrücke, Strömungsgeschwindigkeiten. Der Bericht ist jedes Mal gleich aufgebaut — aber Sie schreiben ihn jedes Mal neu.',
     features: [], // Report uses pillars instead

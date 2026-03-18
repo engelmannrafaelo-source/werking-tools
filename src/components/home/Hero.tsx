@@ -26,18 +26,18 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-4 flex-wrap">
-            <Link
-              href="/report/"
-              className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-base"
-            >
-              WerkING Report testen
-            </Link>
             <a
               href="#produkte"
-              className="inline-block px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-gold hover:text-gold transition-colors no-underline text-base"
+              className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-base"
             >
               Alle Produkte
             </a>
+            <Link
+              href="/kontakt/"
+              className="inline-block px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-gold hover:text-gold transition-colors no-underline text-base"
+            >
+              Kontakt aufnehmen
+            </Link>
           </div>
         </div>
       </div>

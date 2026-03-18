@@ -18,11 +18,15 @@ export default function ProductGrid() {
         <div className="grid sm:grid-cols-2 gap-6">
           {visibleProducts.map((key) => {
             const p = PRODUCTS[key]
+            const isLinked = key !== 'report'
+            const Wrapper = isLinked ? Link : 'div'
+            const wrapperProps = isLinked
+              ? { href: p.href, className: "group relative rounded-2xl overflow-hidden bg-navy-mid border border-white/10 hover:border-gold/30 transition-all duration-300 no-underline min-h-[240px] flex flex-col justify-end" }
+              : { className: "group relative rounded-2xl overflow-hidden bg-navy-mid border border-white/10 min-h-[240px] flex flex-col justify-end" }
             return (
-              <Link
+              <Wrapper
                 key={key}
-                href={p.href}
-                className="group relative rounded-2xl overflow-hidden bg-navy-mid border border-white/10 hover:border-gold/30 transition-all duration-300 no-underline min-h-[240px] flex flex-col justify-end"
+                {...wrapperProps as any}
               >
                 {/* Screenshot background */}
                 <div className="absolute inset-0">
@@ -30,7 +34,7 @@ export default function ProductGrid() {
                     src={p.screenshot}
                     alt={p.name}
                     fill
-                    className="object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-300"
+                    className="object-cover opacity-30 transition-opacity duration-300"
                     sizes="(max-width: 640px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-mid via-navy-mid/80 to-transparent" />
@@ -45,17 +49,19 @@ export default function ProductGrid() {
 
                 {/* Content */}
                 <div className="relative z-10 p-6">
-                  <h3 className="font-heading text-xl font-semibold text-white mb-2 group-hover:text-gold transition-colors">
+                  <h3 className="font-heading text-xl font-semibold text-white mb-2">
                     Werk<span className="brand-ing">ING</span>{p.name.replace('WerkING', '')}
                   </h3>
                   <p className="text-sm text-white/60 leading-relaxed mb-3">
                     {p.tagline}
                   </p>
-                  <span className="text-xs text-gold font-medium group-hover:underline">
-                    Mehr erfahren &rarr;
-                  </span>
+                  {isLinked && (
+                    <span className="text-xs text-gold font-medium group-hover:underline">
+                      Mehr erfahren &rarr;
+                    </span>
+                  )}
                 </div>
-              </Link>
+              </Wrapper>
             )
           })}
         </div>

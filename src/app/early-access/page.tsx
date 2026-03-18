@@ -53,7 +53,7 @@ export default function EarlyAccessPage() {
           </p>
 
           <a
-            href="https://werking-report.vercel.app/login"
+            href="/kontakt/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-lg"
@@ -137,7 +137,7 @@ export default function EarlyAccessPage() {
             Registrieren Sie sich jetzt und gehören Sie zu den ersten Nutzern.
           </p>
           <a
-            href="https://werking-report.vercel.app/login"
+            href="/kontakt/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)] text-lg"
