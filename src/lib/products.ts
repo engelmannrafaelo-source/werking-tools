@@ -279,7 +279,7 @@ export const PRODUCTS: Record<string, Product> = {
         capabilities: [
           'Fertige Workflows für Gutachten, Energieberichte, Risikoanalysen, Akustik',
           'Eigene Workflows für firmeninterne Prozesse entwickeln',
-          'Von Ingenieuren geprüft und fachlich validiert',
+          'Entwickelt von einem Ziviltechniker für Maschinenbau',
           'Human-in-the-Loop: KI erstellt Entwürfe, Sie prüfen und geben frei',
         ],
       },

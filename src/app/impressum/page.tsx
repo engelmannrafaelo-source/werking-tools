@@ -42,7 +42,7 @@ export default function Impressum() {
                 Berufsbezeichnung des Gründers
               </h2>
               <p>
-                Ziviltechniker (Ingenieurkonsulent für Technische Physik)<br />
+                Ziviltechniker (Ingenieurkonsulent für Maschinenbau)<br />
                 Verliehen in: Österreich<br />
                 Kammer: Bundeskammer der ZiviltechnikerInnen
               </p>

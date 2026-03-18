@@ -5,7 +5,7 @@ import { FOUNDER } from '@/lib/constants'
 const IDENTITY = [
   { skill: 'Fachsprache verstehen', via: 'Maschinenbau-Ingenieur' },
   { skill: 'Regelwerke kennen', via: 'Ziviltechniker' },
-  { skill: 'Automatisieren', via: '10+ Jahre Fullstack' },
+  { skill: 'Automatisieren', via: 'Fullstack Developer' },
 ] as const
 
 export default function FounderTeaser() {
