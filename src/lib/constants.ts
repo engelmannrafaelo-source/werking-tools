@@ -22,7 +22,6 @@ export const NAV_ITEMS = [
       { label: 'WerkingFlow', href: '/platform/', desc: 'Workflow Marketplace' },
     ],
   },
-  { label: 'Early Access', href: '/early-access/' },
   { label: 'Über mich', href: '/ueber-mich/' },
 ] as const
 
