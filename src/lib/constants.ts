@@ -15,7 +15,7 @@ export const NAV_ITEMS = [
     label: 'Produkte',
     href: '#produkte',
     children: [
-      { label: 'WerkING Report', href: '#produkte', desc: 'Technische Gutachten' },
+      { label: 'WerkING Report', href: '/report/', desc: 'Technische Gutachten' },
       { label: 'WerkING Energy', href: '/energy/', desc: 'Energieberichte' },
       { label: 'WerkING Safety', href: '/safety/', desc: 'Gefährdungsbeurteilung' },
       { label: 'WerkING Noise', href: '/noise/', desc: 'Akustik-Planung' },
