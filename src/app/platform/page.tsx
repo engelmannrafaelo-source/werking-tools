@@ -57,6 +57,65 @@ export default function PlatformPage() {
         </div>
       </section>
 
+      {/* Studio-Modell — So entsteht ein Workflow */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="gold-line-center" />
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">So entsteht ein WerkING Workflow</h2>
+            <p className="text-text-muted mt-3 max-w-2xl mx-auto">
+              WerkING Tools ist ein Studio: Jeder Workflow wird selbst gebaut — mit dem Domänen-Know-how erfahrener Fachpartner und fachlich geprüft, bevor er produktiv läuft.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              ['Fachwissen', 'Ein Fachpartner — Ingenieurbüro oder Sachverständiger — bringt das Domänen-Know-how ein: Welche Schritte, welche Normen, welche Prüfkriterien gelten?'],
+              ['Entwicklung', 'WerkING entwickelt daraus einen deterministischen Workflow — Phase für Phase, mit validierten Datenquellen statt freier KI-Improvisation.'],
+              ['Prüfung & Freigabe', 'Jeder Workflow wird fachlich geprüft und freigegeben, bevor er läuft. Handschlagsqualität — reproduzierbar wie ein Fertigungsprozess.'],
+            ].map(([t, d], i) => (
+              <div key={t} className="rounded-2xl border border-black/5 bg-bg-light p-6">
+                <span className="w-9 h-9 rounded-full bg-gold/15 text-gold font-bold flex items-center justify-center mb-4">{i + 1}</span>
+                <h3 className="font-heading text-lg font-semibold text-navy mb-2">{t}</h3>
+                <p className="text-sm text-text-muted leading-relaxed">{d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gemeinsam entwickeln — WerkING Partner-Plattform */}
+      <section className="py-20 bg-navy">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="gold-line-center" />
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">Gemeinsam entwickeln — die WerkING Partner-Plattform</h2>
+            <p className="text-white/55 mt-3 max-w-2xl mx-auto">
+              Sie haben einen eigenen Engineering-Prozess oder bestehende Software, die mit soll? Auf der Partner-Plattform arbeiten Ihr Team und wir parallel — in einer gehosteten Umgebung, jede Änderung über Git nachvollziehbar.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 mb-10">
+            <div className="rounded-2xl border-2 border-gold/30 bg-navy-mid p-6">
+              <span className="text-xs font-semibold uppercase tracking-wider text-gold">Co-Entwicklung</span>
+              <h3 className="font-heading text-lg font-semibold text-white mt-1 mb-2">Workflow gemeinsam entwickeln</h3>
+              <p className="text-sm text-white/60 leading-relaxed">Wir bauen Ihren spezifischen Workflow als Entwicklungspartnerschaft: Sie liefern das Fachwissen, wir die Engine. Geprüft und freigegeben, bevor er produktiv läuft.</p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-navy-mid p-6">
+              <span className="text-xs font-semibold uppercase tracking-wider text-gold">Entwicklungsunterstützung</span>
+              <h3 className="font-heading text-lg font-semibold text-white mt-1 mb-2">Bestehende Software übernehmen &amp; pflegen</h3>
+              <p className="text-sm text-white/60 leading-relaxed">Engineering-Tooling dokumentieren, stabilisieren, weiterentwickeln — flexibel im Stundenmodell. Ihre Mitarbeiter arbeiten KI-gestützt mit, wir auditieren und geben frei.</p>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center gap-2">
+            {['Gehostete Umgebung', 'Git-transparent', 'Ticket-System', 'Mitarbeiter-Chatbot', 'Beidseitige Wartung', 'Keine IT-Integration nötig'].map((f) => (
+              <span key={f} className="text-xs font-medium text-white/70 border border-white/15 rounded-full px-3 py-1.5 bg-white/5">{f}</span>
+            ))}
+          </div>
+          <p className="text-center text-sm text-white/45 mt-8 max-w-2xl mx-auto">
+            Flexibles Stundenmodell, Priorisierung gemeinsam pro Block — klassische Koordination (Calls, E-Mails, Kontext-Erklären) entfällt weitgehend.
+          </p>
+        </div>
+      </section>
+
       {/* Pillars */}
       {product.pillars && <FeaturePillars pillars={product.pillars} />}
 
