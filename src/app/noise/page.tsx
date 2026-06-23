@@ -241,7 +241,7 @@ export default function NoisePage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row-reverse gap-10 items-center">
             <div className="w-full lg:w-1/2">
-              <ImageFrame src="/images/products/noise-gutachten-spread.webp" alt="Fertiges Schallgutachten — Seiten von Deckblatt bis Fazit" w={1600} h={1130} />
+              <ImageFrame src="/images/products/noise-gutachten-gallery.webp" alt="Alle Seiten eines fertigen Schallgutachtens — von Deckblatt bis Fazit" w={1343} h={1532} />
             </div>
             <div className="flex-1">
               <div className="gold-line" />
