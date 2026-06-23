@@ -6,11 +6,11 @@ import PageHeader from '@/components/layout/PageHeader'
 import { FOUNDER, TEAM } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: `${FOUNDER.name} — Ingenieur + Entwickler`,
-  description: 'DI Dr. Rafael Engelmann — Ziviltechniker für Maschinenbau, Fullstack-Entwickler. Von der Aeroakustik-Forschung zur Engineering-Automation.',
+  title: 'WerkING Team — Die Menschen hinter den Tools',
+  description: 'Das Team hinter WerkING Tools: Gründer DI Dr. Rafael Engelmann (Ziviltechniker für Maschinenbau) und erfahrene Ingenieur- und Energie-Fachpartner.',
   openGraph: {
-    title: `${FOUNDER.name} — Ingenieur + Entwickler`,
-    description: 'Ziviltechniker für Maschinenbau, Fullstack-Entwickler. Engineering-Automation mit KI.',
+    title: 'WerkING Team — Die Menschen hinter den Tools',
+    description: 'Gründer DI Dr. Rafael Engelmann und erfahrene Ingenieur- und Energie-Fachpartner.',
   },
   alternates: { canonical: '/ueber-mich' },
 }
@@ -58,9 +58,50 @@ export default function UeberMichPage() {
     <>
       <Navbar />
       <PageHeader
-        title={FOUNDER.name}
-        subtitle={FOUNDER.title}
+        title="WerkING Team"
+        subtitle="Die Menschen hinter den Tools"
       />
+
+      {/* Das Team — ganz oben */}
+      <section className="py-20 bg-bg-light">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="gold-line-center" />
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">Das Team</h2>
+            <p className="text-text-muted mt-3 max-w-2xl mx-auto">
+              WerkING Tools entsteht nicht am Reissbrett — die Workflows werden gemeinsam mit erfahrenen Ingenieur- und Energiepartnern aus der Praxis entwickelt und im echten Bürobetrieb erprobt.
+            </p>
+          </div>
+
+          {/* Gründer oben */}
+          <div className="max-w-sm mx-auto mb-12">
+            <div className="rounded-2xl border-2 border-gold/30 bg-white p-6 text-center shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
+              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden ring-2 ring-gold/40">
+                <Image src="/images/team/rafael-engelmann.webp" alt={FOUNDER.name} width={400} height={400} className="w-full h-full object-cover" />
+              </div>
+              <h3 className="font-heading text-lg font-semibold text-navy">DI Dr. Rafael Engelmann</h3>
+              <p className="text-xs font-medium text-gold uppercase tracking-wider mt-1 mb-3">Gründer · Ingenieur &amp; Entwickler</p>
+              <p className="text-sm text-text-muted leading-relaxed">Ziviltechniker für Maschinenbau und Fullstack-Entwickler — verbindet Engineering-Praxis mit KI-Automation.</p>
+            </div>
+          </div>
+
+          {/* Team & Fachpartner */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {TEAM.map((p) => (
+              <div key={p.name} className="rounded-2xl border border-black/5 bg-white p-6 text-center">
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-navy flex items-center justify-center ring-2 ring-gold/30">
+                  {p.photo
+                    ? <Image src={p.photo} alt={p.name} width={160} height={160} className="w-full h-full object-cover" />
+                    : <span className="font-heading text-xl font-bold text-gold">{p.initials}</span>}
+                </div>
+                <h3 className="font-heading text-lg font-semibold text-navy">{p.name}</h3>
+                <p className="text-xs font-medium text-gold uppercase tracking-wider mt-1 mb-3">{p.role}</p>
+                <p className="text-sm text-text-muted leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Main About */}
       <section className="py-20 bg-white">
@@ -110,7 +151,7 @@ export default function UeberMichPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="gold-line-center" />
           <h2 className="font-heading text-2xl font-bold text-white text-center mb-12">Expertise</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {FOUNDER.expertise.map((item, i) => (
               <div key={i} className="p-8 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-gold/20 transition-all">
                 <div className="w-14 h-14 rounded-xl bg-gold/15 flex items-center justify-center mb-6">
@@ -128,47 +169,6 @@ export default function UeberMichPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Das Team */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="gold-line-center" />
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">Das Team</h2>
-            <p className="text-text-muted mt-3 max-w-2xl mx-auto">
-              WerkING Tools entsteht nicht am Reissbrett — die Workflows werden mit erfahrenen Ingenieur- und Energiepartnern aus der Praxis entwickelt und im echten Bürobetrieb erprobt.
-            </p>
-          </div>
-
-          {/* Gründer oben */}
-          <div className="max-w-sm mx-auto mb-12">
-            <div className="rounded-2xl border-2 border-gold/30 bg-bg-light p-6 text-center shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
-              <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden ring-2 ring-gold/40">
-                <Image src={FOUNDER.photo} alt={FOUNDER.name} width={200} height={200} className="w-full h-full object-cover" />
-              </div>
-              <h3 className="font-heading text-lg font-semibold text-navy">DI Dr. Rafael Engelmann</h3>
-              <p className="text-xs font-medium text-gold uppercase tracking-wider mt-1 mb-3">Gründer · Ingenieur &amp; Entwickler</p>
-              <p className="text-sm text-text-muted leading-relaxed">Ziviltechniker für Maschinenbau und Fullstack-Entwickler — verbindet Engineering-Praxis mit KI-Automation.</p>
-            </div>
-          </div>
-
-          {/* Team & Fachpartner */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {TEAM.map((p) => (
-              <div key={p.name} className="rounded-2xl border border-black/5 bg-bg-light p-6 text-center">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden bg-navy flex items-center justify-center ring-2 ring-gold/30">
-                  {p.photo
-                    ? <Image src={p.photo} alt={p.name} width={160} height={160} className="w-full h-full object-cover" />
-                    : <span className="font-heading text-xl font-bold text-gold">{p.initials}</span>}
-                </div>
-                <h3 className="font-heading text-lg font-semibold text-navy">{p.name}</h3>
-                <p className="text-xs font-medium text-gold uppercase tracking-wider mt-1 mb-3">{p.role}</p>
-                <p className="text-sm text-text-muted leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>

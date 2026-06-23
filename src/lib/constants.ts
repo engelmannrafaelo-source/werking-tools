@@ -21,7 +21,7 @@ export const NAV_ITEMS = [
       { label: 'WerkingFlow', href: '/platform/', desc: 'Workflow Marketplace' },
     ],
   },
-  { label: 'Über mich', href: '/ueber-mich/' },
+  { label: 'Team', href: '/ueber-mich/' },
 ] as const
 
 export const SOLUTION_STEPS = [
@@ -49,13 +49,12 @@ export const FOUNDER = {
   name: 'DI Dr. Rafael Engelmann',
   title: 'Ingenieur + Entwickler',
   photo: '/images/rafael-engelmann.webp',
-  bio: 'Mein Weg führte von der Aeroakustik-Forschung an der TU Wien über klassische Ingenieurprojekte zur Softwareentwicklung. Warum? Weil ich als Ziviltechniker täglich gesehen habe, wie viel Zeit mit repetitiven Excel-Workflows, manuellen Berechnungen und Copy-Paste in Berichten draufgeht.',
-  bioSecond: 'Heute kombiniere ich beides: Ich verstehe Engineering-Prozesse bis ins Detail — und kann sie automatisieren.',
+  bio: 'Als Ziviltechniker habe ich täglich gesehen, wie viel Zeit repetitive Excel-Workflows, manuelle Berechnungen und Copy-Paste in Berichten kosten.',
+  bioSecond: 'Mit WerkING Tools automatisiere ich genau diese Prozesse — von jemandem, der sie aus der Praxis kennt.',
   credentials: [
     { icon: 'graduation', text: 'DI Dr. tech. Maschinenbau (TU Wien) — 5 Publikationen, 1 Patent' },
     { icon: 'shield', text: 'Ziviltechniker für Maschinenbau — befugter Gutachter' },
-    { icon: 'code', text: 'Fullstack Developer — TypeScript, React, Python, FastAPI' },
-    { icon: 'brain', text: 'KI-Integration — OpenAI, Claude, Automatisierung' },
+    { icon: 'brain', text: 'Entwickelt die WerkING-Produkte selbst — Engineering-Praxis trifft KI' },
   ],
   expertise: [
     {
@@ -67,11 +66,6 @@ export const FOUNDER = {
       title: 'Die Praxis als ZT',
       description: 'Als befugter Ziviltechniker betreue ich Projekte von Energiekonzepten bis Schallschutz-Gutachten.',
       items: ['Otto-Wagner Areal (Energiekonzept)', 'Raiffeisen Linz (HVAC-Studie)', 'Bauakustik-Gutachten', 'Technische Beratung'],
-    },
-    {
-      title: 'Der Tech-Stack',
-      description: 'Full-Stack Development mit modernen Tools. Von der Datenbank bis zum React-Frontend.',
-      items: ['Frontend: React, Next.js, TypeScript', 'Backend: Node.js, Python, FastAPI', 'KI: OpenAI, Claude API', 'Deploy: Vercel, AWS, Docker'],
     },
   ],
 } as const
@@ -88,16 +82,16 @@ export const TEAM = [
   },
   {
     name: 'David Engelmann',
-    role: 'Engelmann Energiesysteme · Geschäftsführer',
+    role: 'Entwicklungskooperation · alle WerkING-Produkte',
     initials: 'DE',
     photo: '',
-    desc: 'Führt das TGA-Ingenieurbüro Engelmann Energiesysteme — vierte Generation, seit 1895. Entwicklungspartner: erprobt die Workflows im realen Bürobetrieb.',
+    desc: 'Engelmann Energiesysteme — TGA-Ingenieurbüro in vierter Generation (seit 1895) — setzt alle WerkING-Produkte im Bürobetrieb ein und entwickelt sie als Kooperationspartner mit.',
   },
   {
     name: 'Kurt Engelmann',
-    role: 'Engelmann Energiesysteme · Standortleitung OÖ',
+    role: 'Engelmann Energiesysteme · Fachpartner WerkingFlow',
     initials: 'KE',
     photo: '',
-    desc: 'Jahrzehntelange Praxis aus TGA-Planung und Energiekonzepten — die fachliche Messlatte für die Engineering-Workflows.',
+    desc: 'Jahrzehntelange Praxis aus TGA-Planung und Energiekonzepten — bringt die Fachprozesse als Fachpartner in die Workflow-Plattform WerkingFlow ein.',
   },
 ] as const

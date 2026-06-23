@@ -45,7 +45,7 @@ export default function Footer() {
               {[
                 { href: '/', label: 'Home' },
                 { href: '/early-access/', label: 'Early Access' },
-                { href: '/ueber-mich/', label: 'Über mich' },
+                { href: '/ueber-mich/', label: 'Team' },
                 { href: '/kontakt/', label: 'Kontakt' },
               ].map((link) => (
                 <li key={link.href}>
