@@ -99,7 +99,7 @@ export default function ProductGrid() {
                 </div>
                 <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                   <h4 className="font-heading text-sm font-semibold text-gold mb-1">Entwicklungsunterstützung</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Sie entwickeln selbst mit Claude Code — und holen sich Unterstützung vom Profi, wenn's drauf ankommt.</p>
+                  <p className="text-xs text-white/50 leading-relaxed">Vibe-Coden mit den Profis — Sie bauen Ihre eigenen Tools, wir bringen die Engineering-Erfahrung dazu.</p>
                 </div>
               </div>
 
