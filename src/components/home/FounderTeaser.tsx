@@ -42,7 +42,7 @@ export default function FounderTeaser() {
             {/* Zitat */}
             <blockquote className="border-l-3 border-gold pl-4 mb-6">
               <p className="text-text-body text-sm italic leading-relaxed">
-                &ldquo;Jedes Tool löst ein Problem, das ich selbst hatte.&rdquo;
+                &ldquo;Jedes Tool löst ein echtes Problem.&rdquo;
               </p>
             </blockquote>
 

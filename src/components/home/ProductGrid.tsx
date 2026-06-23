@@ -72,43 +72,34 @@ export default function ProductGrid() {
             href="/platform/"
             className="group block rounded-2xl overflow-hidden border-2 border-gold/30 hover:border-gold/60 transition-all duration-300 no-underline bg-gradient-to-br from-navy-mid via-navy to-navy-mid"
           >
-            <div className="p-8 md:p-10">
+            <div className="p-6 md:p-8">
               {/* Header */}
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-5">
                 <div>
-                  <span className="text-xs text-gold font-semibold uppercase tracking-wider">Die Vision</span>
+                  <span className="text-xs text-gold font-semibold uppercase tracking-wider">Die Plattform</span>
                   <h3 className="font-heading text-2xl md:text-3xl font-bold text-white mt-1 group-hover:text-gold transition-colors">
                     <span className="brand-outline">Werk</span><span className="brand-ing">ING</span><span className="brand-outline">Flow</span>
                   </h3>
-                  <p className="text-white/50 mt-1">KI-Plattform für Engineering-Workflows</p>
+                  <p className="text-white/50 mt-1 text-sm">KI-Plattform · Co-Entwicklung · Entwicklungsunterstützung</p>
                 </div>
-                <span className="text-xs px-3 py-1 rounded-full border border-white/20 text-white/50 bg-white/5">
+                <span className="text-xs px-3 py-1 rounded-full border border-white/20 text-white/50 bg-white/5 whitespace-nowrap">
                   In Entwicklung
                 </span>
               </div>
 
-              {/* 3 Stärken */}
-              <div className="grid md:grid-cols-3 gap-6 mb-6">
-                <div className="p-5 rounded-xl bg-white/5 border border-white/10">
-                  <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center mb-3">
-                    <span className="text-gold text-sm font-bold">1</span>
-                  </div>
-                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Workflow statt Chatbot</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Definierte Prozesse mit klaren Schritten. Reproduzierbare Ergebnisse — keine Zufallstreffer.</p>
+              {/* Das Angebot */}
+              <div className="grid sm:grid-cols-3 gap-3 mb-5">
+                <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+                  <h4 className="font-heading text-sm font-semibold text-gold mb-1">Fertige Workflows</h4>
+                  <p className="text-xs text-white/50 leading-relaxed">Report, Energy, Noise — sofort einsatzbereit, ingenieur-geprüft.</p>
                 </div>
-                <div className="p-5 rounded-xl bg-white/5 border border-white/10">
-                  <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center mb-3">
-                    <span className="text-gold text-sm font-bold">2</span>
-                  </div>
-                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Engineering-fokussiert</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Versteht Fachprozesse, Datenformate und Qualitätsanforderungen — keine generische KI.</p>
+                <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+                  <h4 className="font-heading text-sm font-semibold text-gold mb-1">Gemeinsam entwickeln</h4>
+                  <p className="text-xs text-white/50 leading-relaxed">Ihr eigener Workflow als Co-Entwicklung — exklusiv oder als Fachpartner vermarktet.</p>
                 </div>
-                <div className="p-5 rounded-xl bg-white/5 border border-white/10">
-                  <div className="w-8 h-8 rounded-lg bg-gold/10 flex items-center justify-center mb-3">
-                    <span className="text-gold text-sm font-bold">3</span>
-                  </div>
-                  <h4 className="font-heading text-sm font-semibold text-white mb-1">Volle Kontrolle</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Modell-agnostisch, EU-gehostet. Know-how bleibt im Unternehmen.</p>
+                <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+                  <h4 className="font-heading text-sm font-semibold text-gold mb-1">Entwicklungsunterstützung</h4>
+                  <p className="text-xs text-white/50 leading-relaxed">Beliebige Engineering-Software übernehmen und weiterentwickeln — durch den Profi.</p>
                 </div>
               </div>
 

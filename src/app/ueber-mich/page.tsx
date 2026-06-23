@@ -147,31 +147,21 @@ export default function UeberMichPage() {
       </section>
 
       {/* Expertise Cards */}
-      <section className="py-20 bg-navy">
-        <div className="max-w-5xl mx-auto px-6">
+      <section className="py-16 bg-navy">
+        <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="gold-line-center" />
-          <h2 className="font-heading text-2xl font-bold text-white text-center mb-12">Expertise</h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            {FOUNDER.expertise.map((item, i) => (
-              <div key={i} className="p-8 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:border-gold/20 transition-all">
-                <div className="w-14 h-14 rounded-xl bg-gold/15 flex items-center justify-center mb-6">
-                  {expertiseIcons[i]}
-                </div>
-                <h3 className="text-white text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-white/70 text-sm leading-relaxed mb-6">{item.description}</p>
-                <ul className="space-y-2">
-                  {item.items.map((listItem, j) => (
-                    <li key={j} className="flex items-center gap-2 text-white/80 text-sm">
-                      <svg className="w-4 h-4 text-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      {listItem}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <h2 className="font-heading text-2xl font-bold text-white mb-3">Der Ingenieur-Hintergrund</h2>
+          <p className="text-white/60 leading-relaxed mb-6">
+            Hinter WerkING Tools steht ein Ziviltechniker-Büro mit Projekten von Energiekonzepten bis Schallschutz-Gutachten. Mehr zum ingenieurtechnischen Hintergrund:
+          </p>
+          <a
+            href="https://www.data-energyneering.at"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 rounded-lg border border-gold/40 text-gold font-medium hover:bg-gold/10 transition-colors no-underline"
+          >
+            Data Energyneering &rarr;
+          </a>
         </div>
       </section>
 

@@ -97,21 +97,21 @@ export default function PlatformPage() {
             <div className="rounded-2xl border-2 border-gold/30 bg-navy-mid p-6">
               <span className="text-xs font-semibold uppercase tracking-wider text-gold">Co-Entwicklung</span>
               <h3 className="font-heading text-lg font-semibold text-white mt-1 mb-2">Workflow gemeinsam entwickeln</h3>
-              <p className="text-sm text-white/60 leading-relaxed">Wir bauen Ihren spezifischen Workflow als Entwicklungspartnerschaft: Sie liefern das Fachwissen, wir die Engine. Geprüft und freigegeben, bevor er produktiv läuft.</p>
+              <p className="text-sm text-white/60 leading-relaxed">Sie liefern das Fachwissen, wir die Engine — geprüft und freigegeben, bevor er läuft. Entweder exklusiv für Ihren eigenen Betrieb — oder als Fachpartner gemeinsam vermarktet, mit Beteiligung am Erfolg.</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-navy-mid p-6">
               <span className="text-xs font-semibold uppercase tracking-wider text-gold">Entwicklungsunterstützung</span>
-              <h3 className="font-heading text-lg font-semibold text-white mt-1 mb-2">Bestehende Software übernehmen &amp; pflegen</h3>
-              <p className="text-sm text-white/60 leading-relaxed">Engineering-Tooling dokumentieren, stabilisieren, weiterentwickeln — flexibel im Stundenmodell. Ihre Mitarbeiter arbeiten KI-gestützt mit, wir auditieren und geben frei.</p>
+              <h3 className="font-heading text-lg font-semibold text-white mt-1 mb-2">Entwicklungsunterstützung durch den Profi</h3>
+              <p className="text-sm text-white/60 leading-relaxed">Beliebige Engineering-Software übernehmen, dokumentieren, stabilisieren, weiterentwickeln — flexibel im Stundenmodell. Ihre Mitarbeiter arbeiten KI-gestützt mit, wir auditieren und geben frei.</p>
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-2">
-            {['Gehostete Umgebung', 'Git-transparent', 'Ticket-System', 'Mitarbeiter-Chatbot', 'Beidseitige Wartung', 'Keine IT-Integration nötig'].map((f) => (
+            {['Gehostete Umgebung', 'Zusammenarbeit über Git-Repository', 'Beidseitige Wartung', 'Keine interne IT-Integration nötig'].map((f) => (
               <span key={f} className="text-xs font-medium text-white/70 border border-white/15 rounded-full px-3 py-1.5 bg-white/5">{f}</span>
             ))}
           </div>
           <p className="text-center text-sm text-white/45 mt-8 max-w-2xl mx-auto">
-            Flexibles Stundenmodell, Priorisierung gemeinsam pro Block — klassische Koordination (Calls, E-Mails, Kontext-Erklären) entfällt weitgehend.
+            Flexibles Stundenmodell, Priorisierung gemeinsam pro Block — Sie sehen den aktuellen Stand jederzeit im Repository.
           </p>
         </div>
       </section>
