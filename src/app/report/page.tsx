@@ -11,7 +11,7 @@ const product = PRODUCTS.report
 export const metadata: Metadata = {
   title: `${product.name} — Prüfberichte in Ihrer Struktur, Ihrem Briefkopf`,
   description:
-    'Technische Prüfberichte für Ziviltechniker und Sachverständige: eigene Dokumenttypen, eigene Design-Vorlagen, eigene Wissensbasis. Einmal einrichten, dann folgt jeder Bericht Ihrem Standard. Sie prüfen und unterschreiben — die Kontrolle bleibt bei Ihnen.',
+    'Technische Prüfberichte für Sachverständige, Ziviltechniker und Ingenieurbüros: eigene Dokumenttypen, eigene Design-Vorlagen, eigene Wissensbasis. Einmal einrichten, dann folgt jeder Bericht Ihrem Standard. Sie prüfen und unterschreiben — die Kontrolle bleibt bei Ihnen.',
   openGraph: {
     title: `${product.name} — Prüfberichte in Ihrer Struktur, Ihrem Briefkopf`,
     description:
@@ -121,7 +121,7 @@ export default function ReportPage() {
       <PageHeader
         title={product.name}
         titleHtml={product.nameHtml}
-        subtitle="Technische Prüfberichte für Sachverständige und Ziviltechniker — in Ihrer Struktur, nach Ihren Vorgaben, in Ihrem Briefkopf. Sie prüfen und unterschreiben."
+        subtitle="Technische Prüfberichte für Sachverständige, Ziviltechniker und Ingenieurbüros — in Ihrer Struktur, nach Ihren Vorgaben, in Ihrem Briefkopf. Sie prüfen und unterschreiben."
         status={{ status: product.status, label: product.statusLabel }}
       />
 

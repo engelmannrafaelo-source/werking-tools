@@ -215,7 +215,7 @@ export default function EnergyPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-10 items-center">
             <div className="flex-1 w-full">
-              <ImageFrame src="/images/products/energy-ki-editor.webp" alt="KI-Editor mit Feature-Tabs für den fertigen Energiebericht" w={1210} h={225} />
+              <ImageFrame src="/images/products/energy-ki-editor.webp" alt="Arbeitsbereich mit abgeschlossener Analyse und KI-Editor" w={1190} h={578} />
             </div>
             <div className="flex-1">
               <div className="gold-line" />
