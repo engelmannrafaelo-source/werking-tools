@@ -95,7 +95,7 @@ export default function EnergyPage() {
       <PageHeader
         title={product.name}
         titleHtml={product.nameHtml}
-        subtitle="Alles, was Sie über Ihre Anlage haben, wird zu einer fundierten, anlagenspezifischen Energieanalyse — keine Formular-Auswertung, sondern individuell wie von einem Ingenieur. Sie prüfen und verantworten."
+        subtitle="Alles, was Sie über Ihre Anlage haben, wird zu einer belastbaren, anlagenspezifischen Energieanalyse — keine Formular-Auswertung, sondern individuell wie von einem Ingenieur. Sie prüfen und verantworten."
         status={{ status: product.status, label: product.statusLabel }}
       />
 
@@ -161,8 +161,8 @@ export default function EnergyPage() {
           </p>
 
           <div className="rounded-2xl bg-bg-light border border-black/5 p-8">
-            <h3 className="font-heading text-lg font-semibold text-navy mb-2">Laden Sie hoch, was Sie einem Ingenieur auch zeigen würden</h3>
-            <p className="text-text-muted text-sm mb-5">Je mehr Kontext, desto präziser die Analyse — das Format spielt keine Rolle.</p>
+            <h3 className="font-heading text-lg font-semibold text-navy mb-2">Alle Unterlagen rein, belastbare Analyse raus.</h3>
+            <p className="text-text-muted text-sm mb-5">Laden Sie hoch, was Sie einem Ingenieur auch zeigen würden — je mehr Kontext, desto präziser die Analyse. Das Format spielt keine Rolle.</p>
             <div className="grid sm:grid-cols-2 gap-3">
               {UPLOAD_KONTEXT.map((u) => (
                 <div key={u} className="flex gap-3 items-start">
