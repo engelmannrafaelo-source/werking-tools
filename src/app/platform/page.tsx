@@ -52,7 +52,7 @@ export default function PlatformPage() {
             Eine Plattform, auf der Engineering-Workflows laufen. Jedes Tool ist ein deterministischer Prozess — gleicher Input, gleiche Qualität. Die KI erstellt den Entwurf, der Ingenieur prüft und gibt frei.
           </p>
           <p className="text-text-muted leading-relaxed">
-            Die existierenden Produkte (WerkING Report, Energy, Safety, Noise) zeigen, dass der Ansatz funktioniert. WerkingFlow macht diese Architektur zur offenen Plattform — für fertige Workflows und eigene Prozesse.
+            Die existierenden Produkte (WerkING Report, Energy, Noise) zeigen, dass der Ansatz funktioniert. WerkingFlow macht diese Architektur zur offenen Plattform — für fertige Workflows und eigene Prozesse.
           </p>
         </div>
       </section>
@@ -91,12 +91,8 @@ export default function PlatformPage() {
               <p className="text-sm text-text-muted">8-Phasen-Pipeline mit selbstkorrigierenden Schleifen. Aus Rohdaten zum fertigen Energiebericht in ~40 Minuten.</p>
             </div>
             <div className="p-6 rounded-xl bg-bg-light">
-              <h3 className="font-heading text-base font-semibold text-navy mb-2">WerkING Safety</h3>
-              <p className="text-sm text-text-muted">Automatisierte Gefährdungsbeurteilung aus Maschinendokumentation. Vision-AI erkennt Komponenten aus Bildern und Schaltplänen.</p>
-            </div>
-            <div className="p-6 rounded-xl bg-bg-light">
               <h3 className="font-heading text-base font-semibold text-navy mb-2">WerkING Noise</h3>
-              <p className="text-sm text-text-muted">Lärmberechnung direkt auf der Karte. CNOSSOS-EU validiert, OpenStreetMap-basierter Editor.</p>
+              <p className="text-sm text-text-muted">KI-gestützte Schallgutachten — kartenbasiert, Berechnung nach CNOSSOS-EU, ÖNORM-konform. Die KI formuliert den Gutachtentext, der Sachverständige prüft.</p>
             </div>
           </div>
         </div>

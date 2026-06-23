@@ -25,7 +25,6 @@ export default function EarlyAccessPage() {
   const products = [
     { ...PRODUCTS.report, statusOverride: 'Live Beta' },
     PRODUCTS.energy,
-    PRODUCTS.safety,
     PRODUCTS.noise,
   ]
 

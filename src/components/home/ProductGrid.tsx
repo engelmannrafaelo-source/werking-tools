@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { PRODUCTS, PRODUCT_ORDER, getStatusColor } from '@/lib/products'
 
 export default function ProductGrid() {
-  // Show report, energy, safety, noise — not platform (gets its own mention)
+  // Show report, energy, noise — not platform (gets its own mention)
   const visibleProducts = PRODUCT_ORDER.filter(k => k !== 'platform')
 
   return (
