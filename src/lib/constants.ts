@@ -84,14 +84,14 @@ export const TEAM = [
     name: 'David Engelmann',
     role: 'Entwicklungskooperation · alle WerkING-Produkte',
     initials: 'DE',
-    photo: '',
+    photo: '/images/team/david-engelmann.webp',
     desc: 'Engelmann Energiesysteme — TGA-Ingenieurbüro in vierter Generation (seit 1895) — setzt alle WerkING-Produkte im Bürobetrieb ein und entwickelt sie als Kooperationspartner mit.',
   },
   {
     name: 'Kurt Engelmann',
     role: 'Engelmann Energiesysteme · Fachpartner WerkingFlow',
     initials: 'KE',
-    photo: '',
+    photo: '/images/team/kurt-engelmann.webp',
     desc: 'Jahrzehntelange Praxis aus TGA-Planung und Energiekonzepten — bringt die Fachprozesse als Fachpartner in die Workflow-Plattform WerkingFlow ein.',
   },
-] as const
+]
