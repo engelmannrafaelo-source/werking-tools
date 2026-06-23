@@ -23,16 +23,23 @@ export const metadata: Metadata = {
 const CHIPS = [
   { value: '8 Phasen', label: 'nachvollziehbare Analyse' },
   { value: '5 Schritte', label: 'geführter Wizard' },
-  { value: 'CSV · XLSX', label: 'bis 5 GB Messdaten' },
+  { value: 'Projektkontext', label: 'Daten, Pläne, PDFs, Fotos' },
   { value: 'PDF + Word', label: 'fertiger A4-Bericht' },
 ]
 
-const TRUSTBAR = ['DSGVO-konform', 'EU-Hosting', 'Ihre Messdaten bleiben Ihre']
+const TRUSTBAR = ['DSGVO-konform', 'EU-Hosting', 'Ihre Daten bleiben Ihre']
 
 const PAINPOINTS = [
   'Zwei Jahre Betriebsdaten in Excel — und Wochen, um daraus belastbare Aussagen abzuleiten.',
-  'Jedes Gebäude ist anders — generische Tools und Pauschalwerte treffen es nie genau.',
+  'Standardisierte Tools und Pauschalwerte treffen die Besonderheiten Ihrer Anlage nie.',
   'Eine automatische Auswertung ist nur so viel wert, wie Sie ihren Zahlen vertrauen können.',
+]
+
+const UPLOAD_KONTEXT = [
+  'Mess- und Betriebsdaten (CSV, Excel, Parquet)',
+  'Energieausweise, Vorberichte, Audits',
+  'Pläne, Schemata, Anlagen-Datenblätter',
+  'Fotos, Typenschilder, Notizen',
 ]
 
 const PHASES = [
@@ -53,12 +60,13 @@ const BLACKBOX = [
 ]
 
 const WIZARD = [
-  { n: 1, title: 'Upload', screenshot: '/images/products/energy-upload.webp', w: 1210, h: 846, desc: 'Messdaten als CSV, Excel oder Parquet hochladen — bis 5 GB. Optional Kontext-PDFs wie Energieausweis, Schemata oder Grundrisse.' },
+  { n: 1, title: 'Upload', screenshot: '/images/products/energy-upload.webp', w: 1210, h: 846, desc: 'Laden Sie alles hoch, was Sie zum Projekt haben — Mess- und Betriebsdaten (CSV, Excel, Parquet) ebenso wie Energieausweise, Pläne, Schemata, Datenblätter, Fotos und Notizen. Die KI wertet den gesamten Kontext gemeinsam aus.' },
   { n: 2, title: 'Vorschau', screenshot: '/images/products/energy-vorschau.webp', w: 1210, h: 846, desc: 'Die KI liest die Dateien sofort: erkannte Systeme, Messzeitraum, Auflösung, Datenqualität und erste Auffälligkeiten. Sie prüfen die Grundlage.' },
   { n: 3, title: 'Schema', screenshot: '/images/products/energy-schema.webp', w: 1210, h: 810, desc: 'Die KI leitet die Anlagentopologie aus Daten und Dokumenten ab — Heizkreise, Vor-/Rücklauf, Zähler. Ein editierbares Schema, keine Black Box. Sie korrigieren bei Bedarf.' },
 ]
 
 const FAQ = [
+  ['Ist das ein Energieausweis oder ein Norm-Audit?', 'Nein. WerkING Energy erstellt keinen standardisierten Energieausweis und kein Formular-Audit nach Schema-F, sondern eine individuelle, datengetriebene Analyse Ihrer konkreten Anlage. Ein gesetzlich vorgeschriebenes Energieaudit ersetzt es nicht — es liefert die ingenieurtechnische Tiefenanalyse darüber hinaus.'],
   ['Wie validiert Energy die Berechnungen?', 'In mehreren Stufen: Die Rohdaten werden auf Lücken und Ausreisser geprüft, jede Berechnung gegen physikalische Grenzen und recherchierte Richtwerte abgeglichen, und die Ergebnisse iterativ nachgerechnet, bis sie konsistent sind. Jede Berechnung ist mit Methode und Quelle im Bericht dokumentiert.'],
   ['Kann ich die Zahlen nachvollziehen?', 'Ja. Jede Aussage referenziert die zugrundeliegende Berechnung und Quelle. Alle Diagramme werden aus Ihren Originalmessdaten erzeugt — nicht aus aggregierten Durchschnitten.'],
   ['Was, wenn die Analyse falsch liegt?', 'Sie erhalten den Bericht zur finalen Prüfung vor jeder Weitergabe. Energy beschleunigt die Auswertung — die fachliche Verantwortung bleibt bei Ihnen.'],
@@ -81,7 +89,7 @@ export default function EnergyPage() {
       <PageHeader
         title={product.name}
         titleHtml={product.nameHtml}
-        subtitle="Von Rohdaten zu validierten Energieanalysen — ohne wochenlange manuelle Auswertung. Vollautomatisch berechnet, nachvollziehbar dokumentiert. Sie prüfen und verantworten."
+        subtitle="Aus Ihrem gesamten Projektkontext zu einer validierten, anlagenspezifischen Energieanalyse — keine Formular-Auswertung, sondern individuell wie von einem Ingenieur. Sie prüfen und verantworten."
         status={{ status: product.status, label: product.statusLabel }}
       />
 
@@ -119,6 +127,53 @@ export default function EnergyPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Jede Anlage ist anders — Abgrenzung + Projektkontext */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <div className="gold-line-center" />
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">Jede Anlage ist anders — Ihre Analyse auch.</h2>
+            <p className="text-text-muted mt-3 max-w-2xl mx-auto">
+              WerkING Energy erstellt keinen standardisierten Energieausweis und kein Formular-Audit nach Schema-F. Es arbeitet wie ein Ingenieur, der sich in genau diese eine Anlage eindenkt: alle Unterlagen durcharbeiten, Muster in Ihren echten Betriebsdaten erkennen und Potenziale finden, die ein Standardverfahren übersieht.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-14">
+            <div className="rounded-2xl border border-black/5 bg-bg-light p-6">
+              <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-text-muted mb-4">Standardisiertes Schema</h3>
+              <ul className="space-y-2.5 text-sm text-text-muted">
+                <li>Feste Kategorien, Pauschal- und Referenzwerte</li>
+                <li>Gleiche Vorlage für jedes Gebäude</li>
+                <li>Blind für anlagenspezifische Besonderheiten</li>
+                <li>Compliance-Dokument statt Optimierung</li>
+              </ul>
+            </div>
+            <div className="rounded-2xl border-2 border-gold/30 bg-navy p-6">
+              <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-gold mb-4">WerkING Energy</h3>
+              <ul className="space-y-2.5 text-sm text-white/70">
+                <li>Ihr gesamter Projektkontext als Grundlage</li>
+                <li>Muster aus Ihren echten Betriebsdaten</li>
+                <li>Individuelle Bewertung &amp; Handlungsempfehlungen</li>
+                <li>Erkennt, was Pauschalverfahren übersehen</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="rounded-2xl bg-bg-light border border-black/5 p-8">
+            <h3 className="font-heading text-lg font-semibold text-navy mb-2">Laden Sie hoch, was Sie einem Ingenieur auch zeigen würden</h3>
+            <p className="text-text-muted text-sm mb-5">Je mehr Kontext, desto präziser die Analyse — das Format spielt keine Rolle.</p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {UPLOAD_KONTEXT.map((u) => (
+                <div key={u} className="flex gap-3 items-start">
+                  <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-gold" />
+                  <span className="text-sm text-text-body">{u}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
