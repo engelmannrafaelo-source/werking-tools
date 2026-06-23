@@ -33,8 +33,7 @@ function OrganizationSchema() {
       'AI Workflows',
       'Technische Gutachten',
       'Energieberichte',
-      'Lärmberechnung',
-      'Gefährdungsbeurteilung',
+      'Schallgutachten',
     ],
   }
 

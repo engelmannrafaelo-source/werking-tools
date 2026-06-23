@@ -1,7 +1,7 @@
 export const SITE = {
   name: 'WerkING Tools',
   tagline: 'AI-Workflows mit Handschlagsqualität.',
-  description: 'Technische Gutachten, Energieberichte, Risikoanalysen — KI-gestützt, ingenieur-geprüft.',
+  description: 'Technische Gutachten, Energieberichte, Schallgutachten — KI-gestützt, ingenieur-geprüft.',
   url: 'https://werking.tools',
   email: 'office@werking.tools',
   // phone removed — no phone support

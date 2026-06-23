@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: SITE.description,
   keywords: [
     'KI Gutachten', 'AI Workflows', 'Ingenieur Software', 'technische Berichte',
-    'Energiebericht', 'Schallgutachten', 'Risikoanalyse', 'Ziviltechniker',
+    'Energiebericht', 'Schallgutachten', 'Ingenieurbüro', 'Ziviltechniker',
     'Engineering Automation', 'WerkING Tools', 'WerkING Report',
   ],
   authors: [{ name: 'DI Dr. Rafael Engelmann', url: SITE.url }],

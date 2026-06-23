@@ -77,7 +77,7 @@ export default function OgImage() {
 
         {/* Subtitle */}
         <p style={{ fontSize: '18px', color: 'rgba(255,255,255,0.5)', marginTop: '0' }}>
-          Technische Gutachten · Energieberichte · Risikoanalysen · Lärmberechnung
+          Technische Prüfberichte · Energieberichte · Schallgutachten
         </p>
 
         {/* Bottom bar */}

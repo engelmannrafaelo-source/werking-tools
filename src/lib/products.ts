@@ -257,9 +257,9 @@ export const PRODUCTS: Record<string, Product> = {
       },
       {
         title: 'Engineering-Intelligenz',
-        desc: 'Keine generische KI — die Plattform versteht Fachprozesse. Energieberichte, Gutachten, Risikoanalysen: Jeder Workflow kennt die Domäne, die Datenformate und die Qualitätsanforderungen.',
+        desc: 'Keine generische KI — die Plattform versteht Fachprozesse. Prüfberichte, Energieanalysen, Schallgutachten: Jeder Workflow kennt die Domäne, die Datenformate und die Qualitätsanforderungen.',
         capabilities: [
-          'Fertige Workflows für Gutachten, Energieberichte, Risikoanalysen, Akustik',
+          'Fertige Workflows für Prüfberichte, Energieanalysen und Schallgutachten',
           'Eigene Workflows für firmeninterne Prozesse entwickeln',
           'Entwickelt von einem Ziviltechniker für Maschinenbau',
           'Human-in-the-Loop: KI erstellt Entwürfe, Sie prüfen und geben frei',
