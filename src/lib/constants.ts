@@ -75,3 +75,29 @@ export const FOUNDER = {
     },
   ],
 } as const
+
+// Team & Fachpartner. Fakten aus Business-Docs (team/PLASSER-FACHPARTNER.md, LOI-PLASSER.md,
+// Engelmann-AI-Hub-Konzept). photo: '' → Initialen-Avatar; Pfad eintragen sobald Foto/Logo vorliegt.
+export const TEAM = [
+  {
+    name: 'Markus Plasser',
+    role: 'ReFit Energy GmbH · Fachpartner Energy',
+    initials: 'MP',
+    photo: '/images/team/markus-plasser.webp',
+    desc: 'Energieberatung und HVAC-Anlagenoptimierung mit über 20 Jahren Branchenerfahrung. Fachlicher Partner für WerkING Energy.',
+  },
+  {
+    name: 'David Engelmann',
+    role: 'Engelmann Energiesysteme · Geschäftsführer',
+    initials: 'DE',
+    photo: '',
+    desc: 'Führt das TGA-Ingenieurbüro Engelmann Energiesysteme — vierte Generation, seit 1895. Entwicklungspartner: erprobt die Workflows im realen Bürobetrieb.',
+  },
+  {
+    name: 'Kurt Engelmann',
+    role: 'Engelmann Energiesysteme · Standortleitung OÖ',
+    initials: 'KE',
+    photo: '',
+    desc: 'Jahrzehntelange Praxis aus TGA-Planung und Energiekonzepten — die fachliche Messlatte für die Engineering-Workflows.',
+  },
+] as const
