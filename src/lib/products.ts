@@ -242,7 +242,7 @@ export const PRODUCTS: Record<string, Product> = {
     href: '/platform/',
     appUrl: '',
     screenshot: '/images/products/platform-dashboard.webp',
-    problem: 'Ingenieure verbringen 40-60% ihrer Zeit mit Dokumentation und wiederkehrenden Prozessen. Generische KI-Chatbots helfen nicht — sie erzeugen jedes Mal andere Ergebnisse und verstehen keine Fachprozesse. Was fehlt: strukturierte Workflows, die reproduzierbare Ergebnisse liefern.',
+    problem: 'Das Wertvollste an Ingenieurarbeit ist das Urteil des Fachmanns — die Entscheidung, die Verantwortung, die Unterschrift. Doch genau diese Zeit versinkt in wiederkehrender Dokumentation, und das Know-how dahinter steckt in einzelnen Köpfen. Was es braucht, sind Engineering-Workflows mit Handschlagsqualität: definierte Prozesse, in denen das Fachwissen fest verankert ist — reproduzierbar, prüfbar, freigegeben vom Ingenieur.',
     features: [], // Platform uses pillars instead
     pillars: [
       {

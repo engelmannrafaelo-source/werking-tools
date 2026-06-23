@@ -99,13 +99,13 @@ export default function ProductGrid() {
                 </div>
                 <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                   <h4 className="font-heading text-sm font-semibold text-gold mb-1">Entwicklungsunterstützung</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Beliebige Engineering-Software übernehmen und weiterentwickeln — durch den Profi.</p>
+                  <p className="text-xs text-white/50 leading-relaxed">Sie entwickeln selbst mit Claude Code — und holen sich Unterstützung vom Profi, wenn's drauf ankommt.</p>
                 </div>
               </div>
 
               {/* Tagline */}
               <div className="flex items-center justify-between">
-                <p className="text-sm text-white/40">Die KI erstellt den Entwurf. Sie prüfen und geben frei.</p>
+                <p className="text-sm text-white/40">Eine Arbeitsplattform für Ihre KI-gestützten Ingenieur-Werkzeuge.</p>
                 <span className="text-sm text-gold font-medium group-hover:underline">
                   Mehr erfahren &rarr;
                 </span>

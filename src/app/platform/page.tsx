@@ -35,10 +35,10 @@ export default function PlatformPage() {
           <div className="gold-line" />
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mb-6">Das Problem</h2>
           <p className="text-lg text-text-body leading-relaxed mb-8">
-            Ingenieure verbringen 40-60% ihrer Zeit mit Dokumentation und wiederkehrenden Prozessen. Generische KI-Chatbots helfen nicht — sie erzeugen jedes Mal andere Ergebnisse und verstehen keine Fachprozesse.
+            Das Wertvollste an Ingenieurarbeit ist das Urteil des Fachmanns — die Entscheidung, die Verantwortung, die Unterschrift. Doch genau diese Zeit versinkt in wiederkehrender Dokumentation und Routineprozessen. Und das Know-how dahinter steckt in einzelnen Köpfen: schwer weiterzugeben, und weg, sobald jemand das Unternehmen verlässt.
           </p>
           <p className="text-text-body leading-relaxed">
-            Was fehlt: strukturierte Workflows, die reproduzierbare Ergebnisse liefern. Nicht &quot;frag die KI&quot;, sondern definierte Prozesse mit klaren Schritten, Qualitätsprüfung und nachvollziehbaren Ergebnissen.
+            Was es braucht, ist kein Werkzeug, das improvisiert, sondern Engineering-Workflows mit Handschlagsqualität — definierte Prozesse, in denen das Fachwissen fest verankert ist. Gleicher Input, gleiche Qualität: nachvollziehbar, prüfbar und freigegeben vom Ingenieur.
           </p>
         </div>
       </section>
