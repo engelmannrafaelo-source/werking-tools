@@ -298,7 +298,7 @@ export default function ReportPage() {
             <span className="text-xs font-semibold uppercase tracking-wider text-gold">WerkING-Check</span>
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mt-1">Wie gut ist Ihr Bericht?</h2>
             <p className="text-white/55 mt-3 max-w-2xl mx-auto">
-              Der einfachste Einstieg: Laden Sie einen bestehenden Bericht als PDF hoch — die KI prüft ihn auf Vollständigkeit, Widersprüche und Schlüssigkeit und gibt eine klare Einschätzung. Kein Account, kein Setup. Ein Qualitätscheck, kein Zertifikat: eine zweite Meinung, bevor Sie unterschreiben — per Link teilbar, ohne Login.
+              Der einfachste Einstieg: Laden Sie einen bestehenden Bericht als PDF hoch — die KI prüft ihn auf Vollständigkeit, Widersprüche und Schlüssigkeit und gibt eine klare Einschätzung. Kein Account, kein Setup. Ein Qualitätscheck, kein Zertifikat: eine zweite Meinung, bevor Sie unterschreiben. Das Ergebnis sehen nur Sie — DSGVO-konform, nicht öffentlich.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -313,8 +313,8 @@ export default function ReportPage() {
                 <p className="text-sm text-white/55">Fachliche Behauptungen aus dem Bericht werden gegen Quellen geprüft — Vollständigkeit, Widersprüche, Plausibilität.</p>
               </div>
               <div className="rounded-xl border border-white/10 bg-navy-mid p-5">
-                <h3 className="font-heading text-base font-semibold text-white mb-1">Teilbar, ohne Login</h3>
-                <p className="text-sm text-white/55">Der Check-Link ist für jeden abrufbar — Auftraggeber und Behörden sehen das Ergebnis selbst ein, ganz ohne Account.</p>
+                <h3 className="font-heading text-base font-semibold text-white mb-1">Privat &amp; DSGVO-konform</h3>
+                <p className="text-sm text-white/55">Das Ergebnis sehen nur Sie — kein öffentlicher Link, keine Weitergabe an Dritte. Ohne Account nutzbar, Ihr Bericht bleibt privat.</p>
               </div>
             </div>
           </div>

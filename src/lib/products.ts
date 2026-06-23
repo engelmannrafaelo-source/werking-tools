@@ -95,7 +95,7 @@ export const PRODUCTS: Record<string, Product> = {
           'Bildanalyse — Fotos werden fachlich beschrieben',
           'KI-Editor-Chat — Abschnitte fertiger Berichte gezielt überarbeiten',
           'Export als PDF (druckfertig) oder DOCX (weiterbearbeitbar)',
-          'WerkING-Check — KI-Qualitätscheck für fertige Berichte, per Link teilbar (ohne Login)',
+          'WerkING-Check — KI-Qualitätscheck für fertige Berichte, ohne Account; das Ergebnis bleibt privat',
         ],
       },
     ],
