@@ -9,7 +9,7 @@ export default function CTA() {
           Werk<span className="brand-ing">ING</span> Report &amp; Energy — ab 1. Juli.
         </h2>
         <p className="text-white/60 text-lg mb-10 max-w-xl mx-auto">
-          Sagen Sie uns, welchen Bericht Sie automatisieren möchten — wir zeigen Ihnen den Workflow dazu.
+          Fragen oder eine Demo? Schreiben Sie uns.
         </p>
 
         <div className="flex gap-4 justify-center flex-wrap">

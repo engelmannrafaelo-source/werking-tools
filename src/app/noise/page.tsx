@@ -84,7 +84,7 @@ export default function NoisePage() {
       {/* Hero-Visual: Splitscreen Karte + 3D + Heatmap */}
       <section className="bg-navy pt-2 pb-14">
         <div className="max-w-5xl mx-auto px-6">
-          <ImageFrame src="/images/products/werking-noise.webp" alt="Splitscreen: CNOSSOS-EU Lärmkonturkarte und interaktives 3D-Gebäudemodell" w={1600} h={1313} />
+          <ImageFrame src="/images/products/werking-noise.webp" alt="Splitscreen: CNOSSOS-EU Lärmkonturkarte und interaktives 3D-Gebäudemodell" w={1600} h={1195} />
           <p className="text-center text-xs text-white/40 mt-3">CNOSSOS-EU Lärmkonturkarte und interaktives 3D-Gebäudemodell — Grenzwerte nach ÖNORM S 5021.</p>
         </div>
       </section>

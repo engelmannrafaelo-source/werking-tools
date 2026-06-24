@@ -50,7 +50,7 @@ export default function Hero() {
                 src="/images/hero-werking.webp"
                 alt="WerkING — Schallkarte und 3D-Gebäudemodell aus einem Engineering-Workflow"
                 width={1600}
-                height={1313}
+                height={1195}
                 priority
                 className="w-full h-auto"
               />
