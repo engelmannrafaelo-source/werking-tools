@@ -253,11 +253,6 @@ export default function ReportPage() {
                     <h3 className="font-heading text-xl font-semibold text-white">{s.title}</h3>
                   </div>
                   <p className="text-white/60 leading-relaxed">{s.desc}</p>
-                  {s.highlight && (
-                    <div className="mt-4 rounded-lg border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-gold font-medium">
-                      {s.highlight}
-                    </div>
-                  )}
                 </div>
               </div>
             ))}
