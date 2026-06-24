@@ -4,6 +4,7 @@ import Hero from '@/components/home/Hero'
 import HowItWorks from '@/components/home/HowItWorks'
 import WhyWorkflows from '@/components/home/WhyWorkflows'
 import ProductGrid from '@/components/home/ProductGrid'
+import DataSecurityTeaser from '@/components/home/DataSecurityTeaser'
 import Stats from '@/components/home/Stats'
 import FounderTeaser from '@/components/home/FounderTeaser'
 import CTA from '@/components/home/CTA'
@@ -18,6 +19,7 @@ export default function HomePage() {
       <HowItWorks />
       <WhyWorkflows />
       <ProductGrid />
+      <DataSecurityTeaser />
       <Stats />
       <FounderTeaser />
       <CTA />
