@@ -88,6 +88,7 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} DI Dr. Rafael Engelmann — Ziviltechniker für Maschinenbau</p>
           <div className="flex gap-6">
             <Link href="/impressum/" className="hover:text-gold transition-colors no-underline">Impressum</Link>
+            <Link href="/datensicherheit/" className="hover:text-gold transition-colors no-underline">Datensicherheit</Link>
             <Link href="/datenschutz/" className="hover:text-gold transition-colors no-underline">Datenschutz</Link>
             <a href={SITE.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors no-underline">
               LinkedIn
