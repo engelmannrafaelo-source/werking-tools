@@ -88,7 +88,7 @@ const WIZARD = [
   { n: 2, title: 'Dokumenttyp wählen', screenshot: '/images/products/report-wizard-2.webp', desc: 'Der gewählte Typ bestimmt Struktur, Abschnitte und KI-Verhalten. Ihre Wissensbasis und Design-Vorlage greifen automatisch.' },
   { n: 3, title: 'Unterlagen', screenshot: '/images/products/report-wizard-3.webp', desc: 'Fotos, Messpläne und Datenblätter aus dem Projektordner. Eine KI-Checkliste prüft auf Vollständigkeit — was fehlt, wird sofort angezeigt.' },
   { n: 4, title: 'Arbeitsbereich', screenshot: '/images/products/report-wizard-4.webp', desc: 'Mehr als ein Notizfeld: Freitext, ein Excel-artiger Tabellen-Editor, Python-Diagramme aus Ihren Messwerten, Fotodokumentation und ein KI-Coach mit Lückenanalyse — alles im Split-Screen.' },
-  { n: 5, title: 'Generierung', screenshot: '/images/products/report-wizard-5.webp', desc: 'Die KI plant den kompletten Bericht in Abschnitte und Einzelpunkte — jeder Punkt einzeln an-/abschaltbar und kommentierbar. Dann ein Klick.', highlight: '121 / 121 Inhaltspunkte geplant — in 10 Abschnitten, jeder einzeln steuerbar.' },
+  { n: 5, title: 'Generierung', screenshot: '/images/products/report-wizard-5.webp', desc: 'Die KI plant den kompletten Bericht in Abschnitte und Einzelpunkte — jeder Punkt einzeln an-/abschaltbar und kommentierbar. Dann ein Klick.' },
 ]
 
 const PROOF = [
