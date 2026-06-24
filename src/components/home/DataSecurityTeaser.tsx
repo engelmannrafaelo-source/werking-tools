@@ -22,10 +22,10 @@ export default function DataSecurityTeaser() {
         <div className="text-center mb-16">
           <div className="gold-line-center" />
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">
-            Datenschutz ist kein Nachgedanke.
+            Vertraulich. Von Anfang an.
           </h2>
           <p className="text-text-muted mt-4 max-w-2xl mx-auto leading-relaxed">
-            Sie arbeiten mit sensiblen Projekt- und Personendaten. Deshalb sind Datensicherheit und Pseudonymisierung von Anfang an Teil jedes Workflows — nicht nachträglich angeklebt.
+            Sie arbeiten mit sensiblen Projekt- und Personendaten. Datensicherheit und Pseudonymisierung sind in jedem Workflow von Anfang an eingebaut — kein nachträglicher Zusatz.
           </p>
         </div>
 
