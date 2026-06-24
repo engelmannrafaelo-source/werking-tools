@@ -125,11 +125,11 @@ export default function ReportPage() {
         status={{ status: product.status, label: product.statusLabel }}
       />
 
-      {/* Hero-Visual: Editor mit fertigem Prüfbericht */}
+      {/* Hero-Visual: seitengetreue A4-Vorschau */}
       <section className="bg-navy pt-2 pb-14">
-        <div className="max-w-5xl mx-auto px-6">
-          <ImageFrame src="/images/products/report-editor.webp" alt="Prüfbericht im Editor — Toolbar, KI-Assistent und A4-Bericht in Ihrem Briefkopf" w={1600} h={1390} />
-          <p className="text-center text-xs text-white/40 mt-3">Vom Dokumenttyp bis zum unterschriftsreifen Prüfbericht — alles in einem Editor mit KI-Assistent.</p>
+        <div className="max-w-2xl mx-auto px-6">
+          <ImageFrame src="/images/products/report-a4.webp" alt="Seitengetreue A4-Vorschau des fertigen Prüfberichts" w={1600} h={1717} />
+          <p className="text-center text-xs text-white/40 mt-3">Seitengetreue A4-Vorschau — Logo, Kopfzeile, Seitenränder und Seitenzahlen. Was Sie sehen, exportieren Sie.</p>
         </div>
       </section>
 
@@ -329,7 +329,7 @@ export default function ReportPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row-reverse gap-10 items-center">
             <div className="w-full lg:w-[46%]">
-              <ImageFrame src="/images/products/report-a4.webp" alt="Fertiger A4-Prüfbericht, unterschriftsreif" w={1600} h={1717} />
+              <ImageFrame src="/images/products/report-editor.webp" alt="Editor mit Bearbeiten/Vorschau-Umschalter, KI-Assistent und PDF/Word-Export" w={1600} h={1390} />
             </div>
             <div className="flex-1">
               <div className="gold-line" />
