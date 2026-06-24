@@ -6,10 +6,10 @@ import { SITE } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'Kontakt',
-  description: 'Kontaktieren Sie WerkING Tools. Fragen zu KI-Workflows, Gutachten-Automatisierung oder Early Access. Antwort innerhalb von 24 Stunden.',
+  description: 'Kontaktieren Sie WerkING Tools. Fragen zu KI-Workflows, Gutachten-Automatisierung oder einer Demo. Antwort innerhalb von 24 Stunden.',
   openGraph: {
     title: 'Kontakt — WerkING Tools',
-    description: 'Fragen zu KI-Workflows oder Early Access? Wir antworten innerhalb von 24 Stunden.',
+    description: 'Fragen zu KI-Workflows oder eine Demo? Wir antworten innerhalb von 24 Stunden.',
   },
   alternates: { canonical: '/kontakt' },
 }

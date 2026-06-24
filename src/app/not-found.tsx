@@ -24,10 +24,10 @@ export default function NotFound() {
               Zur Startseite
             </Link>
             <Link
-              href="/early-access/"
+              href="/kontakt/"
               className="inline-block px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-gold hover:text-gold transition-colors no-underline"
             >
-              Early Access
+              Kontakt
             </Link>
           </div>
         </div>
