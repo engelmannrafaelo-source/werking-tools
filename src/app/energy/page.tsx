@@ -94,6 +94,14 @@ export default function EnergyPage() {
         status={{ status: product.status, label: product.statusLabel }}
       />
 
+      {/* Hero-Visual: KI-erstelltes Anlagenschema */}
+      <section className="bg-navy pt-2 pb-14">
+        <div className="max-w-5xl mx-auto px-6">
+          <ImageFrame src="/images/products/energy-schema.webp" alt="KI-erstelltes Anlagenschema — Heizkreise, Verteiler und Zähler aus Ihren Daten" w={1210} h={810} />
+          <p className="text-center text-xs text-white/40 mt-3">Die KI leitet die Anlagentopologie aus Ihren Daten ab — Sie prüfen und korrigieren das Schema.</p>
+        </div>
+      </section>
+
       {/* Kennzahlen + Trust */}
       <section className="bg-navy pb-16 -mt-4">
         <div className="max-w-5xl mx-auto px-6">

@@ -125,6 +125,14 @@ export default function ReportPage() {
         status={{ status: product.status, label: product.statusLabel }}
       />
 
+      {/* Hero-Visual: Editor mit fertigem Prüfbericht */}
+      <section className="bg-navy pt-2 pb-14">
+        <div className="max-w-5xl mx-auto px-6">
+          <ImageFrame src="/images/products/report-editor.webp" alt="Prüfbericht im Editor — Toolbar, KI-Assistent und A4-Bericht in Ihrem Briefkopf" w={1600} h={1390} />
+          <p className="text-center text-xs text-white/40 mt-3">Vom Dokumenttyp bis zum unterschriftsreifen Prüfbericht — alles in einem Editor mit KI-Assistent.</p>
+        </div>
+      </section>
+
       {/* Kennzahlen + Capabilities */}
       <section className="bg-navy pb-16 -mt-4">
         <div className="max-w-5xl mx-auto px-6">
