@@ -95,7 +95,7 @@ export default function EnergyPage() {
       <PageHeader
         title={product.name}
         titleHtml={product.nameHtml}
-        subtitle="Alles, was Sie über Ihre Anlage haben, wird zu einer belastbaren, anlagenspezifischen Energieanalyse — keine Formular-Auswertung, sondern individuell wie von einem Ingenieur. Sie prüfen und verantworten."
+        subtitle="Alles, was Sie über Ihre Anlage haben, wird zu einer belastbaren Energieanalyse — zugeschnitten auf genau diese eine Anlage, nicht nach Schema F. Sie prüfen und verantworten."
         status={{ status: product.status, label: product.statusLabel }}
       />
 
@@ -268,7 +268,7 @@ export default function EnergyPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-10 items-center">
             <div className="flex-1 w-full">
-              <ImageFrame src="/images/products/energy-ki-editor.webp" alt="Arbeitsbereich mit abgeschlossener Analyse und KI-Editor" w={1190} h={578} />
+              <ImageFrame src="/images/products/energy-editor-chat.webp" alt="Editor mit Rich-Text-Toolbar und KI-Chat-Panel — Bericht bearbeiten und nachfragen" w={1200} h={395} />
             </div>
             <div className="flex-1">
               <div className="gold-line" />
