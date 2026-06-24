@@ -39,9 +39,9 @@ const PAINPOINTS = [
 
 const WORKFLOW = [
   { n: 1, title: 'Projekt & Datenblätter', screenshot: '/images/products/noise-projekt.webp', w: 1600, h: 900, desc: 'Adresse, Auftraggeber und technische Datenblätter importieren. Die KI liest Schallleistungspegel (Lw) aus den PDFs — Sie prüfen jeden Wert.' },
-  { n: 2, title: 'Geometrie aus OpenStreetMap', screenshot: '/images/products/noise-3d.webp', w: 1600, h: 1313, desc: 'Bereich auf der Karte wählen — Gebäudegeometrie und Stockwerke kommen automatisch aus OpenStreetMap und werden zum 3D-Modell. Sie korrigieren bei Bedarf. Kein CAD-Zeichnen.' },
-  { n: 3, title: 'Quellen & Immissionsorte', screenshot: '/images/products/noise-receivers.webp', w: 1600, h: 1313, desc: 'Schallquellen und Immissionsorte per Klick platzieren — mehrere Punkte und Höhen. 100 % Ihre Eingabe; die KI schlägt nur vor.' },
-  { n: 4, title: 'Berechnung & ÖNORM-Vergleich', screenshot: '/images/products/noise-berechnung.webp', w: 1600, h: 1313, desc: 'Die Schallausbreitung wird nach CNOSSOS-EU berechnet. Ergebnis: LAeq pro Immissionsort und Höhe, automatischer Grenzwertvergleich nach ÖNORM S 5021 mit Ampel-Status.' },
+  { n: 2, title: 'Geometrie aus OpenStreetMap', screenshot: '/images/products/noise-3d.webp', w: 1600, h: 1189, desc: 'Bereich auf der Karte wählen — Gebäudegeometrie und Stockwerke kommen automatisch aus OpenStreetMap und werden zum 3D-Modell. Sie korrigieren bei Bedarf. Kein CAD-Zeichnen.' },
+  { n: 3, title: 'Quellen & Immissionsorte', screenshot: '/images/products/noise-receivers.webp', w: 1600, h: 1189, desc: 'Schallquellen und Immissionsorte per Klick platzieren — mehrere Punkte und Höhen. 100 % Ihre Eingabe; die KI schlägt nur vor.' },
+  { n: 4, title: 'Berechnung & ÖNORM-Vergleich', screenshot: '/images/products/noise-berechnung.webp', w: 1600, h: 1189, desc: 'Die Schallausbreitung wird nach CNOSSOS-EU berechnet. Ergebnis: LAeq pro Immissionsort und Höhe, automatischer Grenzwertvergleich nach ÖNORM S 5021 mit Ampel-Status.' },
   { n: 5, title: 'KI formuliert das Gutachten', screenshot: '/images/products/noise-gutachten.webp', w: 1600, h: 2264, desc: 'Die KI schreibt den Gutachtentext — Berechnungswerte bleiben dabei unverändert. Sie prüfen, ergänzen und unterschreiben.' },
 ]
 
