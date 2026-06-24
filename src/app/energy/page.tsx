@@ -11,17 +11,17 @@ const product = PRODUCTS.energy
 export const metadata: Metadata = {
   title: `${product.name} — Validierte Energieanalysen aus Betriebsdaten`,
   description:
-    'Von Rohdaten zu validierten Energieanalysen — ohne wochenlange manuelle Auswertung. Eine nachvollziehbare 8-Phasen-Analyse mit Quellen-Referenzen und Plausibilitätsprüfung. Sie prüfen und verantworten die Ergebnisse.',
+    'Von Rohdaten zu validierten Energieanalysen — ohne wochenlange manuelle Auswertung. Eine nachvollziehbare, mehrstufige Analyse mit Quellen-Referenzen und Plausibilitätsprüfung. Sie prüfen und verantworten die Ergebnisse.',
   openGraph: {
     title: `${product.name} — Validierte Energieanalysen aus Betriebsdaten`,
     description:
-      'Nachvollziehbare 8-Phasen-Analyse statt Black-Box: jede Berechnung referenziert, Diagramme aus Ihren Originaldaten, Sie prüfen und verantworten.',
+      'Nachvollziehbare, mehrstufige Analyse statt Black-Box: jede Berechnung referenziert, Diagramme aus Ihren Originaldaten, Sie prüfen und verantworten.',
   },
   alternates: { canonical: '/energy' },
 }
 
 const CHIPS = [
-  { value: '8 Phasen', label: 'nachvollziehbare Analyse' },
+  { value: 'Industrieprozess', label: 'kuratierte KI-Pipeline, kein Chat' },
   { value: '5 Schritte', label: 'geführter Wizard' },
   { value: 'Alle Unterlagen', label: 'Daten, Pläne, PDFs, Fotos' },
   { value: 'PDF + Word', label: 'fertiger A4-Bericht' },
@@ -48,15 +48,10 @@ const LANDSCAPE = [
   { name: 'WerkING Energy', tag: 'frei · anlagenspezifisch', desc: 'Datengetriebene Betriebs- und Optimierungsanalyse Ihrer konkreten Anlage. Keine Norm-Vorlage — die KI denkt sich in genau diese eine Anlage ein.', highlight: true },
 ]
 
-const PHASES = [
-  ['Datenverständnis', 'Struktur, Einheiten und Zeitreihen erkennen — was steckt in den Messdaten?'],
-  ['Web-Recherche', 'Richtwerte und Benchmarks für den erkannten Anlagen- und Gebäudetyp.'],
-  ['Datenvalidierung', 'Lücken, Ausreisser und Plausibilität gegen physikalische Grenzen prüfen.'],
-  ['Formelentdeckung', 'Physikalische Zusammenhänge aus den Messdaten ableiten — Energiebilanzen, Wirkungsgrade.'],
-  ['Verhaltensanalyse', 'Lastprofile, Betriebsmuster und Anomalien im Zeitverlauf erkennen.'],
-  ['Einsparpotenzial-Recherche', 'Konkrete Effizienzmassnahmen für die gefundenen Befunde recherchieren.'],
-  ['Effizienzberechnung', 'Einsparpotenziale quantifizieren — mit Wirtschaftlichkeit und Amortisation.'],
-  ['Berichtgenerierung', 'A4-Bericht mit Diagrammen aus Ihren Originaldaten und Handlungsempfehlungen.'],
+const DIFF = [
+  ['Spezialisierte KI-Rollen', 'Datenanalyse, Recherche, Validierung, Berechnung, Bericht — jede Stufe ein eigener, darauf optimierter Arbeitsschritt statt eine Frage an einen Allrounder.'],
+  ['Kuratierte Abläufe', 'Hinter jedem Schritt steckt ein erprobtes, getestetes Vorgehen — nicht bei jeder Frage anders. Gleiche Eingabe, gleiche Qualität.'],
+  ['Gegenseitige Kontrolle', 'Die Schritte bauen aufeinander auf und prüfen die Ergebnisse gegen physikalische Grenzen — Vier-Augen-Prinzip als Pipeline.'],
 ]
 
 const BLACKBOX = [
@@ -175,29 +170,26 @@ export default function EnergyPage() {
         </div>
       </section>
 
-      {/* 8-Phasen-Pipeline — Trust-Anker */}
+      {/* Industrieprozess statt Chat — DIY-Differenzierung */}
       <section className="py-20 bg-navy">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-4">
             <div className="gold-line-center" />
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">Wie Energy analysiert</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">„Das mache ich doch selbst mit ChatGPT"</h2>
             <p className="text-white/55 mt-3 max-w-2xl mx-auto">
-              Keine Black Box, sondern ein strukturierter Ingenieurprozess in acht Phasen — genau die Schritte, die Sie manuell auch gehen würden, nur schneller. Jede Phase baut auf den geprüften Ergebnissen der vorigen auf.
+              Eine KI im Chat ist ein Generalist, der bei jeder Frage neu anfängt — mal so, mal anders. WerkING Energy ist kein Chat, sondern ein Industrieprozess: viele kuratierte, aufeinander abgestimmte Arbeitsschritte, in denen spezialisierte KI-Rollen nacheinander an Ihren Daten arbeiten — jede mit klarer Aufgabe, jede prüft die Ergebnisse der vorigen.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-4 mt-12">
-            {PHASES.map(([t, d], i) => (
-              <div key={t} className="flex gap-4 rounded-xl border border-white/10 bg-navy-mid p-5">
-                <span className="flex-shrink-0 w-9 h-9 rounded-full bg-gold/15 text-gold font-bold flex items-center justify-center">{i + 1}</span>
-                <div>
-                  <h3 className="font-heading text-base font-semibold text-white">{t}</h3>
-                  <p className="text-sm text-white/55 mt-1 leading-relaxed">{d}</p>
-                </div>
+          <div className="grid sm:grid-cols-3 gap-4 mt-12">
+            {DIFF.map(([t, d]) => (
+              <div key={t} className="rounded-xl border border-white/10 bg-navy-mid p-6">
+                <h3 className="font-heading text-base font-semibold text-white mb-2">{t}</h3>
+                <p className="text-sm text-white/55 leading-relaxed">{d}</p>
               </div>
             ))}
           </div>
           <p className="text-center text-sm text-white/45 mt-8 max-w-2xl mx-auto">
-            Jede Phase sichert ihren Zustand als Checkpoint — nach einer Unterbrechung setzt die Analyse exakt dort fort. Nach Phase 8 entstehen daraus Report-Varianten: Executive Summary, technische Kurzfassung und Detailbericht.
+            Genau dieses Zusammenspiel — erprobte Abläufe, spezialisierte Rollen, gegenseitige Kontrolle — lässt sich in einem einzelnen Chatfenster nicht nachstellen. Am Ende entstehen daraus Report-Varianten: Executive Summary, technische Kurzfassung und Detailbericht.
           </p>
         </div>
       </section>
@@ -258,7 +250,7 @@ export default function EnergyPage() {
           </div>
           <div className="mt-12 max-w-3xl mx-auto text-center rounded-2xl border border-gold/25 bg-gold/5 px-8 py-7">
             <p className="font-heading text-lg font-semibold text-white">Schritt 4 &amp; 5: Behauptungen bestätigen, dann läuft die Pipeline.</p>
-            <p className="text-white/60 mt-2">Die KI formuliert überprüfbare Behauptungen über Systeme und Verbrauch — Sie bestätigen, korrigieren oder verwerfen. Erst danach startet die 8-Phasen-Analyse.</p>
+            <p className="text-white/60 mt-2">Die KI formuliert überprüfbare Behauptungen über Systeme und Verbrauch — Sie bestätigen, korrigieren oder verwerfen. Erst danach startet die Analyse-Pipeline.</p>
           </div>
         </div>
       </section>

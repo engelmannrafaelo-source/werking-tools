@@ -147,7 +147,7 @@ export default function PlatformPage() {
             </div>
             <div className="p-6 rounded-xl bg-bg-light">
               <h3 className="font-heading text-base font-semibold text-navy mb-2">WerkING Energy</h3>
-              <p className="text-sm text-text-muted">8-Phasen-Pipeline mit selbstkorrigierenden Schleifen. Aus Rohdaten zum fertigen Energiebericht in ~40 Minuten.</p>
+              <p className="text-sm text-text-muted">Kuratierte Analyse-Pipeline mit selbstkorrigierenden Schleifen. Aus Rohdaten zum fertigen Energiebericht in ~40 Minuten.</p>
             </div>
             <div className="p-6 rounded-xl bg-bg-light">
               <h3 className="font-heading text-base font-semibold text-navy mb-2">WerkING Noise</h3>
