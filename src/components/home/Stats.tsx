@@ -1,7 +1,7 @@
 const STATS = [
-  { value: 'Aus Echtdaten', label: 'Diagramme und Werte aus Ihren Messdaten — kein Template.' },
+  { value: 'Datengetrieben', label: 'Diagramme und Werte entstehen aus Ihren Messdaten — nicht aus Vorlagen.' },
   { value: 'Reproduzierbar', label: 'Gleiche Daten, gleiche Analyse, gleiche Ergebnisse.' },
-  { value: 'Sie unterschreiben', label: 'Den Entwurf macht die KI — die Verantwortung bleibt bei Ihnen.' },
+  { value: 'Nachvollziehbar', label: 'Jeder Wert ist bis zur Quelle rückverfolgbar — Sie prüfen und geben frei.' },
 ] as const
 
 export default function Stats() {
