@@ -26,7 +26,7 @@ export default function WhyWorkflows() {
             Workflow statt Chatbot.
           </h2>
           <p className="text-text-muted mt-4 max-w-2xl mx-auto leading-relaxed">
-            Hinter einem WerkING-Workflow steckt kein einzelner Chatbot, sondern eine Pipeline aus vielen spezialisierten, kuratierten KI-Schritten, die nacheinander an Ihren Daten arbeiten und sich gegenseitig prüfen. Genau das macht das Ergebnis verlässlich — und lässt sich in einem Chatfenster nicht nachbauen.
+            Hinter einem WerkING-Workflow steckt eine Pipeline aus vielen spezialisierten, kuratierten KI-Schritten, die nacheinander an Ihren Daten arbeiten und sich gegenseitig prüfen. Das macht die Ergebnisse verlässlich und reproduzierbar.
           </p>
         </div>
 
