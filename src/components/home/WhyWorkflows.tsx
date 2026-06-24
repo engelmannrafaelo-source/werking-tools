@@ -1,8 +1,8 @@
 const ARGUMENTS = [
   {
-    title: 'Definierter Prozess',
-    text: 'Jeder Workflow ist eine feste Abfolge von Schritten. Jede Phase wird validiert. Nichts wird improvisiert.',
-    contrast: 'Chatbots entscheiden selbst was sie tun.',
+    title: 'Eine Pipeline, kein Chatfenster',
+    text: 'Ein Workflow ist eine Pipeline aus vielen spezialisierten KI-Schritten — jeder mit klarer Aufgabe, jede Phase validiert. Wie ein eingespieltes Team aus Spezialisten statt einem einzelnen Alleskönner.',
+    contrast: 'Ein Chatbot ist ein Generalist, der bei jeder Frage neu entscheidet.',
   },
   {
     title: 'Inhaltlich reproduzierbar',
@@ -25,6 +25,9 @@ export default function WhyWorkflows() {
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">
             Workflow statt Chatbot.
           </h2>
+          <p className="text-text-muted mt-4 max-w-2xl mx-auto leading-relaxed">
+            Hinter einem WerkING-Workflow steckt kein einzelner Chatbot, sondern eine Pipeline aus vielen spezialisierten, kuratierten KI-Schritten, die nacheinander an Ihren Daten arbeiten und sich gegenseitig prüfen. Genau das macht das Ergebnis verlässlich — und lässt sich in einem Chatfenster nicht nachbauen.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

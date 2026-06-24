@@ -170,14 +170,14 @@ export default function EnergyPage() {
         </div>
       </section>
 
-      {/* Industrieprozess statt Chat — DIY-Differenzierung */}
+      {/* Durchgängiger Analyseprozess */}
       <section className="py-20 bg-navy">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-4">
             <div className="gold-line-center" />
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">„Das mache ich doch selbst mit ChatGPT"</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">Ein durchgängiger Analyseprozess</h2>
             <p className="text-white/55 mt-3 max-w-2xl mx-auto">
-              Eine KI im Chat ist ein Generalist, der bei jeder Frage neu anfängt — mal so, mal anders. WerkING Energy ist kein Chat, sondern ein Industrieprozess: viele kuratierte, aufeinander abgestimmte Arbeitsschritte, in denen spezialisierte KI-Rollen nacheinander an Ihren Daten arbeiten — jede mit klarer Aufgabe, jede prüft die Ergebnisse der vorigen.
+              Aus Ihren Daten wird ein Bericht nicht in einem Schritt, sondern in einem durchgängigen Prozess: viele kuratierte, aufeinander abgestimmte Arbeitsschritte, in denen spezialisierte KI-Rollen nacheinander an Ihren Daten arbeiten — jede mit klarer Aufgabe, jede prüft die Ergebnisse der vorigen.
             </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-4 mt-12">
@@ -189,7 +189,7 @@ export default function EnergyPage() {
             ))}
           </div>
           <p className="text-center text-sm text-white/45 mt-8 max-w-2xl mx-auto">
-            Genau dieses Zusammenspiel — erprobte Abläufe, spezialisierte Rollen, gegenseitige Kontrolle — lässt sich in einem einzelnen Chatfenster nicht nachstellen. Am Ende entstehen daraus Report-Varianten: Executive Summary, technische Kurzfassung und Detailbericht.
+            So entsteht aus Rohdaten ein belastbarer Bericht — am Ende in drei Varianten: Executive Summary, technische Kurzfassung und Detailbericht.
           </p>
         </div>
       </section>
@@ -260,7 +260,7 @@ export default function EnergyPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-10 items-center">
             <div className="flex-1 w-full">
-              <ImageFrame src="/images/products/energy-editor-chat.webp" alt="Editor mit Rich-Text-Toolbar und KI-Chat-Panel — Bericht bearbeiten und nachfragen" w={1200} h={395} />
+              <ImageFrame src="/images/products/energy-editor.webp" alt="Bericht im Editor mit Rich-Text-Toolbar und KI-Chat — bearbeiten und nachfragen" w={1205} h={427} />
             </div>
             <div className="flex-1">
               <div className="gold-line" />
