@@ -18,7 +18,7 @@ export const NAV_ITEMS = [
       { label: 'WerkING Report', href: '/report/', desc: 'Technische Gutachten' },
       { label: 'WerkING Energy', href: '/energy/', desc: 'Energieberichte' },
       { label: 'WerkING Noise', href: '/noise/', desc: 'Schallgutachten' },
-      { label: 'WerkingFlow', href: '/platform/', desc: 'Workflow Marketplace' },
+      { label: 'WerkingFlow', href: '/platform/', desc: 'KI-Plattform' },
     ],
   },
   { label: 'Team', href: '/ueber-mich/' },

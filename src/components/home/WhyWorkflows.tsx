@@ -46,9 +46,6 @@ export default function WhyWorkflows() {
           ))}
         </div>
 
-        <p className="text-center text-sm text-text-muted mt-12 font-heading tracking-wide">
-          Werkzeug, kein Spielzeug.
-        </p>
       </div>
     </section>
   )

@@ -1,7 +1,7 @@
 const STATS = [
-  { value: 'Workflow', label: 'Definierter Prozess statt Chatbot-Raten' },
-  { value: 'Für Ingenieure', label: 'Jedes Tool löst ein konkretes Problem' },
-  { value: 'Reproduzierbar', label: 'Gleiche Daten, gleiche Analyse, gleiche Empfehlungen.' },
+  { value: 'Aus Echtdaten', label: 'Diagramme und Werte aus Ihren Messdaten — kein Template.' },
+  { value: 'Reproduzierbar', label: 'Gleiche Daten, gleiche Analyse, gleiche Ergebnisse.' },
+  { value: 'Sie unterschreiben', label: 'Den Entwurf macht die KI — die Verantwortung bleibt bei Ihnen.' },
 ] as const
 
 export default function Stats() {

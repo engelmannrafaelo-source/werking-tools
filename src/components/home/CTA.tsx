@@ -6,10 +6,10 @@ export default function CTA() {
       <div className="max-w-3xl mx-auto px-6 text-center">
         <div className="gold-line-center" />
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
-          Werk<span className="brand-ing">ING</span> Tools — jetzt im Early Access.
+          Werk<span className="brand-ing">ING</span> Report &amp; Energy — ab 1. Juli.
         </h2>
         <p className="text-white/60 text-lg mb-10 max-w-xl mx-auto">
-          Workflow statt Prompt. Reproduzierbare Prüfberichte, Energie- und Schallgutachten.
+          Sagen Sie uns, welchen Bericht Sie automatisieren möchten — wir zeigen Ihnen den Workflow dazu.
         </p>
 
         <div className="flex gap-4 justify-center flex-wrap">
