@@ -1,7 +1,7 @@
 // Product data for all WerkING Tools products
 // Each product has its own subpage at /{slug}/
 
-export type ProductStatus = 'live' | 'prelaunch' | 'beta' | 'development'
+export type ProductStatus = 'live' | 'prelaunch' | 'beta' | 'alpha' | 'development'
 
 export type PricingPlan = {
   name: string
@@ -60,8 +60,8 @@ export const PRODUCTS: Record<string, Product> = {
     name: 'WerkING Report',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Report</span>',
     tagline: 'Technische Gutachten. Reproduzierbar. In Ihrem Stil.',
-    status: 'live',
-    statusLabel: 'Early Access',
+    status: 'beta',
+    statusLabel: 'Beta · ab 1. Juli',
     href: '/report/',
     appUrl: '',
     screenshot: '/images/products/report-dashboard.webp',
@@ -119,8 +119,8 @@ export const PRODUCTS: Record<string, Product> = {
     name: 'WerkING Energy',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Energy</span>',
     tagline: 'Energieberichte aus Betriebsdaten. Industrieprozess statt Chat. Selbstkorrigierend.',
-    status: 'development',
-    statusLabel: 'In Entwicklung',
+    status: 'beta',
+    statusLabel: 'Beta · ab 1. Juli',
     href: '/energy/',
     appUrl: '',
     screenshot: '/images/products/energy-dashboard.webp',
@@ -178,8 +178,8 @@ export const PRODUCTS: Record<string, Product> = {
     name: 'WerkING Noise',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Noise</span>',
     tagline: 'KI-Schallgutachten. Auf der Karte berechnet, ÖNORM-konform formuliert.',
-    status: 'development',
-    statusLabel: 'In Entwicklung',
+    status: 'alpha',
+    statusLabel: 'Alpha',
     href: '/noise/',
     appUrl: '',
     screenshot: '/images/products/werking-noise.webp',
@@ -293,6 +293,7 @@ export function getStatusColor(status: ProductStatus): string {
     case 'live': return 'bg-green/20 text-green border-green/30'
     case 'prelaunch': return 'bg-gold/20 text-gold border-gold/30'
     case 'beta': return 'bg-gold/20 text-gold border-gold/30'
+    case 'alpha': return 'bg-text-muted/20 text-text-muted border-text-muted/30'
     case 'development': return 'bg-text-muted/20 text-text-muted border-text-muted/30'
   }
 }

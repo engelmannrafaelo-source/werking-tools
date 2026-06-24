@@ -91,7 +91,7 @@ export default function ProductGrid() {
               <div className="grid sm:grid-cols-3 gap-3 mb-5">
                 <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                   <h4 className="font-heading text-sm font-semibold text-gold mb-1">Fertige Workflows</h4>
-                  <p className="text-xs text-white/50 leading-relaxed">Report, Energy, Noise — sofort einsatzbereit, ingenieur-geprüft.</p>
+                  <p className="text-xs text-white/50 leading-relaxed">Report, Energy, Noise — fertige Workflows für den Praxiseinsatz.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                   <h4 className="font-heading text-sm font-semibold text-gold mb-1">Gemeinsam entwickeln</h4>
