@@ -64,14 +64,14 @@ export default function PlatformPage() {
             <div className="gold-line-center" />
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">So entsteht ein WerkING Workflow</h2>
             <p className="text-text-muted mt-3 max-w-2xl mx-auto">
-              WerkING Tools ist ein Studio: Jeder Workflow wird selbst gebaut — mit dem Domänen-Know-how erfahrener Fachpartner und fachlich geprüft, bevor er produktiv läuft.
+              WerkING Tools ist ein Studio: Jeder Workflow wird selbst gebaut — mit dem Domänen-Know-how erfahrener Fachpartner, von Ingenieuren entwickelt, bevor er produktiv läuft.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               ['Fachwissen', 'Ein Fachpartner — Ingenieurbüro oder Sachverständiger — bringt das Domänen-Know-how ein: Welche Schritte, welche Normen, welche Prüfkriterien gelten?'],
               ['Entwicklung', 'WerkING entwickelt daraus einen deterministischen Workflow — Phase für Phase, mit validierten Datenquellen statt freier KI-Improvisation.'],
-              ['Prüfung & Freigabe', 'Jeder Workflow wird fachlich geprüft und freigegeben, bevor er läuft. Handschlagsqualität — reproduzierbar wie ein Fertigungsprozess.'],
+              ['Reproduzierbar & dokumentiert', 'Jeder Workflow läuft als deterministischer, dokumentierter Prozess — gleiche Eingabe, gleiches Ergebnis, wie in der Fertigung. Das fertige Ergebnis verantwortet und unterschreibt der Ingenieur.'],
             ].map(([t, d], i) => (
               <div key={t} className="rounded-2xl border border-black/5 bg-bg-light p-6">
                 <span className="w-9 h-9 rounded-full bg-gold/15 text-gold font-bold flex items-center justify-center mb-4">{i + 1}</span>
@@ -97,7 +97,7 @@ export default function PlatformPage() {
             <div className="rounded-2xl border-2 border-gold/30 bg-navy-mid p-6">
               <span className="text-xs font-semibold uppercase tracking-wider text-gold">Co-Entwicklung</span>
               <h3 className="font-heading text-lg font-semibold text-white mt-1 mb-2">Workflow gemeinsam entwickeln</h3>
-              <p className="text-sm text-white/60 leading-relaxed">Sie liefern das Fachwissen, wir die Engine — geprüft und freigegeben, bevor er läuft. Entweder exklusiv für Ihren eigenen Betrieb — oder als Fachpartner gemeinsam vermarktet, mit Beteiligung am Erfolg.</p>
+              <p className="text-sm text-white/60 leading-relaxed">Sie liefern das Fachwissen, wir die Engine — von Ingenieuren entwickelt, bevor er läuft. Entweder exklusiv für Ihren eigenen Betrieb — oder als Fachpartner gemeinsam vermarktet, mit Beteiligung am Erfolg.</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-navy-mid p-6">
               <span className="text-xs font-semibold uppercase tracking-wider text-gold">Entwicklungsunterstützung</span>
