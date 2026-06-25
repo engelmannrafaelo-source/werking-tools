@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/layout/PageHeader'
@@ -81,58 +80,6 @@ export default function PlatformPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Gemeinsam entwickeln — WerkING Partner-Plattform */}
-      <section id="partner-plattform" className="py-20 bg-navy scroll-mt-24">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="gold-line-center" />
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">Gemeinsam entwickeln — die WerkING Partner-Plattform</h2>
-            <p className="text-white/55 mt-3 max-w-2xl mx-auto">
-              Sie haben einen eigenen Engineering-Prozess oder bestehende Software, die mit soll? Auf der Partner-Plattform arbeiten Ihr Team und wir parallel — in einer gehosteten Umgebung, jede Änderung über Git nachvollziehbar.
-            </p>
-          </div>
-
-          {/* Screenshot im Browser-Rahmen */}
-          <div className="rounded-xl overflow-hidden border border-white/15 shadow-2xl bg-navy-mid mb-12">
-            <div className="flex items-center gap-2 px-4 py-2.5 bg-navy border-b border-white/10">
-              <span className="w-3 h-3 rounded-full bg-red-400/80" />
-              <span className="w-3 h-3 rounded-full bg-yellow-400/80" />
-              <span className="w-3 h-3 rounded-full bg-green-400/80" />
-              <span className="ml-3 text-xs text-white/40 font-mono">partner.werking.tools</span>
-            </div>
-            <Image
-              src="/images/products/partner-plattform.webp"
-              alt="WerkING Partner-Plattform — gehostete Arbeitsumgebung mit Workflow Explorer, Tool Hub, Chat und Live-Updates"
-              width={1680}
-              height={1097}
-              className="w-full h-auto"
-              sizes="(max-width: 1024px) 100vw, 1024px"
-            />
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-10">
-            <div className="rounded-2xl border-2 border-gold/30 bg-navy-mid p-6">
-              <span className="text-xs font-semibold uppercase tracking-wider text-gold">Co-Entwicklung</span>
-              <h3 className="font-heading text-lg font-semibold text-white mt-1 mb-2">Workflow gemeinsam entwickeln</h3>
-              <p className="text-sm text-white/60 leading-relaxed">Sie liefern das Fachwissen, wir die Engine. Entweder exklusiv für Ihren eigenen Betrieb — oder als Fachpartner gemeinsam vermarktet, mit Beteiligung am Erfolg.</p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-navy-mid p-6">
-              <span className="text-xs font-semibold uppercase tracking-wider text-gold">Entwicklungsunterstützung</span>
-              <h3 className="font-heading text-lg font-semibold text-white mt-1 mb-2">Entwicklungsunterstützung durch den Profi</h3>
-              <p className="text-sm text-white/60 leading-relaxed">Beliebige Engineering-Software übernehmen, dokumentieren, stabilisieren, weiterentwickeln — flexibel im Stundenmodell. Ihre Mitarbeiter arbeiten KI-gestützt mit, wir auditieren und geben frei.</p>
-            </div>
-          </div>
-          <div className="flex flex-wrap justify-center gap-2">
-            {['Gehostete Umgebung', 'Zusammenarbeit über Git-Repository', 'Beidseitige Wartung', 'Keine interne IT-Integration nötig'].map((f) => (
-              <span key={f} className="text-xs font-medium text-white/70 border border-white/15 rounded-full px-3 py-1.5 bg-white/5">{f}</span>
-            ))}
-          </div>
-          <p className="text-center text-sm text-white/45 mt-8 max-w-2xl mx-auto">
-            Flexibles Stundenmodell, Priorisierung gemeinsam pro Block — Sie sehen den aktuellen Stand jederzeit im Repository.
-          </p>
         </div>
       </section>
 

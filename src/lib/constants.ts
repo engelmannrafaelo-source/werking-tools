@@ -21,6 +21,7 @@ export const NAV_ITEMS = [
       { label: 'WerkingFlow', href: '/platform/', desc: 'KI-Plattform' },
     ],
   },
+  { label: 'Partner-Plattform', href: '/partner-plattform/' },
   { label: 'Datensicherheit', href: '/datensicherheit/' },
   { label: 'Team', href: '/ueber-mich/' },
 ] as const

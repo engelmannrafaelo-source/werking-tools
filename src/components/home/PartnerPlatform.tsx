@@ -61,7 +61,7 @@ export default function PartnerPlatform() {
 
         <div className="text-center mt-12">
           <Link
-            href="/platform/#partner-plattform"
+            href="/partner-plattform/"
             className="inline-block px-6 py-3 border-2 border-navy/20 text-navy font-semibold rounded-lg hover:border-gold hover:text-gold transition-colors no-underline"
           >
             Mehr zur Partner-Plattform →
