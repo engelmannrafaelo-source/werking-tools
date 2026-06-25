@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/layout/PageHeader'
@@ -84,7 +85,7 @@ export default function PlatformPage() {
       </section>
 
       {/* Gemeinsam entwickeln — WerkING Partner-Plattform */}
-      <section className="py-20 bg-navy">
+      <section id="partner-plattform" className="py-20 bg-navy scroll-mt-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-12">
             <div className="gold-line-center" />
@@ -93,6 +94,25 @@ export default function PlatformPage() {
               Sie haben einen eigenen Engineering-Prozess oder bestehende Software, die mit soll? Auf der Partner-Plattform arbeiten Ihr Team und wir parallel — in einer gehosteten Umgebung, jede Änderung über Git nachvollziehbar.
             </p>
           </div>
+
+          {/* Screenshot im Browser-Rahmen */}
+          <div className="rounded-xl overflow-hidden border border-white/15 shadow-2xl bg-navy-mid mb-12">
+            <div className="flex items-center gap-2 px-4 py-2.5 bg-navy border-b border-white/10">
+              <span className="w-3 h-3 rounded-full bg-red-400/80" />
+              <span className="w-3 h-3 rounded-full bg-yellow-400/80" />
+              <span className="w-3 h-3 rounded-full bg-green-400/80" />
+              <span className="ml-3 text-xs text-white/40 font-mono">partner.werking.tools</span>
+            </div>
+            <Image
+              src="/images/products/partner-plattform.webp"
+              alt="WerkING Partner-Plattform — gehostete Arbeitsumgebung mit Workflow Explorer, Tool Hub, Chat und Live-Updates"
+              width={1680}
+              height={1097}
+              className="w-full h-auto"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+          </div>
+
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             <div className="rounded-2xl border-2 border-gold/30 bg-navy-mid p-6">
               <span className="text-xs font-semibold uppercase tracking-wider text-gold">Co-Entwicklung</span>
