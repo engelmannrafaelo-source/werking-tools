@@ -125,11 +125,11 @@ export default function ReportPage() {
         status={{ status: product.status, label: product.statusLabel }}
       />
 
-      {/* Hero-Visual: seitengetreue A4-Vorschau */}
+      {/* Hero-Visual: Editor mit seitengetreuer A4-Vorschau */}
       <section className="bg-navy pt-2 pb-14">
-        <div className="max-w-2xl mx-auto px-6">
-          <ImageFrame src="/images/products/report-a4.webp" alt="Seitengetreue A4-Vorschau des fertigen Prüfberichts" w={1600} h={1717} />
-          <p className="text-center text-xs text-white/40 mt-3">Seitengetreue A4-Vorschau — Logo, Kopfzeile, Seitenränder und Seitenzahlen. Was Sie sehen, exportieren Sie.</p>
+        <div className="max-w-4xl mx-auto px-6">
+          <ImageFrame src="/images/products/report-editor.webp" alt="WerkING Report Editor mit seitengetreuer A4-Vorschau, KI-Assistent und PDF/Word-Export" w={1600} h={1390} />
+          <p className="text-center text-xs text-white/40 mt-3">Der Editor mit seitengetreuer A4-Vorschau — bearbeiten, KI-Assistent nutzen, dann als PDF oder Word exportieren.</p>
         </div>
       </section>
 
@@ -329,7 +329,7 @@ export default function ReportPage() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row-reverse gap-10 items-center">
             <div className="w-full lg:w-[46%]">
-              <ImageFrame src="/images/products/report-editor.webp" alt="Editor mit Bearbeiten/Vorschau-Umschalter, KI-Assistent und PDF/Word-Export" w={1600} h={1390} />
+              <ImageFrame src="/images/products/report-a4.webp" alt="Seitengetreue A4-Vorschau des fertigen Prüfberichts — Logo, Kopfzeile, Seitenränder, Seitenzahlen" w={1600} h={1717} />
             </div>
             <div className="flex-1">
               <div className="gold-line" />
