@@ -27,7 +27,9 @@ const SEGMENTS: { t?: string; pii?: string; tok?: string }[] = [
   { pii: 'Hauptstraße 12, 1010 Wien', tok: 'LOCATION_001' },
   { t: ', E-Mail ' },
   { pii: 't.berger@berger-immo.at', tok: 'EMAIL_001' },
-  { t: ' — Druckbelüftungsanlage geprüft am 12.06.2026.' },
+  { t: ' — Druckbelüftungsanlage geprüft am ' },
+  { pii: '12.06.2026', tok: 'DATE_001' },
+  { t: '.' },
 ]
 
 export default function Datensicherheit() {
@@ -95,7 +97,7 @@ export default function Datensicherheit() {
           </div>
 
           <p className="text-center text-sm text-text-muted mt-6 max-w-2xl mx-auto">
-            Erkannt und ersetzt werden u.&nbsp;a. Personen, Firmen, Adressen, E-Mail-Adressen und Telefonnummern. Fachliche Inhalte, Messwerte und Berechnungen bleiben unverändert.
+            Erkannt und ersetzt werden u.&nbsp;a. Personen, Firmen, Adressen, E-Mail-Adressen, Telefonnummern und Datumsangaben. Fachliche Inhalte, Messwerte und Berechnungen bleiben unverändert.
           </p>
         </div>
       </section>

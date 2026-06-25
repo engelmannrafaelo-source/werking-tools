@@ -25,7 +25,7 @@ export default function DataSecurityTeaser() {
             Vertraulich. Von Anfang an.
           </h2>
           <p className="text-text-muted mt-4 max-w-2xl mx-auto leading-relaxed">
-            Sie arbeiten mit sensiblen Projekt- und Personendaten. Datensicherheit und Pseudonymisierung sind in jedem Workflow von Anfang an eingebaut — kein nachträglicher Zusatz.
+            Sie arbeiten mit sensiblen Projekt- und Personendaten. Deshalb schützen wir sie von der ersten Datei an — nicht erst, wenn etwas schiefgeht.
           </p>
         </div>
 
