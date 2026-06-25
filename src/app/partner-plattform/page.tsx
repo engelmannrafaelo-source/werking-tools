@@ -6,46 +6,38 @@ import PageHeader from '@/components/layout/PageHeader'
 import ProductCTA from '@/components/product/ProductCTA'
 
 export const metadata: Metadata = {
-  title: 'WerkING Partner-Plattform — gemeinsam Software entwickeln',
+  title: 'WerkING Partner-Plattform — Engineering-Workflows gemeinsam entwickeln',
   description:
-    'Gehostete Arbeitsumgebung für Co-Development: Ihr Team und WerkING arbeiten parallel an einer Codebasis. Entwicklungsunterstützung für beliebige Apps und gemeinsame Workflow-Entwicklung — über den Browser, ohne Setup.',
+    'Sie kennen einen Engineering-Prozess, der sich wiederholt? Auf der WerkING Partner-Plattform entwickeln wir daraus gemeinsam einen Workflow — von der Idee zum geprüften Produkt auf WerkingFlow. Sie bringen das Fachwissen, wir die Engine.',
   openGraph: {
-    title: 'WerkING Partner-Plattform — gemeinsam Software entwickeln',
+    title: 'WerkING Partner-Plattform — Engineering-Workflows gemeinsam entwickeln',
     description:
-      'Gehostete Arbeitsumgebung für Co-Development: Ihr Team und WerkING arbeiten parallel an einer Codebasis — über den Browser, ohne Setup.',
+      'Aus Ihrem Fachprozess wird ein deterministischer, geprüfter Workflow auf WerkingFlow. Sie bringen das Fachwissen, wir die Engine.',
   },
   alternates: { canonical: '/partner-plattform' },
 }
 
-// Typische Leistungen (Quelle: Stoller-Angebot AN-26102)
-const LEISTUNGEN = [
+// Von der Idee zum Workflow (Quelle: VISION.md Studio-Modell Stufe 2, BUSINESSPLAN-2026.md Fachpartner-Modell)
+const SCHRITTE = [
   {
-    title: 'Bestandsaufnahme & Dokumentation',
-    desc: 'Architektur-Übersicht, Setup- und Deployment-Anleitungen, Domänen-Glossar und eine strukturierte Risiko-Übersicht — damit der Stand der Software für alle nachvollziehbar wird.',
+    title: 'Ihre Idee',
+    desc: 'Sie kennen einen Engineering-Prozess, der sich wiederholt und sich lohnt zu automatisieren. Das ist der Ausgangspunkt.',
   },
   {
-    title: 'Code-Stabilisierung & Risiko-Bereinigung',
-    desc: 'Beseitigung hartcodierter Tokens und API-Schlüssel, konfigurierbare Endpoints, Auth-Härtung der Backend-API und aktualisierte Dependencies.',
+    title: 'Sie werden Product Owner',
+    desc: 'Sie bringen das Domänen-Wissen ein und behalten die fachliche Hoheit über den Workflow — wie unsere Fachpartner für Energy, Report und Safety.',
   },
   {
-    title: 'Test-Automatisierung & CI-Pipeline',
-    desc: 'Unit- und Integrationstests für die produktiven Repositories, automatische Build- und Test-Läufe über eine CI-Pipeline.',
+    title: 'Gemeinsam entwickeln',
+    desc: 'Wir bauen daraus einen deterministischen Workflow — Phase für Phase, mit validierten Datenquellen statt freier KI-Improvisation. Sie arbeiten KI-gestützt mit, in derselben Umgebung.',
   },
   {
-    title: 'Refactoring & Modernisierung',
-    desc: 'Strukturelle Verbesserungen, Reduktion von Redundanzen, sauberere Modul-Trennung — priorisiert nach Risikobeitrag und Wartbarkeit.',
-  },
-  {
-    title: 'Migration & Hosting',
-    desc: 'Backend-Server-Migration auf einen wartbaren Host — wo möglich ohne Eingriff in bestehende Clients, etwa per DNS-Switch.',
-  },
-  {
-    title: 'Laufende Pflege & Erweiterungen',
-    desc: 'Bugfixes, kleinere Erweiterungen und Anpassungen nach Bedarf — Reaktion auf die konkreten Anforderungen Ihres Teams.',
+    title: 'Produkt & Beteiligung',
+    desc: 'Der fertige Workflow wird ein Produkt auf WerkingFlow — exklusiv für Ihren Betrieb oder gemeinsam vermarktet, mit Beteiligung am Erfolg.',
   },
 ] as const
 
-// So funktioniert die Zusammenarbeit (Quelle: PARTNER-CUI-PLAN.md, Stoller-Angebot)
+// So funktioniert die Zusammenarbeit (Quelle: PARTNER-CUI-PLAN.md)
 const MECHANIK = [
   {
     title: 'Browser-Login, kein Setup',
@@ -60,16 +52,8 @@ const MECHANIK = [
     desc: 'Alle Änderungen laufen über Git-Branches, Aufgaben werden über ein integriertes Ticket-System koordiniert.',
   },
   {
-    title: 'Mitarbeiter-Chatbot',
-    desc: 'Rückfragen zum Code beantwortet der eingebaute Chatbot — wiederholtes Erklären von Kontext entfällt.',
-  },
-  {
     title: 'KI-gestützt mitarbeiten',
-    desc: 'Ihre Mitarbeiter entwickeln eigenständig mit KI-Unterstützung in derselben Umgebung wie wir.',
-  },
-  {
-    title: 'Audit vor jedem Merge',
-    desc: 'Wir auditieren und prüfen die Änderungen, bevor sie in den Hauptzweig übernommen werden.',
+    desc: 'Sie und Ihre Mitarbeiter entwickeln KI-gestützt mit — in derselben Umgebung wie wir, mit identischem Werkzeug-Stand.',
   },
 ] as const
 
@@ -79,19 +63,19 @@ export default function PartnerPlattformPage() {
       <Navbar />
       <PageHeader
         title="WerkING Partner-Plattform"
-        subtitle="Eine gehostete Arbeitsumgebung, in der Ihr Team und WerkING parallel an einer Codebasis entwickeln — über den Browser, jede Änderung über Git nachvollziehbar."
+        subtitle="Hier entwickeln Fachpartner gemeinsam mit uns ihre Engineering-Workflows — von der Idee zum geprüften, einsatzbereiten Produkt."
         status={{ status: 'live', label: 'Produktiv im Einsatz' }}
       />
 
-      {/* Was ist die Partner-Plattform — Intro + Screenshot */}
+      {/* Intro + Screenshot */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
           <div className="gold-line-center" />
           <p className="text-lg text-text-body leading-relaxed max-w-3xl mx-auto text-center mb-12">
-            Mehrere Personen — Ihre Mitarbeiter gemeinsam mit Rafael Engelmann — arbeiten parallel an
-            derselben Software. Klassische Koordinations-Aufwände wie Abstimmungs-Telefonate, E-Mail-Verkehr
-            oder das wiederholte Erklären von Code-Kontext entfallen weitgehend. Die Plattform wird bereits
-            für mehrere Engineering-Partnerschaften produktiv eingesetzt.
+            Eine gehostete Arbeitsumgebung, in der Fachpartner und das WerkING-Team parallel an einem
+            Workflow entwickeln — über den Browser, jede Änderung über Git nachvollziehbar. Klassische
+            Koordinations-Aufwände wie Abstimmungs-Telefonate, E-Mail-Verkehr oder das wiederholte
+            Erklären von Code-Kontext entfallen weitgehend.
           </p>
 
           {/* Screenshot im Browser-Rahmen */}
@@ -115,51 +99,23 @@ export default function PartnerPlattformPage() {
         </div>
       </section>
 
-      {/* Zwei Wege */}
+      {/* Von der Idee zum Workflow */}
       <section className="py-20 bg-bg-light">
         <div className="max-w-5xl mx-auto px-6">
           <div className="text-center mb-12">
             <div className="gold-line-center" />
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">Zwei Wege, wie wir zusammenarbeiten</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="rounded-2xl border-2 border-gold/40 bg-white p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-gold">Für Ihre Software</span>
-              <h3 className="font-heading text-xl font-semibold text-navy mt-2 mb-3">Entwicklungsunterstützung für beliebige Apps</h3>
-              <p className="text-sm text-text-body leading-relaxed">
-                Beliebige Engineering-Software übernehmen, dokumentieren, stabilisieren und weiterentwickeln —
-                flexibel im Stundenmodell. Ihre Mitarbeiter arbeiten KI-gestützt mit, wir auditieren und geben frei.
-                So wird Ihre Codebasis von beiden Seiten wartbar.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-gray-200 bg-white p-8">
-              <span className="text-xs font-semibold uppercase tracking-wider text-gold">Für WerkingFlow</span>
-              <h3 className="font-heading text-xl font-semibold text-navy mt-2 mb-3">Workflows gemeinsam entwickeln</h3>
-              <p className="text-sm text-text-body leading-relaxed">
-                Sie bringen das Fachwissen, wir die Engine: Als Fachpartner entwickeln Sie mit uns
-                deterministische Engineering-Workflows für WerkingFlow — entweder exklusiv für Ihren
-                eigenen Betrieb oder gemeinsam vermarktet, mit Beteiligung am Erfolg.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Typische Leistungen */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="gold-line-center" />
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">Typische Leistungen</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">Von der Idee zum Workflow</h2>
             <p className="text-text-muted mt-3 max-w-2xl mx-auto">
-              Deskriptiv, nicht abschließend — die Schwerpunkte werden gemeinsam pro Stundenblock priorisiert.
+              Hat jemand in Ihrem Fachgebiet eine gute Idee, finden wir gemeinsam den Weg zum fertigen
+              Workflow — und entwickeln das Modell zusammen.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {LEISTUNGEN.map((l) => (
-              <div key={l.title} className="p-6 rounded-2xl border border-gray-200 bg-bg-light">
-                <h3 className="font-heading text-base font-semibold text-navy mb-2">{l.title}</h3>
-                <p className="text-sm text-text-muted leading-relaxed">{l.desc}</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {SCHRITTE.map((s, i) => (
+              <div key={s.title} className="rounded-2xl border border-gray-200 bg-white p-7">
+                <span className="w-9 h-9 rounded-full bg-gold/15 text-gold font-bold flex items-center justify-center mb-4">{i + 1}</span>
+                <h3 className="font-heading text-lg font-semibold text-navy mb-2">{s.title}</h3>
+                <p className="text-sm text-text-muted leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -173,7 +129,7 @@ export default function PartnerPlattformPage() {
             <div className="gold-line-center" />
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">So funktioniert die Zusammenarbeit</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {MECHANIK.map((m) => (
               <div key={m.title} className="p-6 rounded-2xl border border-white/10 bg-navy-mid">
                 <h3 className="font-heading text-base font-semibold text-white mb-2">{m.title}</h3>
@@ -181,18 +137,26 @@ export default function PartnerPlattformPage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-white/45 mt-10 max-w-2xl mx-auto">
-            Flexibles Stundenmodell, Priorisierung gemeinsam pro Block — Sie sehen den aktuellen Stand
-            jederzeit im Repository.
-          </p>
         </div>
       </section>
 
       <ProductCTA
-        headline="Gemeinsam an Ihrer Software arbeiten?"
-        buttonText="Gespräch vereinbaren"
+        headline="Eine Idee für einen Engineering-Workflow?"
+        buttonText="Idee besprechen"
         buttonHref="/kontakt/"
       />
+
+      {/* Hinweis: Entwicklungsunterstützung für bestehende Software — bewusst klein, kein Schwerpunkt */}
+      <section className="py-10 bg-bg-light border-t border-gray-200">
+        <div className="max-w-3xl mx-auto px-6">
+          <p className="text-xs text-text-muted/80 leading-relaxed text-center">
+            Grundsätzlich lässt sich auf der Plattform auch bestehende Engineering-Software übernehmen,
+            stabilisieren und weiterentwickeln. Unser Fokus liegt aber auf der gemeinsamen
+            Workflow-Entwicklung — skalierbare Produkte, die auf WerkingFlow laufen.
+          </p>
+        </div>
+      </section>
+
       <Footer />
     </>
   )

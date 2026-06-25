@@ -3,16 +3,16 @@ import Link from 'next/link'
 
 const POINTS = [
   {
-    title: 'Co-Development',
-    text: 'Ihr Team und wir arbeiten parallel an derselben Codebasis — jeder Zugang isoliert, jede Änderung über Git-Branches nachvollziehbar.',
+    title: 'Von der Idee zum Workflow',
+    text: 'Aus Ihrem wiederkehrenden Fachprozess wird ein deterministischer, geprüfter Workflow auf WerkingFlow.',
   },
   {
-    title: 'Audit vor jedem Merge',
-    text: 'Ihre Mitarbeiter arbeiten KI-gestützt mit. Wir auditieren und prüfen die Änderungen, bevor sie in den Hauptzweig gehen.',
+    title: 'Sie bleiben Product Owner',
+    text: 'Sie bringen das Fachwissen und behalten die fachliche Hoheit — wie unsere Fachpartner für Energy, Report und Safety.',
   },
   {
-    title: 'Tickets & Mitarbeiter-Chatbot',
-    text: 'Aufgaben laufen über ein integriertes Ticket-System, Rückfragen zum Code beantwortet der eingebaute Chatbot — ohne Abstimmungs-Telefonate.',
+    title: 'Beteiligung am Erfolg',
+    text: 'Exklusiv für Ihren Betrieb oder gemeinsam vermarktet, mit Anteil am Produkterfolg.',
   },
 ] as const
 
@@ -23,12 +23,12 @@ export default function PartnerPlatform() {
         <div className="text-center mb-14">
           <div className="gold-line-center" />
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy">
-            Gemeinsam an Ihrer Codebasis arbeiten
+            Ihre Idee, gemeinsam zum Workflow entwickelt
           </h2>
           <p className="text-text-muted mt-4 max-w-2xl mx-auto leading-relaxed">
-            Die WerkING Partner-Plattform ist eine gehostete Arbeitsumgebung, in der mehrere
-            Personen parallel an Software entwickeln — Ihr Team gemeinsam mit uns. Bereits in
-            mehreren Engineering-Partnerschaften produktiv im Einsatz.
+            Sie kennen einen Engineering-Prozess, der sich wiederholt? Auf der WerkING
+            Partner-Plattform entwickeln wir daraus gemeinsam einen Workflow — Sie bringen das
+            Fachwissen, wir die Engine.
           </p>
         </div>
 
