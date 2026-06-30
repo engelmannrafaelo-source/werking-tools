@@ -18,11 +18,8 @@ export default function ProductGrid() {
         <div className="grid sm:grid-cols-2 gap-6">
           {visibleProducts.map((key) => {
             const p = PRODUCTS[key]
-            const isLinked = key !== 'report'
-            const Wrapper = isLinked ? Link : 'div'
-            const wrapperProps = isLinked
-              ? { href: p.href, className: "group relative rounded-2xl overflow-hidden bg-navy-mid border border-white/10 hover:border-gold/30 transition-all duration-300 no-underline min-h-[240px] flex flex-col justify-end" }
-              : { className: "group relative rounded-2xl overflow-hidden bg-navy-mid border border-white/10 min-h-[240px] flex flex-col justify-end" }
+            const Wrapper = Link
+            const wrapperProps = { href: p.href, className: "group relative rounded-2xl overflow-hidden bg-navy-mid border border-white/10 hover:border-gold/30 transition-all duration-300 no-underline min-h-[240px] flex flex-col justify-end" }
             return (
               <Wrapper
                 key={key}
@@ -55,11 +52,9 @@ export default function ProductGrid() {
                   <p className="text-sm text-white/60 leading-relaxed mb-3">
                     {p.tagline}
                   </p>
-                  {isLinked && (
-                    <span className="text-xs text-gold font-medium group-hover:underline">
-                      Mehr erfahren &rarr;
-                    </span>
-                  )}
+                  <span className="text-xs text-gold font-medium group-hover:underline">
+                    Mehr erfahren &rarr;
+                  </span>
                 </div>
               </Wrapper>
             )
