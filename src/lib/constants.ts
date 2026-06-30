@@ -1,6 +1,6 @@
 export const SITE = {
   name: 'WerkING Tools',
-  tagline: 'AI-Workflows mit Handschlagsqualität.',
+  tagline: 'KI-Workflows mit Handschlagsqualität.',
   description: 'Technische Gutachten, Energieberichte, Schallgutachten — KI-gestützte Engineering-Workflows.',
   url: 'https://werking.tools',
   email: 'office@werking.tools',
@@ -49,10 +49,10 @@ export const SOLUTION_STEPS = [
 
 export const FOUNDER = {
   name: 'DI Dr. Rafael Engelmann',
-  title: 'Ingenieur + Entwickler',
+  title: 'Ingenieur & Entwickler',
   photo: '/images/rafael-engelmann.webp',
   bio: 'Als Ziviltechniker habe ich täglich gesehen, wie viel Zeit repetitive Excel-Workflows, manuelle Berechnungen und Copy-Paste in Berichten kosten.',
-  bioSecond: 'Mit WerkING Tools automatisiere ich genau diese Prozesse — von jemandem, der sie aus der Praxis kennt.',
+  bioSecond: 'Mit WerkING Tools automatisiere ich genau diese Prozesse — und ich kenne sie aus der Praxis.',
   credentials: [
     { icon: 'graduation', text: 'DI Dr. tech. Maschinenbau (TU Wien) — 5 Publikationen, 1 Patent' },
     { icon: 'shield', text: 'Ziviltechniker für Maschinenbau — befugter Gutachter' },

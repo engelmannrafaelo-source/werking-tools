@@ -1,13 +1,13 @@
 const ARGUMENTS = [
   {
     title: 'Eine Pipeline, kein Chatfenster',
-    text: 'Ein Workflow ist eine Pipeline aus vielen spezialisierten KI-Schritten — jeder mit klarer Aufgabe, jede Phase validiert. Wie ein eingespieltes Team aus Spezialisten statt einem Praktikanten.',
+    text: 'Ein Workflow ist eine Pipeline aus vielen spezialisierten KI-Schritten — jeder mit klarer Aufgabe, jede Phase validiert. Wie ein eingespieltes Team aus Spezialisten statt eines Praktikanten.',
     contrast: 'Ein Chatbot ist ein Generalist, der bei jeder Frage neu entscheidet.',
   },
   {
     title: 'Inhaltlich reproduzierbar',
     text: 'Gleiche Daten, gleiche Analyse, gleiche Empfehlungen. Die KI formuliert frei — aber die inhaltlichen Ergebnisse sind nachvollziehbar und prüfbar.',
-    contrast: 'Chatbots liefern heute so, morgen anders.',
+    contrast: 'Chatbots antworten heute so und morgen anders.',
   },
   {
     title: 'Sie behalten die Kontrolle',

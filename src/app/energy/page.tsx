@@ -44,7 +44,7 @@ const UPLOAD_KONTEXT = [
 
 const LANDSCAPE = [
   { name: 'Energieausweis', tag: 'Pflicht · standardisiert', desc: 'Gesetzliches Standarddokument nach OIB-Richtlinie 6. Formularbasiert, Effizienzklasse A–G — bewertet das Gebäude nach festem Schema.' },
-  { name: 'Energieaudit (EN 16247)', tag: 'Pflicht · normiert', desc: 'Strukturierte Pflichtprüfung für grosse Unternehmen nach ÖNORM EN 16247. Erfasst die Energieströme nach Norm — kein Formular, aber festes Verfahren.' },
+  { name: 'Energieaudit (EN 16247)', tag: 'Pflicht · normiert', desc: 'Strukturierte Pflichtprüfung für große Unternehmen nach ÖNORM EN 16247. Erfasst die Energieströme nach Norm — kein Formular, aber festes Verfahren.' },
   { name: 'WerkING Energy', tag: 'frei · anlagenspezifisch', desc: 'Datengetriebene Betriebs- und Optimierungsanalyse Ihrer konkreten Anlage. Keine Norm-Vorlage — die KI denkt sich in genau diese eine Anlage ein.', highlight: true },
 ]
 
@@ -68,7 +68,7 @@ const WIZARD = [
 
 const FAQ = [
   ['Ist das ein Energieausweis oder ein Norm-Audit?', 'Nein. WerkING Energy erstellt keinen standardisierten Energieausweis und kein Formular-Audit nach Schema-F, sondern eine individuelle, datengetriebene Analyse Ihrer konkreten Anlage. Ein gesetzlich vorgeschriebenes Energieaudit ersetzt es nicht — es liefert die ingenieurtechnische Tiefenanalyse darüber hinaus.'],
-  ['Wie validiert Energy die Berechnungen?', 'In mehreren Stufen: Die Rohdaten werden auf Lücken und Ausreisser geprüft, jede Berechnung gegen physikalische Grenzen und recherchierte Richtwerte abgeglichen, und die Ergebnisse iterativ nachgerechnet, bis sie konsistent sind. Jede Berechnung ist mit Methode und Quelle im Bericht dokumentiert.'],
+  ['Wie validiert Energy die Berechnungen?', 'In mehreren Stufen: Die Rohdaten werden auf Lücken und Ausreißer geprüft, jede Berechnung gegen physikalische Grenzen und recherchierte Richtwerte abgeglichen, und die Ergebnisse iterativ nachgerechnet, bis sie konsistent sind. Jede Berechnung ist mit Methode und Quelle im Bericht dokumentiert.'],
   ['Kann ich die Zahlen nachvollziehen?', 'Ja. Jede Aussage referenziert die zugrundeliegende Berechnung und Quelle. Alle Diagramme werden aus Ihren Originalmessdaten erzeugt — nicht aus aggregierten Durchschnitten.'],
   ['Was, wenn die Analyse falsch liegt?', 'Sie erhalten den Bericht zur finalen Prüfung vor jeder Weitergabe. Energy beschleunigt die Auswertung — die fachliche Verantwortung bleibt bei Ihnen.'],
   ['Wie unterscheidet sich das von ChatGPT?', 'Ein Chatbot formuliert Text. Energy durchläuft einen definierten, validierten Analyseprozess: Berechnungen aus Ihren Echtdaten, gegen Normen und Grenzen geprüft, nachvollziehbar dokumentiert — reproduzierbar statt frei erfunden.'],

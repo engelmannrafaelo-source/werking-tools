@@ -15,12 +15,12 @@ export default function Hero() {
             <div className="gold-line mb-6" />
 
             <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-6 leading-[1.1]">
-              AI-Workflows mit<br />
+              KI-Workflows mit<br />
               <span className="text-gold">Handschlagsqualität.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-white/75 mb-4 leading-relaxed">
-              Technische Gutachten, Energie- und Schallberichte aus Ihren Daten — reproduzierbar und in Ihrem Stil.
+              Technische Gutachten, Energieberichte und Schallgutachten aus Ihren Daten — reproduzierbar und in Ihrem Stil.
             </p>
 
             <p className="font-heading text-sm text-white/50 mb-10 tracking-wide">

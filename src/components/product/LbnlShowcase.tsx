@@ -8,10 +8,10 @@ const FINDINGS = [
 ]
 
 const KEY_RESULTS = [
-  { value: '7,6x', desc: 'Uberdimensionierung identifiziert (1.758 kW installiert vs. 232 kW Spitzenlast)' },
+  { value: '7,6x', desc: 'Überdimensionierung identifiziert (1.758 kW installiert vs. 232 kW Spitzenlast)' },
   { value: '62%', desc: 'Pumpenlast am Gesamtverbrauch — Benchmark: 15-30%' },
-  { value: '311-500 MWh', desc: 'Jahrliches Einsparpotenzial (46-73% des Gesamtverbrauchs)' },
-  { value: '4 Befunde', desc: 'Teillastbetrieb, Low-Delta-T, parasitare Pumpen, Kuhlturm-Verschmutzung' },
+  { value: '311-500 MWh', desc: 'Jährliches Einsparpotenzial (46-73% des Gesamtverbrauchs)' },
+  { value: '4 Befunde', desc: 'Teillastbetrieb, Low-Delta-T, parasitäre Pumpen, Kühlturm-Verschmutzung' },
 ]
 
 export default function LbnlShowcase() {
@@ -25,11 +25,11 @@ export default function LbnlShowcase() {
             Beispiel-Analyse: LBNL Chiller Plant
           </h2>
           <p className="text-text-muted mt-3 text-base max-w-3xl mx-auto">
-            WerkING Energy analysiert das offentliche{' '}
+            WerkING Energy analysiert das öffentliche{' '}
             <span className="text-text-body font-medium">LBNL FDD Dataset</span>{' '}
             — ein validiertes digitales Zwillingsmodell (EnergyPlus-Modelica Co-Simulation) des
-            Lawrence Berkeley National Laboratory. Grosses Burogebaude in Chicago, 46.320 m²,
-            Kalteanlage mit 3 Zentrifugalkaltemaschinen.
+            Lawrence Berkeley National Laboratory. Großes Bürogebäude in Chicago, 46.320 m²,
+            Kälteanlage mit 3 Zentrifugalkältemaschinen.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ export default function LbnlShowcase() {
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
-              Vollstandiger Bericht (103 S.)
+              Vollständiger Bericht (103 S.)
             </Link>
           </div>
 

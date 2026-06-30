@@ -48,7 +48,7 @@ const PAINPOINTS = [
 
 const CORES = [
   ['Eigene Dokumenttypen', 'Sie definieren Ihre Prüfarten selbst — Abschnitte, Felder und Prüfkriterien. Kein vordefiniertes Schema, keine Einschränkung auf einen Fachbereich.'],
-  ['Eigene Design-Vorlagen', 'Ihr Logo, Ihr Briefkopf, Ihr Layout. Der exportierte Bericht trägt ausschliesslich Ihre Marke — kein WerkING-Branding.'],
+  ['Eigene Design-Vorlagen', 'Ihr Logo, Ihr Briefkopf, Ihr Layout. Der exportierte Bericht trägt ausschließlich Ihre Marke — kein WerkING-Branding.'],
   ['Eigene Wissensbasis', 'Ihre eigenen Dokumente als Referenz: interne Richtlinien, Checklisten, Muster-Berichte. Die KI baut auf Ihrem Wissen auf, nicht auf Allgemeinplätzen.'],
 ]
 
@@ -92,7 +92,7 @@ const WIZARD = [
 ]
 
 const PROOF = [
-  ['Ihr Briefkopf, kein Tool-Branding', 'Der Export trägt ausschliesslich Ihr Logo und Layout — der Bericht stammt sichtbar aus Ihrem Büro.'],
+  ['Ihr Briefkopf, kein Tool-Branding', 'Der Export trägt ausschließlich Ihr Logo und Layout — der Bericht stammt sichtbar aus Ihrem Büro.'],
   ['Quellen-Nachweis', 'Nachvollziehbar, aus welcher Unterlage jede Aussage stammt — Sie können jeden Satz verantworten.'],
   ['Versionierung mit Wort-Diff', 'Jeder Speicherstand wird festgehalten, Versionen vergleichbar und wiederherstellbar.'],
   ['PDF + DOCX, kein Lock-in', 'Druckfertig oder in Word weiterbearbeitbar — Ihre Berichte gehören Ihnen.'],

@@ -56,7 +56,7 @@ const KI_TABLE = [
 
 const FAQ = [
   ['Wer haftet für die Berechnungswerte?', 'Sie. Die Pegel kommen aus der validierten Berechnung nach CNOSSOS-EU — Sie prüfen die Eingaben (Geometrie, Quellen, Lw-Werte) und unterschreiben das fertige Gutachten.'],
-  ['Kann die KI falsche Schallpegel erfinden?', 'Nein. Die KI liest Lw aus den Datenblättern (Sie prüfen die Werte), die Ausbreitung wird mit validierten Formeln nach CNOSSOS-EU berechnet, und die KI formuliert anschliessend nur den Text. Die Zahl „52 dB(A)" stammt aus der Berechnung, nicht aus der KI.'],
+  ['Kann die KI falsche Schallpegel erfinden?', 'Nein. Die KI liest Lw aus den Datenblättern (Sie prüfen die Werte), die Ausbreitung wird mit validierten Formeln nach CNOSSOS-EU berechnet, und die KI formuliert anschließend nur den Text. Die Zahl „52 dB(A)" stammt aus der Berechnung, nicht aus der KI.'],
   ['Ist das nicht wie ein Gutachten von ChatGPT?', 'Nein. ChatGPT kennt keine Normen und rechnet nichts. WerkING Noise rechnet normkonform nach CNOSSOS-EU; die KI formuliert nur den Text, die Berechnungswerte bleiben fix.'],
   ['Ersetzt das meine Spezialsoftware?', 'Für Standard-Gutachten (Wohnbau, kleinere Gewerbe) bietet Noise dieselbe Berechnungsmethodik (CNOSSOS-EU) — plus automatische Dokumentation. Für Spezialfälle behalten Sie Ihre gewohnten Werkzeuge.'],
   ['Wo werden meine Daten gespeichert?', 'Gehostet in der EU, DSGVO-konform. Keine Weitergabe an Dritte.'],

@@ -74,7 +74,7 @@ export const PRODUCTS: Record<string, Product> = {
         capabilities: [
           'Beliebige Berichtstypen — von Druckbelüftung bis Schallgutachten',
           'Muster hochladen — Stil und Struktur werden übernommen',
-          'Checkliste: Das System weiss, welche Daten fehlen',
+          'Checkliste: Das System weiß, welche Daten fehlen',
           'Eigene Design-Vorlagen für das fertige PDF',
         ],
       },
@@ -104,7 +104,7 @@ export const PRODUCTS: Record<string, Product> = {
       { title: 'Wizard starten', desc: 'Projekt zuordnen, Titel und Adresse eingeben, Auftraggeber angeben. Der 5-Schritt-Wizard führt Sie durch den gesamten Prozess.', screenshot: '/images/products/report-wizard.webp' },
       { title: 'Bericht entsteht', desc: 'Die KI generiert Ihren Bericht — formatiert, in Ihrem Stil, direkt bearbeitbar im integrierten Editor mit KI-Assistent und Versionierung.', screenshot: '/images/products/report-editor.webp' },
       { title: 'Berichte verwalten', desc: 'Alle Gutachten auf einen Blick — bearbeiten, drucken, Eingabedaten anpassen. Versionierung und Projektordner inklusive.', screenshot: '/images/products/report-berichte.webp' },
-      { title: 'Quellen & Wissensbasis', desc: 'Alle Quellen, die in den Bericht einfliessen, werden referenziert und sind aus dem Editor anklickbar. KI-Recherche und eigene Wissensbasis ergänzen den Kontext.', screenshot: '/images/products/report-quellen.webp' },
+      { title: 'Quellen & Wissensbasis', desc: 'Alle Quellen, die in den Bericht einfließen, werden referenziert und sind aus dem Editor anklickbar. KI-Recherche und eigene Wissensbasis ergänzen den Kontext.', screenshot: '/images/products/report-quellen.webp' },
     ],
     stats: [
       { value: 'Ihr Stil', label: 'Schreibt wie Sie — nicht wie eine Maschine' },
@@ -161,7 +161,7 @@ export const PRODUCTS: Record<string, Product> = {
     steps: [
       { title: 'Projekte verwalten', desc: 'Alle Energy Reports auf einen Blick — Status, Fortschritt und Dateien pro Projekt. Neuen Report mit einem Klick starten.', screenshot: '/images/products/energy-projektliste.webp' },
       { title: 'Daten hochladen', desc: 'Excel, CSV oder Parquet hochladen — bis 5 GB. Die KI analysiert sofort: Zeitraum, Sampling-Rate, Datenlücken — und zeigt fehlende Informationen.', screenshot: '/images/products/energy-wizard-upload.webp' },
-      { title: 'KI klärt Kontext', desc: 'Ein Copilot stellt gezielte Rückfragen zum Datensatz. Antworten fliessen direkt in die Analyse ein — kein Raten.', screenshot: '/images/products/energy-wizard-kontext.webp' },
+      { title: 'KI klärt Kontext', desc: 'Ein Copilot stellt gezielte Rückfragen zum Datensatz. Antworten fließen direkt in die Analyse ein — kein Raten.', screenshot: '/images/products/energy-wizard-kontext.webp' },
       { title: 'Review & Systemschema', desc: 'Die KI erstellt automatisch ein Schema der Anlage: Heizkreise, Vor-/Rücklauf, Zähler. Sie prüfen das Mapping und korrigieren — editierbar, keine Black Box. Erst dann startet die Analyse-Pipeline.', screenshot: '/images/products/energy-schema.webp' },
       { title: 'Fertiger Energiebericht', desc: 'Druckfertiger A4-Bericht mit Diagrammen, Befunden und Handlungsempfehlungen — als Browser-Vorschau mit PDF-Export und KI-Editor zum Nachbearbeiten.', screenshot: '/images/products/energy-report.webp' },
     ],
@@ -208,7 +208,7 @@ export const PRODUCTS: Record<string, Product> = {
       },
       {
         title: 'KI schreibt das Gutachten',
-        desc: 'Werking Noise ist kein Rechner mit KI-Knopf. Die KI formuliert den vollständigen Gutachtentext — Projektbeschreibung, Umgebung, Immissionsprognose, Beurteilung, Maßnahmen, Fazit. Berechnungswerte und Norm-Referenzen bleiben dabei unverändert. Export als DOCX in Ihrem Briefkopf.',
+        desc: 'WerkING Noise ist kein Rechner mit KI-Knopf. Die KI formuliert den vollständigen Gutachtentext — Projektbeschreibung, Umgebung, Immissionsprognose, Beurteilung, Maßnahmen, Fazit. Berechnungswerte und Norm-Referenzen bleiben dabei unverändert. Export als DOCX in Ihrem Briefkopf.',
         capabilities: [
           '6 von 8 Gutachtenabschnitten KI-generiert — Gutachter prüft und ergänzt',
           'KI-Editor-Chat: Abschnitte per Spracheingabe gezielt überarbeiten',

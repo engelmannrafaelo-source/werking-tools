@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'nodejs'
-export const alt = 'WerkING Tools — AI-Workflows mit Handschlagsqualität'
+export const alt = 'WerkING Tools — KI-Workflows mit Handschlagsqualität'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -61,7 +61,7 @@ export default function TwitterImage() {
 
         {/* Tagline */}
         <p style={{ fontSize: '28px', color: '#ffffff', fontWeight: 600, marginBottom: '12px', marginTop: '0' }}>
-          AI-Workflows mit Handschlagsqualität.
+          KI-Workflows mit Handschlagsqualität.
         </p>
 
         {/* Subtitle */}

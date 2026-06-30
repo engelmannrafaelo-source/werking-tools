@@ -23,7 +23,7 @@ export default function PlatformPage() {
     <>
       <Navbar />
       <PageHeader
-        title="WerkINGFlow"
+        title="WerkingFlow"
         titleHtml='<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline">Flow</span>'
         subtitle="KI-Plattform für automatisierte Engineering-Workflows. Reproduzierbar. Kontrolliert."
         status={{ status: 'development', label: 'In Entwicklung' }}
