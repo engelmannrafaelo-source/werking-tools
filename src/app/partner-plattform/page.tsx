@@ -25,7 +25,7 @@ const SCHRITTE = [
   },
   {
     title: 'Sie werden Product Owner',
-    desc: 'Sie bringen das Domänen-Wissen ein und behalten die fachliche Hoheit über den Workflow — wie unsere Fachpartner für Energy, Report und Safety.',
+    desc: 'Sie bringen das Domänen-Wissen ein und behalten die fachliche Hoheit über den Workflow — wie unsere Fachpartner für Energy und Report.',
   },
   {
     title: 'Gemeinsam entwickeln',

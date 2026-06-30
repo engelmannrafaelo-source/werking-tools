@@ -8,7 +8,7 @@ const POINTS = [
   },
   {
     title: 'Sie bleiben Product Owner',
-    text: 'Sie bringen das Fachwissen und behalten die fachliche Hoheit — wie unsere Fachpartner für Energy, Report und Safety.',
+    text: 'Sie bringen das Fachwissen und behalten die fachliche Hoheit — wie unsere Fachpartner für Energy und Report.',
   },
   {
     title: 'Beteiligung am Erfolg',
