@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'WerkING Team — Die Menschen hinter den Tools',
     description: 'Gründer DI Dr. Rafael Engelmann und erfahrene Ingenieur- und Energie-Fachpartner.',
   },
-  alternates: { canonical: '/ueber-mich' },
+  alternates: { canonical: '/ueber-mich/' },
 }
 
 const credentialIcons: Record<string, React.ReactNode> = {

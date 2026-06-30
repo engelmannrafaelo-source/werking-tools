@@ -4,7 +4,7 @@ import Footer from '@/components/layout/Footer'
 import { SITE } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Impressum - WerkING Tools',
+  title: 'Impressum',
   robots: 'noindex',
 }
 

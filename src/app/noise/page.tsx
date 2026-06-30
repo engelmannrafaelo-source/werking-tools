@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description:
       'Validierte Berechnung nach CNOSSOS-EU und ÖNORM S 5021 + KI-gestützte Dokumentation. Berechnungswerte bleiben fix, Sie unterschreiben.',
   },
-  alternates: { canonical: '/noise' },
+  alternates: { canonical: '/noise/' },
 }
 
 const CHIPS = [

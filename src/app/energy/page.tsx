@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description:
       'Nachvollziehbare, mehrstufige Analyse statt Black-Box: jede Berechnung referenziert, Diagramme aus Ihren Originaldaten, Sie prüfen und verantworten.',
   },
-  alternates: { canonical: '/energy' },
+  alternates: { canonical: '/energy/' },
 }
 
 const CHIPS = [

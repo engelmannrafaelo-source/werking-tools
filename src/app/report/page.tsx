@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description:
       'Eigene Dokumenttypen, eigener Briefkopf, eigene Wissensbasis — geführter Workflow, voller Volltext, Sie behalten die Kontrolle.',
   },
-  alternates: { canonical: '/report' },
+  alternates: { canonical: '/report/' },
 }
 
 const CHIPS = [

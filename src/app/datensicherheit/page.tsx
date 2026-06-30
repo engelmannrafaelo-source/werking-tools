@@ -4,10 +4,10 @@ import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/layout/PageHeader'
 
 export const metadata: Metadata = {
-  title: 'Datensicherheit — WerkING Tools',
+  title: 'Datensicherheit',
   description:
     'Ihre Daten bleiben in Deutschland. Vor jeder KI-Verarbeitung werden personenbezogene Daten pseudonymisiert — Namen, Firmen und Adressen werden durch Platzhalter ersetzt.',
-  alternates: { canonical: '/datensicherheit' },
+  alternates: { canonical: '/datensicherheit/' },
 }
 
 const PILLARS = [

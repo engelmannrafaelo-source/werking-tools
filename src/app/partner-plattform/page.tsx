@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Aus Ihrem Fachprozess wird ein deterministischer, geprüfter Workflow auf WerkingFlow. Sie bringen das Fachwissen, wir die Engine.',
   },
-  alternates: { canonical: '/partner-plattform' },
+  alternates: { canonical: '/partner-plattform/' },
 }
 
 // Von der Idee zum Workflow (Quelle: VISION.md Studio-Modell Stufe 2, BUSINESSPLAN-2026.md Fachpartner-Modell)

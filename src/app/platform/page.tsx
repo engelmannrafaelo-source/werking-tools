@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'WerkingFlow — KI-Plattform für Engineering-Workflows',
     description: 'Deterministische Engineering-Workflows. Reproduzierbar, kontrolliert, modell-agnostisch.',
   },
-  alternates: { canonical: '/platform' },
+  alternates: { canonical: '/platform/' },
 }
 
 export default function PlatformPage() {

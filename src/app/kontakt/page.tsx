@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'Kontakt — WerkING Tools',
     description: 'Fragen zu KI-Workflows oder eine Demo? Wir antworten innerhalb von 24 Stunden.',
   },
-  alternates: { canonical: '/kontakt' },
+  alternates: { canonical: '/kontakt/' },
 }
 
 export default function KontaktPage() {

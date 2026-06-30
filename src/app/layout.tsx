@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: SITE.url,
+    canonical: '/',
   },
 }
 
@@ -72,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="de" className={`${spaceGrotesk.variable} ${inter.variable}`}>
+    <html lang="de-AT" className={`${spaceGrotesk.variable} ${inter.variable}`}>
       <body className="antialiased">
         {children}
         <Analytics />
