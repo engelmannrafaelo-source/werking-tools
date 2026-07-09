@@ -20,7 +20,7 @@ export default function Datenschutz() {
             <div>
               <h2 className="font-heading text-xl font-semibold text-white mb-3">1. Verantwortlicher</h2>
               <p>
-                DI Dr. tech. Rafael Engelmann<br />
+                Dipl.-Ing. Dr. techn. Rafael Engelmann<br />
                 {SITE.address}<br />
                 E-Mail: {SITE.email}
               </p>

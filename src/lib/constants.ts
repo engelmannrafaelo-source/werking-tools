@@ -48,13 +48,13 @@ export const SOLUTION_STEPS = [
 ] as const
 
 export const FOUNDER = {
-  name: 'DI Dr. Rafael Engelmann',
+  name: 'Rafael Engelmann',
   title: 'Ingenieur & Entwickler',
   photo: '/images/rafael-engelmann.webp',
   bio: 'Als Ziviltechniker habe ich täglich gesehen, wie viel Zeit repetitive Excel-Workflows, manuelle Berechnungen und Copy-Paste in Berichten kosten.',
   bioSecond: 'Mit WerkING Tools automatisiere ich genau diese Prozesse — und ich kenne sie aus der Praxis.',
   credentials: [
-    { icon: 'graduation', text: 'DI Dr. tech. Maschinenbau (TU Wien) — 5 Publikationen, 1 Patent' },
+    { icon: 'graduation', text: 'Doktorat Maschinenbau (TU Wien) — 5 Publikationen, 1 Patent' },
     { icon: 'shield', text: 'Ziviltechniker für Maschinenbau — befugter Gutachter' },
     { icon: 'brain', text: 'Entwickelt die WerkING-Produkte selbst — Engineering-Praxis trifft KI' },
   ],

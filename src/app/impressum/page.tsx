@@ -23,7 +23,7 @@ export default function Impressum() {
               </h2>
               <p>
                 Werkingflow<br />
-                DI Dr. tech. Rafael Engelmann<br />
+                Dipl.-Ing. Dr. techn. Rafael Engelmann<br />
                 IT-Dienstleistungen<br />
                 {SITE.address}
               </p>

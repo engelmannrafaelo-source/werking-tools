@@ -7,10 +7,10 @@ import { FOUNDER, TEAM } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: 'WerkING Team — Die Menschen hinter den Tools',
-  description: 'Das Team hinter WerkING Tools: Gründer DI Dr. Rafael Engelmann (Ziviltechniker für Maschinenbau) und erfahrene Ingenieur- und Energie-Fachpartner.',
+  description: 'Das Team hinter WerkING Tools: Gründer Rafael Engelmann (Ziviltechniker für Maschinenbau) und erfahrene Ingenieur- und Energie-Fachpartner.',
   openGraph: {
     title: 'WerkING Team — Die Menschen hinter den Tools',
-    description: 'Gründer DI Dr. Rafael Engelmann und erfahrene Ingenieur- und Energie-Fachpartner.',
+    description: 'Gründer Rafael Engelmann und erfahrene Ingenieur- und Energie-Fachpartner.',
   },
   alternates: { canonical: '/ueber-mich/' },
 }
@@ -79,7 +79,7 @@ export default function UeberMichPage() {
               <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden ring-2 ring-gold/40">
                 <Image src="/images/team/rafael-engelmann.webp" alt={FOUNDER.name} width={400} height={400} className="w-full h-full object-cover" />
               </div>
-              <h3 className="font-heading text-lg font-semibold text-navy">DI Dr. Rafael Engelmann</h3>
+              <h3 className="font-heading text-lg font-semibold text-navy">Rafael Engelmann</h3>
               <p className="text-xs font-medium text-gold uppercase tracking-wider mt-1 mb-3">Gründer · Ingenieur &amp; Entwickler</p>
               <p className="text-sm text-text-muted leading-relaxed">Ziviltechniker für Maschinenbau und Fullstack-Entwickler — verbindet Engineering-Praxis mit KI-Automation.</p>
             </div>

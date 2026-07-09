@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     'Energiebericht', 'Schallgutachten', 'Ingenieurbüro', 'Ziviltechniker',
     'Engineering Automation', 'WerkING Tools', 'WerkING Report',
   ],
-  authors: [{ name: 'DI Dr. Rafael Engelmann', url: SITE.url }],
-  creator: 'DI Dr. Rafael Engelmann',
+  authors: [{ name: 'Rafael Engelmann', url: SITE.url }],
+  creator: 'Rafael Engelmann',
   publisher: 'WerkING Tools',
   formatDetection: {
     email: false,

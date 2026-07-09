@@ -84,7 +84,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>&copy; {new Date().getFullYear()} DI Dr. Rafael Engelmann — Ziviltechniker für Maschinenbau</p>
+          <p>&copy; {new Date().getFullYear()} Rafael Engelmann — Ziviltechniker für Maschinenbau</p>
           <div className="flex gap-6">
             <Link href="/impressum/" className="hover:text-gold transition-colors no-underline">Impressum</Link>
             <Link href="/datensicherheit/" className="hover:text-gold transition-colors no-underline">Datensicherheit</Link>
