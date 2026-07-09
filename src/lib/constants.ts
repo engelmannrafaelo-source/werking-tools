@@ -83,14 +83,14 @@ export const TEAM = [
     desc: 'Energieberatung und HVAC-Anlagenoptimierung mit über 20 Jahren Branchenerfahrung. Fachlicher Partner für WerkING Energy.',
   },
   {
-    name: 'David Engelmann',
+    name: 'Ing. David Engelmann, MSc',
     role: 'Entwicklungskooperation · alle WerkING-Produkte',
     initials: 'DE',
     photo: '/images/team/david-engelmann.webp',
     desc: 'Engelmann Energiesysteme — TGA-Ingenieurbüro in vierter Generation (seit 1895) — setzt alle WerkING-Produkte im Bürobetrieb ein und entwickelt sie als Kooperationspartner mit.',
   },
   {
-    name: 'Kurt Engelmann',
+    name: 'Ing. Kurt Engelmann',
     role: 'Engelmann Energiesysteme · Fachpartner WerkingFlow',
     initials: 'KE',
     photo: '/images/team/kurt-engelmann.webp',
