@@ -24,7 +24,7 @@ export default function Hero() {
             </p>
 
             <p className="font-heading text-sm text-white/50 mb-10 tracking-wide">
-              Werkzeug, kein Spielzeug. Von Ingenieuren, für Ingenieure.
+              Werkzeug, kein Spielzeug. Von einem Ziviltechniker-Büro, für Ingenieure.
             </p>
 
             <div className="flex gap-4 flex-wrap">

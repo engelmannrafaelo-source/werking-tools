@@ -150,7 +150,7 @@ export default function UeberMichPage() {
       <section className="py-16 bg-navy">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="gold-line-center" />
-          <h2 className="font-heading text-2xl font-bold text-white mb-3">Der Ingenieur-Hintergrund</h2>
+          <h2 className="font-heading text-2xl font-bold text-white mb-3">Der Ziviltechniker-Hintergrund</h2>
           <p className="text-white/60 leading-relaxed mb-6">
             Hinter WerkING Tools steht ein Ziviltechniker-Büro mit Projekten von Energiekonzepten bis Schallschutz-Gutachten. Mehr zum ingenieurtechnischen Hintergrund:
           </p>

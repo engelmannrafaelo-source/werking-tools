@@ -49,7 +49,7 @@ const LANDSCAPE = [
 ]
 
 const DIFF = [
-  ['Spezialisierte KI-Rollen', 'Datenanalyse, Recherche, Validierung, Berechnung, Bericht — jede Stufe ein eigener, darauf optimierter Arbeitsschritt statt eine Frage an einen Allrounder.'],
+  ['Über 100 kuratierte Prompts', 'Datenanalyse, Recherche, Validierung, Berechnung, Bericht — über 100 handkuratierte, aufeinander abgestimmte Prompts statt eine einzelne Frage an einen Allrounder wie ChatGPT.'],
   ['Kuratierte Abläufe', 'Hinter jedem Schritt steckt ein erprobtes, getestetes Vorgehen — nicht bei jeder Frage anders. Gleiche Eingabe, gleiche Qualität.'],
   ['Gegenseitige Kontrolle', 'Die Schritte bauen aufeinander auf und prüfen die Ergebnisse gegen physikalische Grenzen — Vier-Augen-Prinzip als Pipeline.'],
 ]
@@ -185,7 +185,7 @@ export default function EnergyPage() {
             <div className="gold-line-center" />
             <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">Ein durchgängiger Analyseprozess</h2>
             <p className="text-white/55 mt-3 max-w-2xl mx-auto">
-              Aus Ihren Daten wird ein Bericht nicht in einem Schritt, sondern in einem durchgängigen Prozess: viele kuratierte, aufeinander abgestimmte Arbeitsschritte, in denen spezialisierte KI-Rollen nacheinander an Ihren Daten arbeiten — jede mit klarer Aufgabe, jede prüft die Ergebnisse der vorigen.
+              Aus Ihren Daten wird ein Bericht nicht in einem Schritt, sondern in einem durchgängigen Prozess: viele kuratierte, aufeinander abgestimmte Arbeitsschritte arbeiten nacheinander an Ihren Daten — jeder mit klarer Aufgabe, jeder prüft die Ergebnisse des vorigen.
             </p>
           </div>
           <div className="grid sm:grid-cols-3 gap-4 mt-12">

@@ -59,7 +59,7 @@ export const PRODUCTS: Record<string, Product> = {
     slug: 'report',
     name: 'WerkING Report',
     nameHtml: '<span class="brand-outline">Werk</span><span class="brand-ing">ING</span><span class="brand-outline"> Report</span>',
-    tagline: 'Technische Gutachten. Reproduzierbar. In Ihrem Stil.',
+    tagline: 'Technische Gutachten, die stimmen. Reproduzierbar. In Ihrem Stil.',
     status: 'prelaunch',
     statusLabel: 'Release 1. Juli',
     href: '/report/',
@@ -139,7 +139,7 @@ export const PRODUCTS: Record<string, Product> = {
       },
       {
         title: 'Kuratierte Analyse-Pipeline',
-        desc: 'Kein Chat, sondern ein Industrieprozess: Vom Rohdaten-Upload bis zum fertigen Bericht arbeiten spezialisierte KI-Rollen nacheinander an Ihren Daten — Datenverständnis, Recherche, Validierung, Berechnung und Berichtgenerierung. Jeder Schritt baut auf den geprüften Ergebnissen des vorigen auf und sichert seinen Zustand als Checkpoint — nach einer Unterbrechung setzt die Pipeline exakt dort fort.',
+        desc: 'Kein Chat, sondern ein Industrieprozess: Vom Rohdaten-Upload bis zum fertigen Bericht arbeiten über 100 kuratierte Prompts in klar abgegrenzten Arbeitsschritten nacheinander an Ihren Daten — Datenverständnis, Recherche, Validierung, Berechnung und Berichtgenerierung. Jeder Schritt baut auf den geprüften Ergebnissen des vorigen auf und sichert seinen Zustand als Checkpoint — nach einer Unterbrechung setzt die Pipeline exakt dort fort.',
         capabilities: [
           'Mehrstufige Analyse-Pipeline — vollautomatisch auf eigener Backend-Infrastruktur',
           'Autonomer Research-Agent recherchiert Richtwerte und Effizienz-Benchmarks',
@@ -166,7 +166,7 @@ export const PRODUCTS: Record<string, Product> = {
       { title: 'Fertiger Energiebericht', desc: 'Druckfertiger A4-Bericht mit Diagrammen, Befunden und Handlungsempfehlungen — als Browser-Vorschau mit PDF-Export und KI-Editor zum Nachbearbeiten.', screenshot: '/images/products/energy-report.webp' },
     ],
     stats: [
-      { value: 'Industrieprozess', label: 'spezialisierte KI-Rollen statt Chat' },
+      { value: 'Industrieprozess', label: 'kuratierte Prompt-Pipeline statt Chat' },
       { value: '~40 Min', label: 'Vollständiger Energiebericht' },
       { value: 'Selbstkorrigierend', label: 'KI prüft und iteriert automatisch' },
     ],

@@ -9,13 +9,13 @@ import { PRODUCTS } from '@/lib/products'
 const product = PRODUCTS.report
 
 export const metadata: Metadata = {
-  title: `${product.name} — Prüfberichte in Ihrer Struktur, Ihrem Briefkopf`,
+  title: `${product.name} — Prüfsichere Berichte in Ihrer Struktur, Ihrem Briefkopf`,
   description:
-    'Technische Prüfberichte für Sachverständige, Ziviltechniker und Ingenieurbüros: eigene Dokumenttypen, eigene Design-Vorlagen, eigene Wissensbasis. Einmal einrichten, dann folgt jeder Bericht Ihrem Standard. Sie prüfen und unterschreiben — die Kontrolle bleibt bei Ihnen.',
+    'Technische Prüfberichte für Sachverständige, Ziviltechniker und Ingenieurbüros: eigene Dokumenttypen, eigene Design-Vorlagen, eigene Wissensbasis — und die Sicherheit, dass Zahlen und Normen-Referenzen stimmen, bevor Sie unterschreiben. Einmal einrichten, dann folgt jeder Bericht Ihrem Standard. Die Kontrolle bleibt bei Ihnen.',
   openGraph: {
-    title: `${product.name} — Prüfberichte in Ihrer Struktur, Ihrem Briefkopf`,
+    title: `${product.name} — Prüfsichere Berichte in Ihrer Struktur, Ihrem Briefkopf`,
     description:
-      'Eigene Dokumenttypen, eigener Briefkopf, eigene Wissensbasis — geführter Workflow, voller Volltext, Sie behalten die Kontrolle.',
+      'Eigene Dokumenttypen, eigener Briefkopf, eigene Wissensbasis — geführter Workflow, geprüfte Fakten und Normen, Sie behalten die Kontrolle.',
   },
   alternates: { canonical: '/report/' },
 }
@@ -43,6 +43,7 @@ const CAPABILITIES = [
 const TRUSTBAR = ['DSGVO-konform', 'EU-Hosting', 'Pseudonymisierung', 'Keine Weitergabe an Dritte']
 
 const PAINPOINTS = [
+  'Sie unterschreiben und haften — aber sind Sie wirklich sicher, dass jede Zahl stimmt und keine Norm fehlt?',
   'Jeder Bericht wird neu getippt — obwohl die Struktur jedes Mal dieselbe ist.',
   'Generische KI vom Markt schreibt beliebigen Text — nicht in Ihrer Struktur, nicht in Ihrer Sprache.',
   'Tool-Output sieht nach Software aus — nicht nach einem Dokument aus Ihrem Büro.',
@@ -78,7 +79,7 @@ const BAUSTEINE = [
     h: 828,
     points: [
       ['Ihr Briefkopf, kein Branding', 'Logo, Firmenname, Kontaktdaten — kein WerkING-Branding im Export. Der Bericht wirkt intern erstellt.'],
-      ['DOCX-Vorlage hochladen', 'Eigene Word-Vorlage hochladen — WerkING befüllt künftig alle Berichte mit genau diesem Layout.'],
+      ['PDF-Vorlage hochladen', 'Bestehendes Berichts-PDF hochladen — WerkING übernimmt Layout, Logo und Struktur für alle künftigen Berichte.'],
       ['Pro Dokumenttyp zuweisbar', 'Druckbelüftungsprüfung bekommt ein anderes Layout als die Wohnungsübergabe — jede Prüfart ihr eigenes Erscheinungsbild.'],
       ['Sofort startklar', 'Der WerkING-Standard ist einsatzbereit — exportieren, anpassen, wieder hochladen.'],
     ],
@@ -103,7 +104,7 @@ const PROOF = [
 const FAQ = [
   ['Wer haftet für den Inhalt des Berichts?', 'Sie. Die KI erstellt einen Entwurf, den Sie prüfen, anpassen und unterschreiben. Die fachliche und rechtliche Verantwortung bleibt bei Ihnen — WerkING Report ist das Werkzeug, nicht der Entscheider.'],
   ['Kann ich eigene Richtlinien und Checklisten einbinden?', 'Ja. Sie hinterlegen beliebige eigene Dokumente als Wissensbasis am Dokumenttyp — die KI greift bei der Generierung automatisch darauf zu und formuliert auf Basis Ihrer Vorgaben.'],
-  ['Bleibt mein Briefkopf erhalten?', 'Ja. Sie laden eine eigene Design-Vorlage als DOCX hoch — jeder Export trägt Ihr Logo und Layout, ohne WerkING-Branding.'],
+  ['Bleibt mein Briefkopf erhalten?', 'Ja. Sie laden eine eigene Design-Vorlage als PDF hoch — jeder Export trägt Ihr Logo und Layout, ohne WerkING-Branding.'],
   ['Wie unterscheidet sich das von ChatGPT?', 'Ein Chatbot liefert bei gleicher Frage jedes Mal etwas anderes. WerkING Report ist ein definierter Prozess: gleiche Dokumenttyp-Konfiguration, gleiche Struktur, nachvollziehbare Quellen — reproduzierbar statt Zufall, und in Ihrem Stil statt generisch.'],
   ['Wie sicher sind meine Daten?', 'Dokumente werden verschlüsselt abgelegt und bleiben dem jeweiligen Projekt zugeordnet — kein projektübergreifender Zugriff, keine Weitergabe an Dritte und kein Training von KI-Modellen mit Ihren Unterlagen.'],
 ]
@@ -123,7 +124,7 @@ export default function ReportPage() {
       <PageHeader
         title={product.name}
         titleHtml={product.nameHtml}
-        subtitle="Technische Prüfberichte für Sachverständige, Ziviltechniker und Ingenieurbüros — in Ihrer Struktur, nach Ihren Vorgaben, in Ihrem Briefkopf. Sie prüfen und unterschreiben."
+        subtitle="Technische Prüfberichte für Sachverständige, Ziviltechniker und Ingenieurbüros — in Ihrer Struktur, nach Ihren Vorgaben, in Ihrem Briefkopf, mit der Sicherheit, dass Zahlen und Normen-Referenzen stimmen. Sie prüfen und unterschreiben."
         status={{ status: product.status, label: product.statusLabel }}
       />
 
