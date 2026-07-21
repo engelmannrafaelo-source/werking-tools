@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   alternates: { canonical: '/report/' },
 }
 
+const CHECK_URL = 'https://report.werking.tools/check'
+
 const CHIPS = [
   { value: '5 Schritte', label: 'geführter Workflow' },
   { value: '≤ 45 min', label: 'bis zum Entwurf' },
@@ -299,10 +301,16 @@ export default function ReportPage() {
           <div className="text-center mb-12">
             <div className="gold-line-center" />
             <span className="text-xs font-semibold uppercase tracking-wider text-gold">WerkING-Check</span>
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mt-1">Wie gut ist Ihr Bericht?</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mt-1">Wissen Sie, ob Ihr Bericht stimmt?</h2>
             <p className="text-white/55 mt-3 max-w-2xl mx-auto">
-              Der einfachste Einstieg: Laden Sie einen bestehenden Bericht als PDF hoch — die KI prüft ihn auf Vollständigkeit, Widersprüche und Schlüssigkeit und gibt eine klare Einschätzung. Kein Account, kein Setup. Ein Qualitätscheck, kein Zertifikat: eine zweite Meinung, bevor Sie unterschreiben. Das Ergebnis sehen nur Sie — DSGVO-konform, nicht öffentlich.
+              Der WerkING-Check prüft Ihren technischen Bericht auf Fehler, falsche Referenzen und fehlende Normen — kostenlos. Laden Sie ein bestehendes PDF hoch, kein Account, kein Setup. Damit Sie ihn ruhigen Gewissens rausgeben.
             </p>
+            <a
+              href={CHECK_URL}
+              className="inline-block mt-6 px-8 py-4 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-colors no-underline shadow-[0_4px_20px_rgba(222,193,94,0.4)]"
+            >
+              Bericht jetzt prüfen — kostenlos
+            </a>
           </div>
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <ImageFrame src="/images/products/report-check.webp" alt="WerkING-Check Qualitätsbericht mit Einschätzung und Anmerkungen" w={1600} h={1300} />
@@ -312,8 +320,8 @@ export default function ReportPage() {
                 <p className="text-sm text-white/55">„Verwendbar", „Verwendbar mit Auflagen" oder „Nicht verwendbar" — mit Begründung und Schweregrad pro Anmerkung.</p>
               </div>
               <div className="rounded-xl border border-white/10 bg-navy-mid p-5">
-                <h3 className="font-heading text-base font-semibold text-white mb-1">Faktenprüfung</h3>
-                <p className="text-sm text-white/55">Fachliche Behauptungen aus dem Bericht werden gegen Quellen geprüft — Vollständigkeit, Widersprüche, Plausibilität.</p>
+                <h3 className="font-heading text-base font-semibold text-white mb-1">Faktenprüfung &amp; Normen-Referenzen</h3>
+                <p className="text-sm text-white/55">Fachliche Behauptungen und Normen-Referenzen aus dem Bericht werden gegen echte Quellen geprüft — Vollständigkeit, Widersprüche, Plausibilität.</p>
               </div>
               <div className="rounded-xl border border-white/10 bg-navy-mid p-5">
                 <h3 className="font-heading text-base font-semibold text-white mb-1">Privat &amp; DSGVO-konform</h3>
