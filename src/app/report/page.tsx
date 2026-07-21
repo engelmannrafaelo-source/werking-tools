@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer'
 import PageHeader from '@/components/layout/PageHeader'
 import ProductCTA from '@/components/product/ProductCTA'
 import { PRODUCTS } from '@/lib/products'
+import { SITE } from '@/lib/constants'
 
 const product = PRODUCTS.report
 
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/report/' },
 }
 
-const CHECK_URL = 'https://report.werking.tools/check'
+const CHECK_URL = SITE.checkUrl
 
 const CHIPS = [
   { value: '5 Schritte', label: 'geführter Workflow' },

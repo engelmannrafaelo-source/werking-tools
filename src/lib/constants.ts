@@ -8,6 +8,7 @@ export const SITE = {
   address: 'Florianigasse 17/19, 1080 Wien',
   linkedin: 'https://www.linkedin.com/in/rafael-engelmann-02567a2aa/',
   hours: 'Mo-Do: 09-17, Fr: 09-12',
+  checkUrl: 'https://report.werking.tools/check',
 } as const
 
 export const NAV_ITEMS = [

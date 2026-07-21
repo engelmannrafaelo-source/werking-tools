@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { SITE } from '@/lib/constants'
 
 export default function Hero() {
   return (
@@ -41,6 +42,13 @@ export default function Hero() {
                 Kontakt aufnehmen
               </Link>
             </div>
+
+            <a
+              href={SITE.checkUrl}
+              className="inline-flex items-center gap-1.5 mt-6 text-sm text-white/60 hover:text-gold transition-colors no-underline"
+            >
+              Oder: bestehenden Bericht kostenlos auf Fehler prüfen lassen &rarr;
+            </a>
           </div>
 
           {/* Visual */}
